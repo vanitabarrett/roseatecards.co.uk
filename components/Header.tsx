@@ -1,7 +1,16 @@
+import Link from 'next/link';
+
+import Nav from './Nav';
+
 export default function Header() {
   return (
     <header className="header">
-      <img src="/logo.svg" alt="Roseate Cards" className="header__logo" />
+      <Link href="/">
+        <a>
+          <img src="/logo.svg" alt="Roseate Cards" className="header__logo" />
+        </a>
+      </Link>
+      <Nav />
     </header>
   )
 }

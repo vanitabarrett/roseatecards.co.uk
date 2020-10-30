@@ -1,0 +1,28 @@
+.nav {
+  display: block;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    padding: 2px;
+
+    &--active,
+    &:active,
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $black;
+    }
+  }
+}

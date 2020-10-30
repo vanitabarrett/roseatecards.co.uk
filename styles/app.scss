@@ -1,8 +1,23 @@
-body {
-  background: #fff;
-  color: #111;
-  min-width: 320px;
-  margin: 0 auto;
+$black: #111;
+$white: #fff;
+$red: #ED664C;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@import './components/header';
+body {
+  background: $white;
+  color: $black;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+@import "./components/header";
+@import "./components/nav";
