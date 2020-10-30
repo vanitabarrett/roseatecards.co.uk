@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import Nav from './Nav';
+
 export default function Header() {
   return (
     <header className="header">
@@ -8,6 +10,7 @@ export default function Header() {
           <img src="/logo.svg" alt="Roseate Cards" className="header__logo" />
         </a>
       </Link>
+      <Nav />
     </header>
   )
 }
