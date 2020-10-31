@@ -1,7 +1,13 @@
-$footer-font-size: .9rem;
-$footer-padding-size: .5rem;
-$footer-height-xs: (3 * ($footer-font-size + $footer-padding-size + $footer-padding-size)) + (2 * $footer-padding-size);
-$footer-height-m: (2 * ($footer-font-size + $footer-padding-size + $footer-padding-size)) + (2 * $footer-padding-size);
+$footer-font-size: 0.9rem;
+$footer-padding-size: 0.5rem;
+
+@function calculate-footer-height($no-of-lines) {
+  @return ($no-of-lines * ($footer-font-size + $footer-padding-size + $footer-padding-size)) +
+    (2 * $footer-padding-size);
+}
+
+$footer-height-xs: calculate-footer-height(3);
+$footer-height-m: calculate-footer-height(2);
 
 .footer {
   font-size: $footer-font-size;
