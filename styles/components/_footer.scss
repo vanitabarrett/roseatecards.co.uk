@@ -1,0 +1,45 @@
+$footer-font-size: .9rem;
+$footer-padding-size: .5rem;
+$footer-height-xs: (3 * ($footer-font-size + $footer-padding-size + $footer-padding-size)) + (2 * $footer-padding-size);
+$footer-height-m: (2 * ($footer-font-size + $footer-padding-size + $footer-padding-size)) + (2 * $footer-padding-size);
+
+.footer {
+  font-size: $footer-font-size;
+  font-weight: 300;
+  background: $light-grey;
+  padding: $footer-padding-size;
+
+  &__social {
+    @include mq($from: gel-bp-m) {
+      float: right;
+    }
+
+    &__item {
+      display: inline-block;
+
+      @include mq($from: gel-bp-m) {
+        display: block;
+        text-align: right;
+      }
+
+      .footer__link {
+        font-weight: bold;
+
+        @include mq($from: gel-bp-m) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin: 0 15px 0 -5px;
+    @include nice-underline(5px);
+    padding: $footer-padding-size 5px;
+  }
+
+  &__copy {
+    padding: $footer-padding-size 0;
+  }
+}
