@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export -o dist",
-    "start": "next start"
+    "start": "next start",
+    "generate-shop-data": "node ./scripts/generateShopData.js"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -14,7 +15,8 @@
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "sass": "^1.27.0"
+    "sass": "^1.27.0",
+    "simple-rate-limiter": "^0.2.3"
   },
   "devDependencies": {
     "@types/node": "^14.14.6",
