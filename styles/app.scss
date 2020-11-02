@@ -1,16 +1,16 @@
 $black: #111;
 $white: #fff;
-$light-grey: #F4F4F4;
-$red: #ED664C;
+$light-grey: #f4f4f4;
+$red: #ed664c;
 
 // BBC GEL Grid and Breakpoints from https://github.com/bbc/gel-grid
 $gel-grid-enable--markup-output: true;
 $gel-grid-columns: 1, 2, 3, 4, 5;
-@import '~gel-sass-tools/sass-tools';
-@import '~sass-mq/mq';
-@import '~gel-grid/grid';
+@import "~gel-sass-tools/sass-tools";
+@import "~sass-mq/mq";
+@import "~gel-grid/grid";
 
-@import './mixins';
+@import "./mixins";
 
 * {
   margin: 0;
@@ -50,3 +50,5 @@ body {
     min-height: calc(100vh - #{$footer-height-m});
   }
 }
+
+@import "./pages/category";

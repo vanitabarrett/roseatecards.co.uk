@@ -2,15 +2,19 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
 
+import shopData from '../shop-data.json';
+
+const categoryLinks = shopData.map(({ id, title }) => ({
+  href: `/${id}`,
+  text: title
+}));
+
 const LINKS = [
   {
     href: '/',
     text: 'Home'
   },
-  {
-    href: '/cards',
-    text: 'Shop'
-  },
+  ...categoryLinks,
   {
     href: '/contact',
     text: 'Contact'
