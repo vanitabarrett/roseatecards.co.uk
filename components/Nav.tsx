@@ -22,7 +22,7 @@ const LINKS = [
 ]
 
 export default function Nav() {
-  const { pathname } = useRouter();
+  const { asPath } = useRouter();
 
   return (
     <nav className="nav">
@@ -30,7 +30,7 @@ export default function Nav() {
         {
           LINKS.map(({ href, text }) => {
             const linkClassName = classnames('nav__link', {
-              'nav__link--active': pathname === href || pathname.startsWith(`${href}/`)
+              'nav__link--active': asPath === href || asPath.startsWith(`${href}/`)
             });
             return (
               <li key={href} className="nav__item">
