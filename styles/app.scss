@@ -30,6 +30,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+@font-face {
+  font-family: "Timothy";
+  src: url("/fonts/timothy.woff2") format("woff2"),
+    url("/fonts/timothy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "./components/header";
 @import "./components/nav";
 @import "./components/footer";
