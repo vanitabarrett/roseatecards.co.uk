@@ -3,18 +3,21 @@ const fs = require('fs');
 
 const VARIATION_ALLOW_LIST = ['Design'];
 const SHOP_ID = 'RoseateCards';
+const IMAGE_DESCRIPTIONS_HEADING = 'Image Descriptions:\n';
+const IMAGE_DESCRIPTIONS_REGEX = /([0-9]+): (?:([a-z0-9- ]+) -- )?(.*)/i;
+const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
 
 (async function () {
-  const activeListings = await getJSON(`/v2/shops/${SHOP_ID}/listings/active`, { includes: 'Section,MainImage' });
+  const activeListings = await getJSON(`/v2/shops/${SHOP_ID}/listings/active`);
   const categories = await activeListings.results.reduce(async (categoriesSoFarPromise, listing) => {
     const categoriesSoFar = await categoriesSoFarPromise;
-    const catSubCatTag = listing.tags.find((tag) => tag.includes('::'));
+    const catSubCatTag = listing.tags.find((tag) => tag.includes('--'));
 
     if (!catSubCatTag) {
       return categoriesSoFar;
     }
 
-    const [categoryName, subCategoryName] = catSubCatTag.split('::');
+    const [categoryName, subCategoryName] = catSubCatTag.split('--');
     const categoryId = getSlug(categoryName);
     const subCategoryId = getSlug(subCategoryName);
     const matchingMappedCategoryIndex = categoriesSoFar.findIndex(({ id }) => categoryId === id);
@@ -95,14 +98,11 @@ async function getProductsForListing(listing) {
     }, []);
     const variations = allPropertyValues.reduce((variationsSoFar, propertyValue) => {
       const allowedVariation = VARIATION_ALLOW_LIST.includes(propertyValue.property_name);
-      const variationAlreadyFound = variationsSoFar.find(({ id }) => id === propertyValue.value_ids[0]);
+      const variationAlreadyFound = variationsSoFar.find((variation) => variation === propertyValue.values[0]);
       if (allowedVariation && !variationAlreadyFound) {
         return [
           ...variationsSoFar,
-          {
-            id: propertyValue.value_ids[0],
-            name: propertyValue.values[0]
-          }
+          propertyValue.values[0]
         ]
       } else {
         return variationsSoFar;
@@ -110,32 +110,26 @@ async function getProductsForListing(listing) {
     }, []);
 
     if (variations.length > 0) {
-      const variationImages = await getJSON(`/v2/listings/${listing.listing_id}/variation-images`);
-      const listingImages = await getJSON(`/v2/listings/${listing.listing_id}/images`);
-      const enrichedVariations = await variations.map((variation) => {
-        const imageId = variationImages.results.find(({ value_id }) => value_id === variation.id).image_id;
-        const title = `${variation.name} ${getCleanTitle(listing.title)}`;
-        const image = listingImages.results.find(({ listing_image_id }) => listing_image_id === imageId);
-        return getCleanListing(listing, { title, image });
-      });
+      const enrichedVariations = await Promise.all(variations.map((variation) => {
+        return getCleanListing(listing, variation);
+      }));
       return enrichedVariations;
     }
-    return [getCleanListing(listing)];
+    return [await getCleanListing(listing)];
   }
-  return [getCleanListing(listing)];
+  return [await getCleanListing(listing)];
 }
 
-function getCleanListing(listing, { title, image } = {}) {
-  const originalTitle = title || listing.title;
-  const cleansedTitle = getCleanTitle(originalTitle);
-  const imageToParse = image || listing.MainImage;
+async function getCleanListing(listing, variationName) {
+  const title = variationName ? `${variationName} ${getCleanTitle(listing.title)}` : getCleanTitle(listing.title);
+  const images = await getImagesForListing(listing, variationName);
   return {
-    slug: getSlug(cleansedTitle),
-    title: cleansedTitle,
+    slug: getSlug(title),
+    title: title,
     description: listing.description,
     url: listing.url,
     price: listing.price,
-    images: getImages(imageToParse)
+    images
   }
 }
 
@@ -143,7 +137,32 @@ function getCleanTitle(originalTitle) {
   return originalTitle.includes('/') ? originalTitle.substr(0, originalTitle.indexOf('/') - 1) : originalTitle;
 }
 
-function getImages(image) {
+async function getImagesForListing(listing, variationName) {
+  const { listing_id, description } = listing;
+  const { results: listingImages } = await getJSON(`/v2/listings/${listing_id}/images`);
+  if (description.indexOf(IMAGE_DESCRIPTIONS_HEADING) < 0) {
+    return listingImages.map(cleanImage);
+  }
+  const imageDescriptions = description
+    .substr(description.indexOf(IMAGE_DESCRIPTIONS_HEADING) + IMAGE_DESCRIPTIONS_HEADING.length)
+    .split(IMAGE_DESCRIPTIONS_SEPARATOR);
+  return imageDescriptions.reduce((imagesSoFar, unmappedImageDescription) => {
+    const [_, imageRank, imageVariationName, imageDescription] = IMAGE_DESCRIPTIONS_REGEX.exec(unmappedImageDescription);
+    if (!imageRank || !imageDescription || (variationName && imageVariationName && variationName !== imageVariationName)) {
+      return imagesSoFar;
+    }
+    const matchingImage = listingImages.find(({ rank }) => rank === Number.parseInt(imageRank));
+    return [
+      ...imagesSoFar,
+      {
+        ...cleanImage(matchingImage),
+        description: imageDescription
+      }
+    ];
+  }, [])
+}
+
+function cleanImage(image) {
   const { url_75x75, url_170x135, url_570xN, url_fullxfull } = image;
   return { url_75x75, url_170x135, url_570xN, url_fullxfull };
 }
