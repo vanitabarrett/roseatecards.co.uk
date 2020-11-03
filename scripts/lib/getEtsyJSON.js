@@ -9,7 +9,7 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const MAX_NO_OF_REQUESTS = 10;
+const MAX_NO_OF_REQUESTS = 7;
 const MAX_REQUESTS_DURATION = 1000;
 const API_HOST = 'openapi.etsy.com';
 
