@@ -17,7 +17,9 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
       return categoriesSoFar;
     }
 
-    const [categoryName, subCategoryName] = catSubCatTag.split('--');
+    const [rawCategoryName, rawSubCategoryName] = catSubCatTag.split('--');
+    const categoryName = rawCategoryName.replace(/-/g, ' ');
+    const subCategoryName = rawSubCategoryName.replace(/-/g, ' ');
     const categoryId = getSlug(categoryName);
     const subCategoryId = getSlug(subCategoryName);
     const matchingMappedCategoryIndex = categoriesSoFar.findIndex(({ id }) => categoryId === id);
