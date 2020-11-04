@@ -1,5 +1,7 @@
 const getJSON = require('./lib/getEtsyJSON');
 const fs = require('fs');
+const Entities = require('html-entities').XmlEntities;
+const entities = new Entities();
 
 const VARIATION_ALLOW_LIST = ['Design'];
 const SHOP_ID = 'RoseateCards';
@@ -37,7 +39,7 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
     const categoryId = getSlug(categoryName);
     const subCategoryId = getSlug(subCategoryName);
     const matchingMappedCategoryIndex = categoriesSoFar.findIndex(({ id }) => categoryId === id);
-    const productsForListing = await getProductsForListing(listing);
+    const productsForListing = await getProductsForListing(listing, categoryId, subCategoryId);
 
     if (matchingMappedCategoryIndex > -1) {
       const matchingMappedCategory = categoriesSoFar[matchingMappedCategoryIndex];
@@ -103,7 +105,7 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
   fs.writeFileSync('./shop-data.json', JSON.stringify(shopData, null, 2));
 })();
 
-async function getProductsForListing(listing) {
+async function getProductsForListing(listing, categoryId, subCategoryId) {
   if (listing.has_variations) {
     const inventoryForListing = await getJSON(`/v2/listings/${listing.listing_id}/inventory`);
     const allPropertyValues = inventoryForListing.results.products.reduce((propertyValuesSoFar, { property_values }) => {
@@ -127,24 +129,27 @@ async function getProductsForListing(listing) {
 
     if (variations.length > 0) {
       const enrichedVariations = await Promise.all(variations.map((variation) => {
-        return getCleanListing(listing, variation);
+        return getCleanListing(listing, categoryId, subCategoryId, variation);
       }));
       return enrichedVariations;
     }
-    return [await getCleanListing(listing)];
+    return [await getCleanListing(listing, categoryId, subCategoryId)];
   }
-  return [await getCleanListing(listing)];
+  return [await getCleanListing(listing, categoryId, subCategoryId)];
 }
 
-async function getCleanListing(listing, variationName) {
+async function getCleanListing(listing, categoryId, subCategoryId, variationName) {
   const title = variationName ? `${variationName} ${getCleanTitle(listing.title)}` : getCleanTitle(listing.title);
   const images = await getImagesForListing(listing, variationName);
+  const slug = getSlug(title);
   return {
-    slug: getSlug(title),
-    title: title,
-    description: listing.description,
+    id: `/${categoryId}/${subCategoryId}/${slug}`,
+    slug,
+    title: entities.decode(title),
+    description: entities.decode(listing.description),
     url: listing.url,
     price: listing.price,
+    created: listing.creation_tsz * 1000,
     images
   }
 }
@@ -172,7 +177,7 @@ async function getImagesForListing(listing, variationName) {
       ...imagesSoFar,
       {
         ...cleanImage(matchingImage),
-        description: imageDescription
+        description: entities.decode(imageDescription)
       }
     ];
   }, [])
@@ -180,7 +185,7 @@ async function getImagesForListing(listing, variationName) {
 
 function cleanImage(image) {
   const { url_75x75, url_170x135, url_570xN, url_fullxfull } = image;
-  return { url_75x75, url_170x135, url_570xN, url_fullxfull };
+  return { url_75x75, url_170x135, url_570xN, url_fullxfull, description: '' };
 }
 
 function getSlug(text) {
