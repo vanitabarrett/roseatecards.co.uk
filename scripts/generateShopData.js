@@ -9,17 +9,31 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
 
 (async function () {
   const activeListings = await getJSON(`/v2/shops/${SHOP_ID}/listings/active`);
-  const categories = await activeListings.results.reduce(async (categoriesSoFarPromise, listing) => {
-    const categoriesSoFar = await categoriesSoFarPromise;
-    const catSubCatTag = listing.tags.find((tag) => tag.includes('--'));
+  const enrichedListings = activeListings.results.reduce((listingsSoFar, listing) => {
+    const catSubCatTags = listing.tags.filter((tag) => tag.includes('--'));
 
-    if (!catSubCatTag) {
-      return categoriesSoFar;
+    if (!catSubCatTags.length) {
+      return listingsSoFar;
     }
 
-    const [rawCategoryName, rawSubCategoryName] = catSubCatTag.split('--');
-    const categoryName = rawCategoryName.replace(/-/g, ' ');
-    const subCategoryName = rawSubCategoryName.replace(/-/g, ' ');
+    return [
+      ...listingsSoFar,
+      ...catSubCatTags.map((catSubCatTag) => {
+        const [rawCategoryName, rawSubCategoryName] = catSubCatTag.split('--');
+        const categoryName = rawCategoryName.replace(/-/g, ' ');
+        const subCategoryName = rawSubCategoryName.replace(/-/g, ' ');
+        return {
+          ...listing,
+          categoryName,
+          subCategoryName
+        }
+      })
+    ]
+  }, []);
+
+  const shopData = await enrichedListings.reduce(async (categoriesSoFarPromise, listing) => {
+    const categoriesSoFar = await categoriesSoFarPromise;
+    const { categoryName, subCategoryName } = listing;
     const categoryId = getSlug(categoryName);
     const subCategoryId = getSlug(subCategoryName);
     const matchingMappedCategoryIndex = categoriesSoFar.findIndex(({ id }) => categoryId === id);
@@ -86,7 +100,7 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
       ]
     }
   }, []);
-  fs.writeFileSync('./shop-data.json', JSON.stringify(categories, null, 2));
+  fs.writeFileSync('./shop-data.json', JSON.stringify(shopData, null, 2));
 })();
 
 async function getProductsForListing(listing) {
