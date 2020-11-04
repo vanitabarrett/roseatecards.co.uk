@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build && next export -o dist",
     "start": "next start",
-    "generate-shop-data": "node ./scripts/generateShopData.js"
+    "generate-shop-data": "node ./scripts/generateShopData.js",
+    "test": "tsc"
   },
   "dependencies": {
     "classnames": "^2.2.6",
