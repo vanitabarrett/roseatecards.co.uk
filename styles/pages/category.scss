@@ -17,10 +17,7 @@
 
     &__item {
       display: inline-block;
-
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
+      margin: .5rem 1rem;
     }
 
     &__link {
