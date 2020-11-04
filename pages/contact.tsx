@@ -36,6 +36,19 @@ export default function Contact() {
         </FAQ>
       </div>
 
+      <div className="contact__methods">
+        <h1 className="page-title">Contact Us</h1>
+
+        <a className="contact__methods__link" href="mailto:hello@roseatecards.co.uk">
+          <img src="/icons/email.svg" className="contact__svg"/>
+          <span>Email us at hello@roseatecards.co.uk</span>
+        </a>
+
+        <a className="contact__methods__link" href="http://m.me/roseatecards">
+          <img src="/icons/live-chat.svg" className="contact__svg"/>
+          <span>Live Chat (requires a Facebook account)</span>
+        </a>
+      </div>
     </div>
   );
 }
