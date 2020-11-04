@@ -1,0 +1,26 @@
+$faq-padding-size: 10px;
+
+.faq {
+  display: block;
+  width: 80%;
+  margin: 0 auto 20px;
+
+  &__question {
+    font-family: "Timothy";
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: $faq-padding-size;
+    background-color: $accessible-red;
+    color: $white;
+  }
+
+  &__answer {
+    padding: $faq-padding-size;
+    background-color: $light-grey;
+    font-weight: 200;
+
+    p:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+}
