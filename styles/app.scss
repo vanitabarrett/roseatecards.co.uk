@@ -53,4 +53,12 @@ body {
   }
 }
 
+.page-title {
+  text-align: center;
+  font-family: "Timothy";
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+
 @import "./pages/category";
+@import "./pages/contact";

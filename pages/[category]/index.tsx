@@ -25,7 +25,7 @@ export default function ProductHomepage({
       <Head>
         <title>{categoryData.title} - Roseate Cards</title>
       </Head>
-      <h1 className="category-page__title">All {categoryData.title}</h1>
+      <h1 className="page-title">All {categoryData.title}</h1>
       <nav aria-label="Select Category" className="category-page__subnav">
         <ul className="category-page__subnav__list">
           <SubNav links={subnavLinks} />
