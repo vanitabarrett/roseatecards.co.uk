@@ -5,7 +5,7 @@ export function getCategoryInfoNoProducts(categoryId): CategoryNoProducts {
   const { subCategories, ...categoryInfo } = getCategoryInfo(categoryId);
   return {
     ...categoryInfo,
-    subCategories: subCategories.map(({ products, ...subCategoryInfo}) => ({ ...subCategoryInfo }))
+    subCategories: subCategories.map(({ products, ...subCategoryInfo }) => ({ ...subCategoryInfo }))
   }
 }
 
