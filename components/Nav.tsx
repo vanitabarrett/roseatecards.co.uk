@@ -3,13 +3,14 @@ import { useRouter } from 'next/router';
 import classnames from 'classnames';
 
 import shopData from '../shop-data.json';
+import { NavLink } from '../types';
 
-const categoryLinks = shopData.map(({ id, title }) => ({
+const categoryLinks = shopData.map(({ id, name }) => ({
   href: `/${id}`,
-  text: title
+  text: name
 }));
 
-const LINKS = [
+const LINKS: NavLink[] = [
   {
     href: '/',
     text: 'Home'
