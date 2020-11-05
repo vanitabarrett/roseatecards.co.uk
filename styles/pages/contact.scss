@@ -1,0 +1,27 @@
+.contact {
+  &__faq{
+    margin-top: 10px;
+  }
+
+  &__methods {
+    text-align: center;
+    margin: 50px 0 30px;
+
+    &__link {
+      display: inline-block;
+      margin: 20px;
+      max-width: 250px;
+      background-color: $accessible-red;
+      padding: 20px;
+      color: $white;
+      font-weight: bold;
+      text-decoration: none;
+
+      .contact__svg {
+        fill: $white;
+        display: block;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+}

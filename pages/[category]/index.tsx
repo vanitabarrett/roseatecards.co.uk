@@ -28,7 +28,7 @@ export default function ProductHomepage({
       <Head>
         <title>{categoryData.title} - Roseate Cards</title>
       </Head>
-      <h1 className="category-page__title">All {categoryData.title}</h1>
+      <h1 className="page-title">All {categoryData.title}</h1>
       <SubNav links={subnavLinks} />
       <div className="gel-layout">
         {

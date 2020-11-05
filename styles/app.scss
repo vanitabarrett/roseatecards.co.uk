@@ -2,6 +2,7 @@ $black: #111;
 $white: #fff;
 $light-grey: #f4f4f4;
 $red: #ed664c;
+$accessible-red: #c84a14; // For use as a background with white text
 
 // BBC GEL Grid and Breakpoints from https://github.com/bbc/gel-grid
 $gel-grid-enable--markup-output: true;
@@ -43,6 +44,7 @@ body {
 @import "./components/nav";
 @import "./components/footer";
 @import "./components/productItem";
+@import "./components/faq";
 
 .page-container {
   min-height: calc(100vh - #{$footer-height-xs});
@@ -52,4 +54,12 @@ body {
   }
 }
 
+.page-title {
+  text-align: center;
+  font-family: "Timothy";
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+
 @import "./pages/category";
+@import "./pages/contact";
