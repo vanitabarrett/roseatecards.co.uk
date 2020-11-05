@@ -1,9 +1,5 @@
 import Link from 'next/link';
-
-import shopData from '../shop-data.json';
-
-const aProduct = shopData[0].subCategories[0].products[0];
-type Product = typeof aProduct;
+import { Product } from '../types';
 
 const NEW_IS_WITHIN_DAYS = 21;
 

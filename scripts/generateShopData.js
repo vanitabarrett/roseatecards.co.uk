@@ -88,7 +88,7 @@ const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
         ...categoriesSoFar,
         {
           id: categoryId,
-          title: categoryName,
+          name: categoryName,
           subCategories: [
             {
               id: subCategoryId,

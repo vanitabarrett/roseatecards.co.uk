@@ -45,6 +45,7 @@ body {
 @import "./components/footer";
 @import "./components/productItem";
 @import "./components/faq";
+@import "./components/categoryNav";
 
 .page-container {
   min-height: calc(100vh - #{$footer-height-xs});
