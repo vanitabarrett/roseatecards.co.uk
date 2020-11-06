@@ -1,5 +1,5 @@
 $footer-font-size: 0.9rem;
-$footer-padding-size: 0.5rem;
+$footer-padding-size: 0.3rem;
 
 @function calculate-footer-height($no-of-lines) {
   @return ($no-of-lines * ($footer-font-size + $footer-padding-size + $footer-padding-size)) +
@@ -46,6 +46,6 @@ $footer-height-m: calculate-footer-height(2);
   }
 
   &__copy {
-    padding: $footer-padding-size 0;
+    padding: ($footer-padding-size * 4) 0 $footer-padding-size;
   }
 }
