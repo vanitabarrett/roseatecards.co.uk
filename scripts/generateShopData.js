@@ -155,6 +155,7 @@ async function getCleanListing(listing, categoryId, subCategoryId, variationName
     url: listing.url,
     price: listing.price,
     created: listing.creation_tsz * 1000,
+    lastModified: listing.last_modified_tsz * 1000,
     images
   }
 }

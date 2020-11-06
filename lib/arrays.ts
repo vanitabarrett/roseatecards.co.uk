@@ -13,3 +13,19 @@ export function shuffle<T>(array: T[]): T[] {
 
   return newArray;
 }
+
+export function sortByKey<T>(arr: T[], key: keyof T): T[] {
+  function compare(a, b) {
+    const aValue = typeof a[key] === 'string' ? a[key].toUpperCase() : a[key];
+    const bValue = typeof b[key] === 'string' ? b[key].toUpperCase() : b[key];
+
+    if (aValue > bValue) {
+      return 1;
+    } else if (aValue < bValue) {
+      return -1;
+    }
+    return 0;
+  }
+
+  return arr.sort(compare);
+}
