@@ -27,7 +27,7 @@ export function getStaticPaths(): GetStaticPathsResult {
   return {
     paths: shopData.map(({ id }) => ({
       params: {
-        category: id,
+        categoryId: id,
       },
     })),
     fallback: false,
@@ -35,7 +35,7 @@ export function getStaticPaths(): GetStaticPathsResult {
 }
 
 export async function getStaticProps({ params }) {
-  const categoryId = params.category as string;
+  const categoryId = params.categoryId as string;
   const categoryInfo = getCategoryInfoNoProducts(categoryId);
   const allProducts = getCategoryInfo(categoryId).subCategories.map(({ products }) => products).flat();
   const dedupedProducts = allProducts.reduce((productsSoFar, product) => {
