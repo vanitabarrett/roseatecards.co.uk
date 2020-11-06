@@ -1,13 +1,25 @@
 @mixin nice-underline($padding: 0px) {
   position: relative;
   text-decoration: none;
+  padding: 5px;
 
   &::after {
     position: absolute;
     content: '';
-    bottom: calc(-1px + #{$padding});
+    bottom: 0;
     left: $padding;
     right: $padding;
     border-bottom: 1px solid $black;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: #ffbeb1;
+
+    &::after {
+      border-bottom: 2px solid $black;
+      left: 0;
+      right: 0;
+    }
   }
 }
