@@ -1,6 +1,10 @@
 .contact {
   &__faq {
     margin-top: 10px;
+
+    a {
+      @include nice-underline();
+    }
   }
 
   &__methods {
