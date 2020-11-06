@@ -76,5 +76,20 @@ a {
   margin-top: 2rem;
 }
 
+.skiplink {
+  position: absolute;
+  left: -99999999px;
+
+  &:focus {
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    outline: 0;
+    background-color: $focus;
+  }
+}
+
 @import "./pages/category";
 @import "./pages/contact";
