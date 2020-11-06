@@ -31,6 +31,13 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $black;
+  }
+}
+
 @font-face {
   font-family: "Timothy";
   src: url("/fonts/timothy.woff2") format("woff2"),
