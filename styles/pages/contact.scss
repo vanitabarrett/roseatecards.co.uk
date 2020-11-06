@@ -20,11 +20,17 @@
       color: $white;
       font-weight: bold;
       text-decoration: none;
+      border-bottom: 5px solid transparent;
 
       .contact__svg {
-        fill: $white;
         display: block;
         margin: 0 auto 30px;
+      }
+
+      &:focus {
+        outline: 0;
+        background-color: $accessible-red;
+        border-bottom: 5px solid $black;
       }
     }
   }
