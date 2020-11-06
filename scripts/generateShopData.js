@@ -8,6 +8,10 @@ const SHOP_ID = 'RoseateCards';
 const IMAGE_DESCRIPTIONS_HEADING = 'Image Descriptions:\n';
 const IMAGE_DESCRIPTIONS_REGEX = /([0-9]+): (?:([a-z0-9- ]+) -- )?(.*)/i;
 const IMAGE_DESCRIPTIONS_SEPARATOR = '\n';
+const SHORT_TITLE_DELIMITER = '|';
+const CATEGORY_TO_TYPE_MAP = {
+  cards: 'card'
+};
 
 (async function () {
   const activeListings = await getJSON(`/v2/shops/${SHOP_ID}/listings/active`);
@@ -139,12 +143,13 @@ async function getProductsForListing(listing, categoryId, subCategoryId) {
 }
 
 async function getCleanListing(listing, categoryId, subCategoryId, variationName) {
-  const title = variationName ? `${variationName} ${getCleanTitle(listing.title)}` : getCleanTitle(listing.title);
+  const title = variationName || getCleanTitle(listing.title);
   const images = await getImagesForListing(listing, variationName);
   const slug = getSlug(title);
   return {
     id: `/${categoryId}/${subCategoryId}/${slug}`,
     slug,
+    type: CATEGORY_TO_TYPE_MAP[categoryId] || '',
     title: entities.decode(title),
     description: entities.decode(listing.description),
     url: listing.url,
@@ -155,7 +160,7 @@ async function getCleanListing(listing, categoryId, subCategoryId, variationName
 }
 
 function getCleanTitle(originalTitle) {
-  return originalTitle.includes('/') ? originalTitle.substr(0, originalTitle.indexOf('/') - 1) : originalTitle;
+  return originalTitle.includes(SHORT_TITLE_DELIMITER) ? originalTitle.substr(0, originalTitle.indexOf(SHORT_TITLE_DELIMITER) - 1) : originalTitle;
 }
 
 async function getImagesForListing(listing, variationName) {
