@@ -22,6 +22,7 @@ $gel-grid-columns: 1, 2, 3, 4, 5;
   color: inherit;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -74,6 +75,7 @@ a {
   font-family: "Timothy";
   font-size: 2.2rem;
   margin-top: 2rem;
+  font-weight: normal;
 }
 
 .skiplink {

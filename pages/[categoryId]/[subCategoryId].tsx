@@ -8,7 +8,7 @@ import ProductsGrid from '../../components/ProductsGrid';
 import { getCategoryInfo, getCategoryInfoNoProducts } from '../../lib/shopData';
 import { useRouter } from 'next/router';
 
-export default function ProductHomepage({
+export default function SubCategoryHomepage({
   categoryInfo,
   products
 }: InferGetStaticPropsType<typeof getStaticProps>) {

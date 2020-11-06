@@ -7,7 +7,7 @@ import CategoryNav from '../../components/CategoryNav';
 import ProductsGrid from '../../components/ProductsGrid';
 import { getCategoryInfo, getCategoryInfoNoProducts } from '../../lib/shopData';
 
-export default function ProductHomepage({
+export default function CategoryHomepage({
   categoryInfo,
   products
 }: InferGetStaticPropsType<typeof getStaticProps>) {
