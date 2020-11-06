@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header">
       <Link href="/">
         <a>
-          <img src="/svgs/logo.svg" alt="Roseate Cards" className="header__logo" />
+          <img src="/svgs/logo.svg" alt="Roseate Cards" className="header__logo" aria-hidden="true" />
         </a>
       </Link>
       <Nav />
