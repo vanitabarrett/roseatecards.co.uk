@@ -146,12 +146,13 @@ async function getCleanListing(listing, categoryId, subCategoryId, variationName
   const title = variationName || getCleanTitle(listing.title);
   const images = await getImagesForListing(listing, variationName);
   const slug = getSlug(title);
+  const listingDescription = listing.description.indexOf(IMAGE_DESCRIPTIONS_HEADING) > -1 ? listing.description.substr(0, listing.description.indexOf(IMAGE_DESCRIPTIONS_HEADING)) : listing.description;
   return {
     id: `/${categoryId}/${subCategoryId}/${slug}`,
     slug,
     type: CATEGORY_TO_TYPE_MAP[categoryId] || '',
     title: entities.decode(title),
-    description: entities.decode(listing.description),
+    description: entities.decode(listingDescription).trim(),
     url: listing.url,
     price: listing.price,
     created: listing.creation_tsz * 1000,
