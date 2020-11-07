@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>
         <Header />
-        <main id="main" role="main">
+        <main id="main" role="main" aria-live="assertive">
           <Component {...pageProps} />
         </main>
       </div>
