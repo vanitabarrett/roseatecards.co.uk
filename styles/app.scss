@@ -1,6 +1,7 @@
 $black: #111;
 $white: #fff;
 $light-grey: #f4f4f4;
+$medium-grey: #777;
 $red: #ed664c;
 $accessible-red: #c84a14; // For use as a background with white text
 $focus: #ffbaad;
@@ -61,6 +62,7 @@ a {
 @import "./components/productItem";
 @import "./components/faq";
 @import "./components/categoryNav";
+@import "./components/breadcrumbs";
 
 .page-container {
   min-height: calc(100vh - #{$footer-height-xs});
@@ -94,5 +96,6 @@ a {
 }
 
 @import "./pages/category";
+@import "./pages/product";
 @import "./pages/contact";
 @import "./pages/privacy-policy";
