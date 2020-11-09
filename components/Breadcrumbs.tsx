@@ -1,16 +1,14 @@
 import Link from 'next/link';
 
-import { NavLink } from "../types";
-
 interface Props {
-  links: NavLink[]
+  items: { text: string, href?: string }[]
 }
 
-export default function Breadcrumbs({ links }: Props) {
+export default function Breadcrumbs({ items }: Props) {
   return (
     <ol className="breadcrumbs">
       {
-        links.map(({ text, href }) => {
+        items.map(({ text, href }) => {
           if (href) {
             return (
               <li key={text} className="breadcrumbs__item">

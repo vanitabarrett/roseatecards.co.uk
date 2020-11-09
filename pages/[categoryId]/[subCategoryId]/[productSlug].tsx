@@ -14,7 +14,7 @@ export default function ProductPage({
   subCategoryInfo,
   product
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const breadcrumbLinks: NavLink[] = [
+  const breadcrumbItems = [
     {
       href: `/${categoryInfo.id}`,
       text: categoryInfo.name
@@ -24,7 +24,6 @@ export default function ProductPage({
       text: subCategoryInfo.name
     },
     {
-      href: undefined,
       text: product.title
     }
   ];
@@ -33,7 +32,7 @@ export default function ProductPage({
       <Head>
         <title>{product.title} - {subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
       </Head>
-      <Breadcrumbs links={breadcrumbLinks} />
+      <Breadcrumbs items={breadcrumbItems} />
       <div className="gel-layout">
         <div className="gel-layout__item gel-1/2@m">
           <ImageCarousel images={product.images} />
