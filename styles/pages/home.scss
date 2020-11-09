@@ -1,0 +1,65 @@
+.home {
+  &__featured {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    background-image: url('../../public/banners/christmas-2020.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20% 20%;
+    border: solid 3px transparent;
+
+    &:hover, &:focus, &:active {
+      border: solid 3px $red;
+    }
+  }
+
+  &__featured-text-wrapper {
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    margin: 20px 10px;
+
+    @include mq($from: gel-bp-m) {
+      margin: 30px;
+    }
+
+    @include mq($from: gel-bp-l) {
+      margin: 70px;
+    }
+  }
+
+  &__featured-text {
+    display: inline-block;
+    font-family: "Timothy", cursive;
+    color: $white;
+    background-color: $black;
+    padding: 0 10px;
+    font-size: 1.5rem;
+
+    @include mq($from: gel-bp-m) {
+      font-size: 2rem;
+    }
+
+    @include mq($from: gel-bp-l) {
+      font-size: 3rem;
+    }
+  }
+
+  &__featured-large-text {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    font-size: 4rem;
+
+    @include mq($from: gel-bp-m) {
+      font-size: 3.5rem;
+      left: 25px;
+    }
+
+    @include mq($from: gel-bp-l) {
+      font-size: 4rem;
+    }
+  }
+}
