@@ -1,4 +1,6 @@
 .home {
+  margin-bottom: 50px;
+
   &__featured {
     display: block;
     width: 100%;
@@ -8,7 +10,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70%;
-    border: solid 3px transparent;
 
     &:hover, &:focus, &:active {
       border: solid 3px $red;
@@ -82,5 +83,12 @@
     @include mq($from: gel-bp-l) {
       font-size: 4rem;
     }
+  }
+
+  &__covid-banner {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: $light-grey;
+    text-align: center;
   }
 }
