@@ -9,7 +9,7 @@ export default function Contact() {
       </Head>
       <h1 className="page-title">FAQ</h1>
 
-      <div className="contact__faq">
+      <div className="contact-page__faq">
         <FAQ anchorId="covid19" question="COVID-19 update">
           <p>Roseate Cards is still open and will remain open during the lockdown period as we can safely work from home! However, our shipping couriers are experiencing some delays which are unfortunately outside our control.</p>
           <p>Most orders take between 3-5 days, but there have been reports of orders taking up to 10 days to arrive. Please make sure you leave as much time as possible when placing your order!</p>
@@ -36,16 +36,16 @@ export default function Contact() {
         </FAQ>
       </div>
 
-      <div className="contact__methods">
+      <div className="contact-page__methods">
         <h1 className="page-title">Contact Us</h1>
 
-        <a className="contact__methods__link" href="mailto:hello@roseatecards.co.uk">
-          <img src="/svgs/email.svg" className="contact__svg"/>
+        <a className="contact-page__methods__link" href="mailto:hello@roseatecards.co.uk">
+          <img src="/svgs/email.svg" className="contact-page__svg"/>
           <span>Email us at hello@roseatecards.co.uk</span>
         </a>
 
-        <a className="contact__methods__link" href="http://m.me/roseatecards">
-          <img src="/svgs/live-chat.svg" className="contact__svg"/>
+        <a className="contact-page__methods__link" href="http://m.me/roseatecards">
+          <img src="/svgs/live-chat.svg" className="contact-page__svg"/>
           <span>Live Chat (requires a Facebook account)</span>
         </a>
       </div>
