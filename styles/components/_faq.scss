@@ -6,7 +6,7 @@ $faq-padding-size: 10px;
   margin: 0 auto 20px;
 
   &__question {
-    font-family: "Timothy";
+    @include headline-font;
     font-size: 1.5rem;
     font-weight: 300;
     padding: $faq-padding-size;

@@ -50,8 +50,8 @@
   }
 
   &__featured-text {
+    @include headline-font;
     display: inline-block;
-    font-family: "Timothy", cursive;
     color: $white;
     background-color: $black;
     padding: 0 10px;

@@ -16,3 +16,7 @@
     background-color: $focus;
   }
 }
+
+@mixin headline-font {
+  font-family: "Timothy", cursive;
+}
