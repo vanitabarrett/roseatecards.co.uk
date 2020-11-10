@@ -1,10 +1,17 @@
 .header {
   padding: 25px 0 0;
+  text-align: center;
+
+  &__link {
+    display: inline-block;
+    padding: 5px;
+
+    &:hover, &:active, &:focus {
+      background: none;
+    }
+  }
 
   &__logo {
-    display: block;
-    margin: 0 auto;
-    padding: 5px;
     width: 250px;
   }
 }
