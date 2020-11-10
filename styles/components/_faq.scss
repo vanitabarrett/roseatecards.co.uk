@@ -8,7 +8,6 @@ $faq-padding-size: 10px;
   &__question {
     @include headline-font;
     font-size: 1.5rem;
-    font-weight: 300;
     padding: $faq-padding-size;
     background-color: $accessible-red;
     color: $white;
