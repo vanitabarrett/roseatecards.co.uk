@@ -1,11 +1,11 @@
 import { InferGetStaticPropsType, GetStaticPathsResult } from 'next';
 import Head from 'next/head';
 
-import shopData from '../../shop-data.json';
-import { sortByKey } from '../../lib/arrays';
-import CategoryNav from '../../components/CategoryNav';
-import ProductsGrid from '../../components/ProductsGrid';
-import { getCategoryInfo, getCategoryInfoNoProducts } from '../../lib/shopData';
+import shopData from '../../../shop-data.json';
+import { sortByKey } from '../../../lib/arrays';
+import CategoryNav from '../../../components/CategoryNav';
+import ProductsGrid from '../../../components/ProductsGrid';
+import { getCategoryInfo, getCategoryInfoNoProducts } from '../../../lib/shopData';
 import { useRouter } from 'next/router';
 
 export default function SubCategoryHomepage({

@@ -1,0 +1,40 @@
+.image-carousel {
+  &__arrow {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-align: center;
+    background: $white;
+    border: 1px solid $black;
+
+    &:focus {
+      outline: none;
+      border: 3px solid $black;
+    }
+
+    &--previous {
+      left: 10px;
+    }
+
+    &--next {
+      right: 10px;
+    }
+  }
+
+  // Override react-responsive-carousel styles
+  .carousel {
+    .thumbs-wrapper {
+      margin: 10px 0;
+    }
+
+    .slide {
+      background: $image-background;
+    }
+  }
+}

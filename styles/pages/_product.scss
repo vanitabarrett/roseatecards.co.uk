@@ -1,0 +1,41 @@
+.product-page {
+  margin-bottom: 50px;
+
+  &__title {
+    margin: 0;
+    text-align: left;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 30px 0;
+  }
+
+  &__buy {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.8rem;
+    color: $white;
+    background: $accessible-red;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Timothy';
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $black;
+      background: $focus;
+      border-bottom-color: black;
+    }
+  }
+}
