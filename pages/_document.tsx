@@ -1,5 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+const isTest = process.env.ENVIRONMENT === 'test';
+const domain = isTest ? 'test.roseatecards.co.uk' : 'roseatecards.co.uk';
+const robots = isTest ? 'noindex, nofollow' : 'index, follow';
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -7,8 +11,6 @@ class MyDocument extends Document {
   }
 
   render() {
-    const domain = process.env.ENVIRONMENT === 'test' ? 'test.roseatecards.co.uk' : 'roseatecards.co.uk';
-
     return (
       <Html lang="en-GB">
         <Head>
@@ -23,7 +25,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
 
           <meta charSet="utf-8" />
-          <meta name="robots" content="index, follow" />
+          <meta name="robots" content={robots} />
           <meta name="keywords" content="roseate cards, cards, greeting, stationery, envelopes, christmas, birthday" />
           <meta name="description" content="Greeting cards and stationery. Send a little love in the post ❤️" />
 
