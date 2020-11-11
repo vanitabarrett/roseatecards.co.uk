@@ -125,4 +125,38 @@
       }
     }
   }
+
+  &__cta {
+    &__wrapper {
+      margin-top: 16px;
+      text-decoration: none;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent;
+
+        .home-page__cta__text {
+          color: $white;
+          background-color: $accessible-red;
+        }
+      }
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+
+      &--christmas {
+        object-position: 100% 60%;
+      }
+    }
+
+    &__text {
+      @include headline-font;
+      font-size: 1.5rem;
+      background-color: $light-grey;
+      text-align: center;
+    }
+  }
 }
