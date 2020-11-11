@@ -2,10 +2,10 @@ import { InferGetStaticPropsType, GetStaticPathsResult } from 'next';
 import Head from 'next/head';
 
 import shopData from '../../shop-data.json';
-import { shuffle } from '../../lib/arrays';
 import CategoryNav from '../../components/CategoryNav';
 import ProductsGrid from '../../components/ProductsGrid';
-import { getCategoryInfo, getCategoryInfoNoProducts } from '../../lib/shopData';
+import { getCategoryInfo, getCategoryInfoNoProducts, sortProducts } from '../../lib/shopData';
+import { dedupeByKey } from '../../lib/arrays';
 
 export default function CategoryHomepage({
   categoryInfo,
@@ -38,13 +38,8 @@ export async function getStaticProps({ params }) {
   const categoryId = params.categoryId as string;
   const categoryInfo = getCategoryInfoNoProducts(categoryId);
   const allProducts = getCategoryInfo(categoryId).subCategories.map(({ products }) => products).flat();
-  const dedupedProducts = allProducts.reduce((productsSoFar, product) => {
-    if (productsSoFar.find(({ slug }) => slug === product.slug)) {
-      return productsSoFar;
-    }
-    return [...productsSoFar, product];
-  }, []);
-  const sortedDedupedProducts = shuffle(dedupedProducts);
+  const dedupedProducts = dedupeByKey(allProducts, 'slug');
+  const sortedDedupedProducts = sortProducts(dedupedProducts);
 
   return {
     props: {

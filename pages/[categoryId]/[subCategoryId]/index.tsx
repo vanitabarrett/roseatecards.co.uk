@@ -2,10 +2,9 @@ import { InferGetStaticPropsType, GetStaticPathsResult } from 'next';
 import Head from 'next/head';
 
 import shopData from '../../../shop-data.json';
-import { sortByKey } from '../../../lib/arrays';
 import CategoryNav from '../../../components/CategoryNav';
 import ProductsGrid from '../../../components/ProductsGrid';
-import { getCategoryInfo, getCategoryInfoNoProducts } from '../../../lib/shopData';
+import { getCategoryInfo, getCategoryInfoNoProducts, sortProducts } from '../../../lib/shopData';
 import { useRouter } from 'next/router';
 
 export default function SubCategoryHomepage({
@@ -50,7 +49,7 @@ export async function getStaticProps({ params }) {
   const subCategoryId = params.subCategoryId as string;
   const categoryInfo = getCategoryInfoNoProducts(categoryId);
   const allProducts = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products;
-  const sortedProducts = sortByKey(allProducts, 'lastModified').reverse();
+  const sortedProducts = sortProducts(allProducts);
 
   return {
     props: {

@@ -1,19 +1,3 @@
-export function shuffle<T>(array: T[]): T[] {
-  const newArray = [...array];
-  var currentIndex = newArray.length, temporaryValue, randomIndex;
-
-  while (0 !== currentIndex) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    temporaryValue = newArray[currentIndex];
-    newArray[currentIndex] = newArray[randomIndex];
-    newArray[randomIndex] = temporaryValue;
-  }
-
-  return newArray;
-}
-
 export function sortByKey<T>(arr: T[], key: keyof T): T[] {
   function compare(a, b) {
     const aValue = typeof a[key] === 'string' ? a[key].toUpperCase() : a[key];
@@ -28,4 +12,13 @@ export function sortByKey<T>(arr: T[], key: keyof T): T[] {
   }
 
   return arr.sort(compare);
+}
+
+export function dedupeByKey<T>(arr: T[], key: keyof T): T[] {
+  return arr.reduce((itemsSoFar, item) => {
+    if (itemsSoFar.find((itemFound) => itemFound[key] === item[key])) {
+      return itemsSoFar;
+    }
+    return [...itemsSoFar, item];
+  }, []);
 }
