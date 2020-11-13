@@ -1,0 +1,20 @@
+.additional-info {
+  margin-top: 30px;
+
+  &__title {
+    @include headline-font;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+  }
+
+  &__section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    width: 70px;
+    margin: 10px 0;
+  }
+}

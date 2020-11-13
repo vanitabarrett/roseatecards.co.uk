@@ -5,8 +5,8 @@ import htmlParser from 'html-react-parser';
 
 import shopData from '../../../shop-data.json';
 import { getCategoryInfo, getCategoryInfoNoProducts } from '../../../lib/shopData';
-import { NavLink } from '../../../types';
 import Breadcrumbs from '../../../components/Breadcrumbs';
+import AdditionalInfo from '../../../components/AdditionalInfo';
 import ImageCarousel from '../../../components/ImageCarousel';
 
 export default function ProductPage({
@@ -50,6 +50,9 @@ export default function ProductPage({
           </p>
         </div>
       </div>
+
+      <AdditionalInfo categoryId={categoryInfo.id} />
+
     </div>
   );
 }
