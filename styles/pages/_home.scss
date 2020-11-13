@@ -88,8 +88,74 @@
 
   &__covid-banner {
     margin-top: 5px;
-    padding: 5px;
+    padding: 10px;
     background-color: $light-grey;
     text-align: center;
+  }
+
+  &__info {
+    display: none;
+
+    @include mq($from: gel-bp-s) {
+      display: block;
+    }
+
+    &__section {
+      display: inline-block;
+      text-align: center;
+      color: $medium-grey;
+      margin: 30px 0;
+    }
+
+    &__image {
+      width: 60px;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    &__text {
+      margin: 0 auto;
+      font-size: 0.8rem;
+      width: 80%;
+
+      @include mq($from: gel-bp-m) {
+        font-size: 1rem;
+        width: 60%;
+      }
+    }
+  }
+
+  &__cta {
+    &__wrapper {
+      margin-top: 16px;
+      text-decoration: none;
+
+      &:hover, &:focus, &:active {
+        background-color: transparent;
+
+        .home-page__cta__text {
+          color: $white;
+          background-color: $accessible-red;
+        }
+      }
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+
+      &--christmas {
+        object-position: 100% 60%;
+      }
+    }
+
+    &__text {
+      @include headline-font;
+      font-size: 1.5rem;
+      background-color: $light-grey;
+      text-align: center;
+    }
   }
 }
