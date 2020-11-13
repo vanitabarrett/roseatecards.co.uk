@@ -25,6 +25,14 @@
     &--next {
       right: 10px;
     }
+
+    &__icon {
+      width: 50% !important;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   // Override react-responsive-carousel styles

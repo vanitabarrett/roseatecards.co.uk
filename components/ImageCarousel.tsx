@@ -31,7 +31,7 @@ function renderArrow(direction: 'previous' | 'next') {
   return (onClickHandler) =>
   (
     <button type="button" onClick={onClickHandler} aria-label={`Show ${direction} image`} className={`image-carousel__arrow image-carousel__arrow--${direction}`}>
-      <span aria-hidden="true">{direction === 'previous' ? '⇦' : '⇨'}</span>
+      <img src={`/svgs/${direction}-arrow.svg`} className="image-carousel__arrow__icon" alt="" />
     </button>
   )
 }
