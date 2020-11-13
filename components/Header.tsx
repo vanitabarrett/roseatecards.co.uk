@@ -7,7 +7,7 @@ export default function Header() {
     <header className="header" aria-hidden="true">
       <Link href="/">
         <a className="header__link" tabIndex={-1}>
-          <img src="/svgs/logo.svg" alt="Roseate Cards" className="header__logo" />
+          <img src="/svgs/logo.svg" alt="Roseate Cards" className="header__logo" width="250px" />
         </a>
       </Link>
       <Nav />
