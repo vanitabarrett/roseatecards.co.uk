@@ -20,15 +20,15 @@ export default function Home() {
 
       <div className="home-page__info gel-layout">
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" />
+          <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" />
           <p className="home-page__info__text">Unique card designs that you won't find anywhere else</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" />
+          <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" width="60px" />
           <p className="home-page__info__text">Direct to recipient shipping available to any UK address</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sustainability.svg" alt=""/>
+          <img className="home-page__info__image" src="/svgs/sustainability.svg" alt="" width="60px" />
           <p className="home-page__info__text">Committed to high quality and sustainable products</p>
         </div>
       </div>

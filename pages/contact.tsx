@@ -40,12 +40,12 @@ export default function Contact() {
         <h1 className="page-title">Contact Us</h1>
 
         <a className="contact-page__methods__link" href="mailto:hello@roseatecards.co.uk">
-          <img src="/svgs/email.svg" className="contact-page__svg"/>
+          <img src="/svgs/email.svg" className="contact-page__svg" alt="" />
           <span>Email us at hello@roseatecards.co.uk</span>
         </a>
 
         <a className="contact-page__methods__link" href="http://m.me/roseatecards">
-          <img src="/svgs/live-chat.svg" className="contact-page__svg"/>
+          <img src="/svgs/live-chat.svg" className="contact-page__svg" alt="" />
           <span>Live Chat (requires a Facebook account)</span>
         </a>
       </div>

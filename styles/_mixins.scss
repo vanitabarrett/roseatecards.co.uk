@@ -5,7 +5,7 @@
   &::after {
     position: absolute;
     content: '';
-    bottom: 0;
+    bottom: ($padding / 2);
     left: $padding;
     right: $padding;
     border-bottom: 1px solid $black;
