@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import shopData from '../../shop-data.json';
 import CategoryNav from '../../components/CategoryNav';
+import Notice from '../../components/Notice';
 import ProductsGrid from '../../components/ProductsGrid';
 import { getCategoryInfo, getCategoryInfoNoProducts, sortProducts } from '../../lib/shopData';
 import { dedupeByKey } from '../../lib/arrays';
@@ -19,6 +20,9 @@ export default function CategoryHomepage({
       <h1 className="page-title">All {categoryInfo.name}</h1>
       <CategoryNav categoryInfo={categoryInfo} />
       <ProductsGrid products={products} />
+      <Notice title="Can't find what you're looking for?">
+        <p>New designs are added at the start of each month, follow us on <a href="https://www.instagram.com/roseatecards/" rel="noreferrer external">social media</a> for updates!</p>
+      </Notice>
     </div>
   );
 }
