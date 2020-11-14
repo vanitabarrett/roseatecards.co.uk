@@ -4,6 +4,8 @@ export default function Home() {
   return (
     <div className="gel-wrap home-page">
 
+      <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
+
       <Link href="/cards/christmas">
         <a className="home-page__featured">
           <p className="home-page__featured-text-wrapper">

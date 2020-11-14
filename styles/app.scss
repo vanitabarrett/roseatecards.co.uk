@@ -99,6 +99,11 @@ a {
   }
 }
 
+.screenreader-only {
+  position: absolute;
+  left:-9999px;
+}
+
 @import "./pages/category";
 @import "./pages/product";
 @import "./pages/contact";
