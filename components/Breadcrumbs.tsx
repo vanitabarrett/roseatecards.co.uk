@@ -12,9 +12,7 @@ export default function Breadcrumbs({ items }: Props) {
           if (href) {
             return (
               <li key={text} className="breadcrumbs__item">
-                <Link href={href}>
-                  <a className="breadcrumbs__link">{text}</a>
-                </Link>
+                <a className="breadcrumbs__link" href={href}>{text}</a>
               </li>
             )
           } else {

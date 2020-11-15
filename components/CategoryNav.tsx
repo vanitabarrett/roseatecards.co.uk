@@ -32,9 +32,7 @@ export default function CategoryNav({ categoryInfo }: Props) {
             });
             return (
               <li className="category-nav__item" key={href}>
-                <Link href={href}>
-                  <a className={className}>{text}</a>
-                </Link>
+                <a className={className} href={href}>{text}</a>
               </li>
             )
           })
