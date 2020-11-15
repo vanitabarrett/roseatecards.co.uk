@@ -35,7 +35,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-p {
+p, li {
   line-height: 1.5;
 }
 
@@ -109,3 +109,4 @@ a {
 @import "./pages/contact";
 @import "./pages/privacy-policy";
 @import "./pages/home";
+@import "./pages/accessibility";

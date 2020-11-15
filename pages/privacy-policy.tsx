@@ -2,15 +2,15 @@ import Head from 'next/head';
 
 export default function PrivacyPolicy() {
   return (
-    <div className="gel-wrap privacy-policy-page gel-2/3">
+    <div className="gel-wrap privacy-policy-page gel-2/3@l">
       <Head>
         <title>Privacy Policy - Roseate Cards</title>
       </Head>
       <h1 className="page-title">Privacy Policy</h1>
-      <p>Roseate Cards operates the website <a href="/">www.roseatecards.co.uk</a>. Roseate Cards is the data controller for any page on the roseatecards.co.uk domain. If you follow a link to a third-party site, for example: Etsy, that organisation is the data controller and is responsible for processing any data you share with them, unless stated otherwise.</p>
+      <p>Roseate Cards operates the website <a href="/">roseatecards.co.uk</a>. Roseate Cards is the data controller for any page on the roseatecards.co.uk domain. If you follow a link to a third-party site, for example: Etsy, that organisation is the data controller and is responsible for processing any data you share with them, unless stated otherwise.</p>
 
       <h2 className="privacy-policy-page__heading">What data we collect</h2>
-      <p>We do not collect any data from you on www.roseatecards.co.uk. If you choose to purchase a product from us, you will be directed to Etsy <a href="https://www.etsy.com/uk/shop/roseatecards">(https://www.etsy.com/uk/shop/roseatecards)</a>. Any purchase made via the Roseate Cards Etsy shop will send the following data to us:</p>
+      <p>We do not collect any data from you on roseatecards.co.uk. If you choose to purchase a product from us, you will be directed to Etsy <a href="https://www.etsy.com/uk/shop/roseatecards">(https://www.etsy.com/uk/shop/roseatecards)</a>. Any purchase made via the Roseate Cards Etsy shop will send the following data to us:</p>
       <ul className="privacy-policy-page__list">
         <li>name and postal address</li>
         <li>email address</li>
