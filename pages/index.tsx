@@ -6,18 +6,14 @@ export default function Home() {
 
       <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
-      <Link href="/cards/christmas">
-        <a className="home-page__featured">
-          <p className="home-page__featured-text-wrapper">
-            <span className="home-page__featured-text">It's beginning to look a lot like</span><br/><span className="home-page__featured-text home-page__featured-large-text">Christmas</span>
-          </p>
-        </a>
-      </Link>
+      <a className="home-page__featured" href="/cards/christmas">
+        <p className="home-page__featured-text-wrapper">
+          <span className="home-page__featured-text">It's beginning to look a lot like</span><br/><span className="home-page__featured-text home-page__featured-large-text">Christmas</span>
+        </p>
+      </a>
 
       <div className="home-page__covid-banner"><strong>COVID-19 update:</strong> we're still open;&nbsp;
-        <Link href="/contact#covid19">
-          <a>shipping may be delayed</a>
-        </Link>
+        <a href="/contact#covid19">shipping may be delayed</a>
       </div>
 
       <div className="home-page__info gel-layout">

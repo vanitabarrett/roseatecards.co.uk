@@ -40,11 +40,9 @@ export default function ProductPage({
         <div className="gel-layout__item gel-1/2@m">
           <h1 className="page-title product-page__title">{product.title}</h1>
           <p className="product-page__price">£{product.price}</p>
-          <Link href={product.url}>
-            <a className="product-page__buy">
-              Buy on Etsy
-            </a>
-          </Link>
+          <a className="product-page__buy" href={product.url}>
+            Buy on Etsy
+          </a>
           <p className="product-page__description">
             {htmlParser(product.description.replace(/\n/g, '<br />'))}
           </p>
