@@ -35,9 +35,7 @@ export default function Nav() {
             });
             return (
               <li key={href} className="nav__item">
-                <Link href={href}>
-                  <a className={linkClassName}>{text}</a>
-                </Link>
+                <a className={linkClassName} href={href}>{text}</a>
               </li>
             )
           })
