@@ -25,15 +25,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer__related">
-          <Link href="/privacy-policy">
-            <a className="footer__link">Privacy Policy</a>
-          </Link>
-          <Link href="/accessibility">
-            <a className="footer__link">Accessibility</a>
-          </Link>
-          <Link href="/contact">
-            <a className="footer__link">Contact</a>
-          </Link>
+          <a className="footer__link" href="/privacy-policy">Privacy Policy</a>
+          <a className="footer__link" href="/accessibility">Accessibility</a>
+          <a className="footer__link" href="/contact">Contact</a>
         </div>
         <div className="footer__copy">
           &copy; Roseate Cards {new Date().getFullYear()}
