@@ -7,7 +7,7 @@ export default function Contact() {
       <Head>
         <title>Contact - Roseate Cards</title>
       </Head>
-      <h1 className="page-title">FAQ</h1>
+      <h1 className="page-title">FAQs</h1>
 
       <div className="contact-page__faq">
         <FAQ anchorId="covid19" question="COVID-19 update">
