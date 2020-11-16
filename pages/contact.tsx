@@ -7,7 +7,7 @@ export default function Contact() {
       <Head>
         <title>Contact - Roseate Cards</title>
       </Head>
-      <h1 className="page-title">FAQ</h1>
+      <h1 className="page-title">FAQs</h1>
 
       <div className="contact-page__faq">
         <FAQ anchorId="covid19" question="COVID-19 update">
@@ -28,7 +28,7 @@ export default function Contact() {
         </FAQ>
 
         <FAQ anchorId="how-long" question="How long will my order take to print and ship?">
-          <p>Orders take approximately 1-2 days to print and 3-4 days for 2nd class delivery in the UK (please see the latest <a href="#covid19">COVID-19 update</a> for information on shipping delays.</p>
+          <p>Orders take approximately 1-2 days to print and 3-4 days for 2nd class delivery in the UK (please see the latest <a href="#covid19">COVID-19 update</a> for information on shipping delays).</p>
         </FAQ>
 
         <FAQ anchorId="tech" question="Trouble with the website itself">
