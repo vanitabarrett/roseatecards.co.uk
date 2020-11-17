@@ -26,7 +26,6 @@ class MyDocument extends Document {
 
           <meta charSet="utf-8" />
           <meta name="robots" content={robots} />
-          <meta name="keywords" content="roseate cards, cards, greeting, stationery, envelopes, christmas, birthday" />
           <meta name="description" content="Greeting cards, postcards and stationery for those special occasions, including mental health and wellbeing cards. Send a little love in the post ❤️" />
 
           <meta property="og:title" content="Roseate Cards | Sustainable Greetings Cards and Postcards" />
