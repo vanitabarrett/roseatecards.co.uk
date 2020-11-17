@@ -19,15 +19,15 @@ export default function Home() {
       <div className="home-page__info gel-layout">
         <div className="home-page__info__section gel-layout__item gel-1/3">
           <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" />
-          <p className="home-page__info__text">Unique card designs that you won't find anywhere else</p>
+          <p className="home-page__info__text">Unique and original photo and card designs that you won't find anywhere else</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
           <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" width="60px" />
-          <p className="home-page__info__text">Direct to recipient shipping available to any UK address</p>
+          <p className="home-page__info__text">Personalise your chosen cards and send directly to the recipient (any UK address)</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
           <img className="home-page__info__image" src="/svgs/sustainability.svg" alt="" width="60px" />
-          <p className="home-page__info__text">Committed to high quality and sustainable products</p>
+          <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products</p>
         </div>
       </div>
 
@@ -45,6 +45,8 @@ export default function Home() {
           <p className="home-page__cta__text">'Just because' cards</p>
         </a>
       </div>
+
+      <p className="home-page__footnote">We love to read your reviews and see our cards arriving through your letterboxes! Tag your images and photos with #roseatecards to be in with a chance of featuring on our website!</p>
 
     </div>
   );
