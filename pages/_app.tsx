@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Roseate Cards</title>
+        <title>Roseate Cards | Sustainable Greetings Cards and Postcards</title>
       </Head>
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>
