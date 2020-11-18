@@ -1,7 +1,6 @@
 import { InferGetStaticPropsType, GetStaticPathsResult } from 'next';
 import Head from 'next/head';
 import { useRouter } from "next/router";
-import Link from 'next/link';
 import htmlParser from 'html-react-parser';
 
 import shopData from '../../../shop-data.json';

@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Link from 'next/link';
 import classnames from 'classnames';
 
 import { CategoryNoProducts, NavLink } from "../types";

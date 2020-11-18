@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 interface Props {
   items: { text: string, href?: string }[]
 }
