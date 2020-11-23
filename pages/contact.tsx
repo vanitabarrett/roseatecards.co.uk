@@ -9,7 +9,7 @@ export default function Contact() {
       </Head>
       <h1 className="page-title">FAQs</h1>
 
-      <div className="contact-page__faq">
+      <div className="contact-page__faq" itemScope itemType="https://schema.org/FAQPage">
         <FAQ anchorId="covid19" question="COVID-19 update">
           <p>Roseate Cards is still open and will remain open during the lockdown period as we can safely work from home! However, our shipping couriers are experiencing some delays which are unfortunately outside our control.</p>
           <p>Most orders take between 3-5 days, but there have been reports of orders taking up to 10 days to arrive. Please make sure you leave as much time as possible when placing your order!</p>

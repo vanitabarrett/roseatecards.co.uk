@@ -8,22 +8,25 @@ interface Props {
 
 export default function ImageCarousel({ images }: Props) {
   return (
-    <Carousel
-      infiniteLoop
-      showStatus={false}
-      showIndicators={false}
-      swipeable
-      emulateTouch
-      className="image-carousel"
-      renderArrowPrev={renderArrow('previous')}
-      renderArrowNext={renderArrow('next')}
-    >
-      {
-        images.map(({ url_fullxfull, description }) => (
-          <img key={url_fullxfull} src={url_fullxfull} alt={description} />
-        ))
-      }
-    </Carousel>
+    <>
+      <link itemProp="image" href={images[0]['url_fullxfull']} />
+      <Carousel
+        infiniteLoop
+        showStatus={false}
+        showIndicators={false}
+        swipeable
+        emulateTouch
+        className="image-carousel"
+        renderArrowPrev={renderArrow('previous')}
+        renderArrowNext={renderArrow('next')}
+      >
+        {
+          images.map(({ url_fullxfull, description }, index) => (
+            <img key={url_fullxfull} src={url_fullxfull} alt={description} />
+          ))
+        }
+      </Carousel>
+    </>
   )
 }
 

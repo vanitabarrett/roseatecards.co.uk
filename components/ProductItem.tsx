@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Product } from '../types';
 
 const NEW_IS_WITHIN_DAYS = 21;
