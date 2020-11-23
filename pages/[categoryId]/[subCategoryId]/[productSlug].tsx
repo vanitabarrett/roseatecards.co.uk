@@ -47,7 +47,7 @@ export default function ProductPage({
           <h1 className="page-title product-page__title">{product.title}</h1>
           <meta itemProp="name" content={`${product.title} - Roseate Cards`} />
           <span itemProp="offers" itemScope itemType="http://schema.org/Offer">
-            <link itemProp="url" href={`https://www.${domain}${asPath}`} />
+            <link itemProp="url" href={`https://${domain}${asPath}`} />
             <meta itemProp="priceCurrency" content="GBP" />
             <meta itemProp="availability" content="https://schema.org/InStock" />
             <meta itemProp="itemCondition" content="https://schema.org/NewCondition" />
