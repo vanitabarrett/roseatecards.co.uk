@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { getCookie } from '../components/CookieBanner';
 
 const isTest = process.env.ENVIRONMENT === 'test';
 const domain = isTest ? 'test.roseatecards.co.uk' : 'roseatecards.co.uk';
@@ -14,6 +15,20 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3YFKQ1M65"></script>
+          <script dangerouslySetInnerHTML={{ __html: `
+            ${ getCookie.toString() }
+
+            if (getCookie('cookie_preferences') && getCookie('cookie_preferences') === '1') {
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments)}
+              gtag('js', new Date());
+
+              gtag('config', 'G-Q3YFKQ1M65');
+            }
+          ` }}>
+          </script>
+
           <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />

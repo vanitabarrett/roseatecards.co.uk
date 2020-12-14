@@ -40,7 +40,7 @@ function cookieExpiry() {
   return currentDate.setFullYear(currentDate.getFullYear() + 1);
 }
 
-function getCookie(name) {
+export function getCookie(name) {
   var nameEQ = name + '='
     var cookies = document.cookie.split(';')
     for (var i = 0, len = cookies.length; i < len; i++) {
@@ -49,7 +49,7 @@ function getCookie(name) {
         cookie = cookie.substring(1, cookie.length)
       }
       if (cookie.indexOf(nameEQ) === 0) {
-        return true
+        return cookie.substring(nameEQ.length)
       }
     }
     return false
