@@ -9,6 +9,11 @@ export default function CookieBanner() {
   }
 
   function rejectCookies() {
+    // Delete all previously set cookies
+    document.cookie.split(';').forEach(function(c) {
+      document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    });
+
     document.cookie = 'cookie_preferences=0;expires=' + cookieExpiry() + ';domain=' + window.location.hostname + ';path=/';
     setShowBanner(false);
   }
