@@ -31,7 +31,7 @@
     }
 
     &__button {
-      display: block;
+      display: inline-block;
       padding: 10px;
       background-color: $accessible-red;
       color: $white;
@@ -49,6 +49,17 @@
         color: $black;
         outline: 0;
       }
+    }
+
+    &__success {
+      display: inline-block;
+      margin-left: 20px;
+      border: 2px solid green;
+      padding: 3px 10px;
+      font-weight: bold;
+      color: green;
+      border-bottom: 5px solid green;
+      vertical-align: bottom;
     }
   }
 }

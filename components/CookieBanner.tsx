@@ -40,7 +40,7 @@ export default function CookieBanner() {
   ) || null
 }
 
-function cookieExpiry() {
+export function cookieExpiry() {
   var date = new Date()
   date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000)) // 1 year expiry
   return date.toUTCString();
