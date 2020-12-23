@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState<boolean>(false);
+  const { asPath } = useRouter();
 
   function acceptCookies() {
     document.cookie = 'cookie_preferences=1;expires=' + cookieExpiry() + ';domain=' + window.location.hostname + ';path=/';
@@ -23,7 +25,7 @@ export default function CookieBanner() {
     setShowBanner(!cookiePreferencesSet);
   }, []);
 
-  return showBanner && (
+  return (showBanner && asPath !== '/cookies') && (
     <div role='region' aria-label='cookie banner' className="cookie-banner">
       <div className="cookie-banner__wrapper">
         <div className="cookie-banner__text-wrapper">
