@@ -14,3 +14,9 @@ type CategoryNoProducts = Omit<Category, "subCategories"> & {
 };
 
 type NavLink = { href: string, text: string };
+
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}

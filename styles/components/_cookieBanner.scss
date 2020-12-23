@@ -1,0 +1,54 @@
+.cookie-banner {
+  background-color: $accessible-red;
+  color: $white;
+  padding: 15px 0;
+
+  &__wrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  &__text-wrapper {
+    margin-bottom: 10px;
+
+    @include mq($from: gel-bp-l) {
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+    }
+  }
+
+  &__heading {
+    @include headline-font;
+    font-size: 2rem;
+  }
+
+  &__buttons {
+    @include mq($from: gel-bp-l) {
+      display: inline-block;
+      text-align: right;
+      width: 50%;
+    }
+  }
+
+  &__button {
+    @include headline-font;
+    background-color: $black;
+    padding: 15px;
+    color: $white;
+    font-size: 1.2rem;
+    margin: 5px 5px 5px 0;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+
+    @include mq($from: gel-bp-s) {
+      width: auto;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $white;
+      outline: 0;
+    }
+  }
+}

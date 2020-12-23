@@ -24,6 +24,7 @@ export default function Footer() {
         </div>
         <div className="footer__related">
           <a className="footer__link" href="/privacy-policy">Privacy Policy</a>
+          <a className="footer__link" href="/cookies">Cookies</a>
           <a className="footer__link" href="/accessibility">Accessibility</a>
           <a className="footer__link" href="/contact">Contact</a>
         </div>
