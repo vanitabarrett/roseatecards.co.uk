@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import { cookieExpiry, getCookie } from '../components/CookieBanner';
+import { cookieExpiry, getCookie, deleteAllCookies } from '../components/CookieBanner';
 
 export default function Cookies() {
   const [showForm, setShowForm] = useState<boolean>(false);
@@ -17,10 +17,7 @@ export default function Cookies() {
     const cookieValueToSet = optionSelected === 'accept' ? 1 : 0;
 
     if (cookieValueToSet === 0) {
-      // Delete all previously set cookies
-      document.cookie.split(';').forEach(function(c) {
-        document.cookie = c.trim().split('=')[0] + '=;' + 'expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-      });
+      deleteAllCookies();
     }
 
     document.cookie = 'cookie_preferences=' + cookieValueToSet + ';expires=' + cookieExpiry() + ';domain=' + window.location.hostname + ';path=/';
