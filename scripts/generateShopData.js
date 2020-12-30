@@ -155,7 +155,7 @@ async function getCleanListing(listing, categoryId, subCategoryId, variationName
     description: entities.decode(listingDescription).trim(),
     url: listing.url,
     price: listing.price,
-    created: listing.creation_tsz * 1000,
+    created: listing.original_creation_tsz * 1000,
     lastModified: listing.last_modified_tsz * 1000,
     featuredRank: listing.featured_rank,
     images
