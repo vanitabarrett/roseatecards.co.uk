@@ -1,317 +1,329 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-<loc>https://roseatecards.co.uk/</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>1.00</priority>
+  <loc>https://roseatecards.co.uk/</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/cards</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/contact</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/contact</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/privacy-policy</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/privacy-policy</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/cookies</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cookies</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/accessibility</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/accessibility</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.80</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/love</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/just-a-little-note-floral-print</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/love/i-love-you</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/thinking-of-you-floral-print</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/flower</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/candles</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/love/love-hearts</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/profiteroles-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/cookies-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/cookies-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/profiteroles-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/transgender-flag</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/personalised-you39re-fern-ally-21</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/pansexual-flag</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/personalised-i-can39t-be-leaf-you39re-21</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/bisexual-flag</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/pink-flowers</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/lgbt-flag</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/white-flowers</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/semi-circles</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/thinking-of-you</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/polka-dot</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/brilliant-human</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/citrus-slices</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/you-are-loved</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/richmond-park</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/here-for-you</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/kensington</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/its-ok-not-to-be-ok</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/hampton-court</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/a-little-note</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/beach</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/look-after-yourself</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/flower</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/birthday-wreath</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/cambridge-the-backs</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/winter-leaves</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/lake-como</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/summer-blooms</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/burano</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/50</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/rome</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/40</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/house</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/30</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/parrot</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/25</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/monkey</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/21</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/switzerland</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/18</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/the-alps</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/just-a-little-note-floral-print</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/trees</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/thinking-of-you-floral-print</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/personalised-valentine-wreath</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/candles</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/i-love-you</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/semi-circles</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/grey-wreath</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/polka-dot</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/red-wreath</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/citrus-slices</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/floral-wreath</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/richmond-park</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/love-hearts</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/kensington</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/light-hearts</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/hampton-court</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/valentines/dark-hearts</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/beach</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/personalised-i-can39t-be-leaf-you39re-21</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/cambridge-the-backs</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/birthday/personalised-you39re-fern-ally-21</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/lake-como</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/camembert-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/burano</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/bauble-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/rome</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/you-are-loved-floral-print</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/house</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/thinking-of-you</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/parrot</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/brilliant-human</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/monkey</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/you-are-loved</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/switzerland</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/here-for-you</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/the-alps</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/its-ok-not-to-be-ok</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/trees</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/a-little-note</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/camembert-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/look-after-yourself</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/photo-cards/bauble-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/look-after-yourself-floral-print</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/you-are-loved-floral-print</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/mental-health/i39m-here-for-you-floral-print</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.64</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/look-after-yourself-floral-print</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/candles</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://roseatecards.co.uk/cards/mental-health/i39m-here-for-you-floral-print</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/profiteroles-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/flower</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/cookies-photo</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/cookies-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>https://roseatecards.co.uk/cards/photo-cards/flower</loc>
-<lastmod>2021-01-08T16:06:48+00:00</lastmod>
-<priority>0.51</priority>
+  <loc>https://roseatecards.co.uk/cards/birthday/profiteroles-photo</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://roseatecards.co.uk/cards/birthday/candles</loc>
+  <lastmod>2021-02-15T11:57:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
