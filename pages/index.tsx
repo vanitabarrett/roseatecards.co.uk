@@ -4,9 +4,9 @@ export default function Home() {
 
       <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
-      <a className="home-page__featured" href="/cards/valentines">
+      <a className="home-page__featured" href="/cards">
         <p className="home-page__featured-text-wrapper">
-          <span className="home-page__featured-text">Love is</span><br/><span className="home-page__featured-text home-page__featured-large-text">in the air...</span>
+          <span className="home-page__featured-text">Send a little love</span><br/><span className="home-page__featured-text home-page__featured-large-text">in the post...</span>
         </p>
       </a>
 
@@ -30,9 +30,9 @@ export default function Home() {
       </div>
 
       <div className="home-page__cta gel-layout">
-        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards/valentines">
-          <img className="home-page__cta__image" src="/featured/valentines.jpg" alt="" />
-          <p className="home-page__cta__text">Valentine's Day</p>
+        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards">
+          <img className="home-page__cta__image" src="/featured/all-cards.jpg" alt="" />
+          <p className="home-page__cta__text">All cards</p>
         </a>
         <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards/mental-health">
           <img className="home-page__cta__image home-page__cta__image--wellbeing" src="/featured/wellbeing.jpg" alt="" />
