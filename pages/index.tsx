@@ -31,16 +31,12 @@ export default function Home() {
 
       <div className="home-page__cta gel-layout">
         <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards">
-          <img className="home-page__cta__image" src="/featured/all-cards.jpg" alt="" />
-          <p className="home-page__cta__text">All cards</p>
+          <img className="home-page__cta__image" src="/featured/wellbeing.jpg" alt="" />
+          <p className="home-page__cta__text">Greetings cards</p>
         </a>
-        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards/mental-health">
-          <img className="home-page__cta__image home-page__cta__image--wellbeing" src="/featured/wellbeing.jpg" alt="" />
-          <p className="home-page__cta__text">'Just because' cards</p>
-        </a>
-        <a className="home-page__cta__wrapper gel-layout__item gel-1/1" href="/cards/birthday">
-          <img className="home-page__cta__image home-page__cta__image--christmas" src="/featured/birthday.jpg"  alt="" />
-          <p className="home-page__cta__text">Birthday cards</p>
+        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/wedding">
+          <img className="home-page__cta__image home-page__cta__image--wellbeing" src="/featured/wedding.jpg" alt="" />
+          <p className="home-page__cta__text">Wedding stationery</p>
         </a>
       </div>
 
