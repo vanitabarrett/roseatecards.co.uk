@@ -85,6 +85,11 @@ a {
   margin-top: 2rem;
 }
 
+h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
 .skiplink {
   position: absolute;
   left: -99999999px;
@@ -113,3 +118,4 @@ a {
 @import "./pages/accessibility";
 @import "./pages/cookies";
 @import "./pages/free-download";
+@import "./pages/papers";
