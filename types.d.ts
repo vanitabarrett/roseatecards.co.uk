@@ -15,6 +15,20 @@ type CategoryNoProducts = Omit<Category, "subCategories"> & {
 
 type NavLink = { href: string, text: string };
 
+type FreeDownload = {
+  id: string,
+  title: string,
+  price: string,
+  created: number,
+  type: string,
+  description: string,
+  url: string,
+  images: {
+    url_570xN: string,
+    description: string
+  }[]
+};
+
 declare global {
   interface Window {
     dataLayer: any[];

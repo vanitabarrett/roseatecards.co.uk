@@ -21,6 +21,13 @@ export default function CategoryNav({ categoryInfo }: Props) {
     }))
   ]
 
+  if (categoryInfo.id === "weddings") {
+    links.push({
+      href: "/weddings/free-downloads",
+      text: "Free Downloads"
+    })
+  }
+
   return (
     <nav aria-label="Select Category" className="category-nav">
       <ul className="category-nav__list">
