@@ -1,8 +1,8 @@
-import { Product } from '../types';
+import { Product, FreeDownload } from '../types';
 
 const NEW_IS_WITHIN_DAYS = 21;
 
-export default function ProductItem({ id, title, price, images, created, type }: Product) {
+export default function ProductItem({ id, title, price, images, created, type }: Product | FreeDownload) {
   const isNew = ((new Date()).getTime() - created) < NEW_IS_WITHIN_DAYS * 24 * 60 * 60 * 1000;
   return (
     <a className="product-item" href={id} aria-label={`${title}${type ? ` ${type}` : ''}. £${price}`}>

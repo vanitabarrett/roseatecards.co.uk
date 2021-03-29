@@ -1,8 +1,8 @@
 import ProductItem from './ProductItem';
-import { Product } from '../types';
+import { Product, FreeDownload } from '../types';
 
 interface Props {
-  products: Product[];
+  products: (Product | FreeDownload)[];
 }
 
 export default function ProductsGrid({ products }: Props) {
