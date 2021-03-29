@@ -16,6 +16,10 @@ const LINKS: NavLink[] = [
   },
   ...categoryLinks,
   {
+    href: '/papers',
+    text: 'Our Papers'
+  },
+  {
     href: '/contact',
     text: 'Contact'
   }
