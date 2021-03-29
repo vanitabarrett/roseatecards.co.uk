@@ -25,7 +25,7 @@ export default function CategoryHomepage({
 }
 
 export async function getStaticProps() {
-  const categoryInfo = getCategoryInfoNoProducts("weddings");
+  const categoryInfo = getCategoryInfoNoProducts("wedding");
   const downloads: FreeDownload[] = freeDownloadsData.map((download) =>  {
     return augmentDownloadData(download)
   })

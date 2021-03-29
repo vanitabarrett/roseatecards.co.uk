@@ -88,7 +88,7 @@ export function getStaticPaths(): GetStaticPathsResult {
 
 export async function getStaticProps({ params }) {
   const downloadId = params.downloadId as string;
-  const categoryInfo = getCategoryInfoNoProducts("weddings");
+  const categoryInfo = getCategoryInfoNoProducts("wedding");
   const download = freeDownloadsData.find(({ id }) => id === downloadId);
   const subCategoryInfo = {
     id: "free-downloads",
