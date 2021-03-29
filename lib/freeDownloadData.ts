@@ -2,7 +2,7 @@ import { FreeDownload } from "../types";
 
 export function augmentDownloadData(download): FreeDownload {
   return {
-    id: `/weddings/free-downloads/${download.id}`,
+    id: `/wedding/free-downloads/${download.id}`,
     title: download.title,
     price: "0",
     created: 0,
