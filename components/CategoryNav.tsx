@@ -21,7 +21,7 @@ export default function CategoryNav({ categoryInfo }: Props) {
     }))
   ]
 
-  if (categoryInfo.id === "weddings") {
+  if (categoryInfo.id === "wedding") {
     links.push({
       href: "/weddings/free-downloads",
       text: "Free Downloads"
