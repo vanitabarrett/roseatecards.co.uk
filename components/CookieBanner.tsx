@@ -7,7 +7,23 @@ export default function CookieBanner() {
 
   function acceptCookies() {
     document.cookie = 'cookie_preferences=1;expires=' + cookieExpiry() + ';domain=' + window.location.hostname + ';path=/';
-    setShowBanner(false);
+
+    // Load gtag script
+    const script = document.createElement('script');
+    script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-MYGOOGLEID');
+
+    script.onload = function() {
+      // Set up GA
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){window.dataLayer.push(arguments)}
+      gtag('js', new Date());
+      gtag('config', 'G-Q3YFKQ1M65');
+
+      // Hide banner
+      setShowBanner(false);
+    }
+
+    document.head.appendChild(script);
   }
 
   function rejectCookies() {

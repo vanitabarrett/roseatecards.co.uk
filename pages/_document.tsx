@@ -15,16 +15,26 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3YFKQ1M65"></script>
           <script dangerouslySetInnerHTML={{ __html: `
             ${ getCookie.toString() }
 
             if (getCookie('cookie_preferences') && getCookie('cookie_preferences') === '1') {
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments)}
-              gtag('js', new Date());
+              if (!getCookie('_ga')) {
+                console.log("loading tag")
+                // Load gtag script
+                const script = document.createElement('script');
+                script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-MYGOOGLEID');
 
-              gtag('config', 'G-Q3YFKQ1M65');
+                script.onload = function() {
+                  // Set up GA
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){window.dataLayer.push(arguments)}
+                  gtag('js', new Date());
+                  gtag('config', 'G-Q3YFKQ1M65');
+                }
+
+                document.head.appendChild(script);
+              }
             }
           ` }}>
           </script>
