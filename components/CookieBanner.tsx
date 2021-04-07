@@ -15,7 +15,7 @@ export default function CookieBanner() {
     script.onload = function() {
       // Set up GA
       window.dataLayer = window.dataLayer || [];
-      function gtag(){window.dataLayer.push(arguments)}
+      function gtag(arg1, arg2){window.dataLayer.push(arguments)}
       gtag('js', new Date());
       gtag('config', 'G-Q3YFKQ1M65');
 
