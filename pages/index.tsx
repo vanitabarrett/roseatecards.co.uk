@@ -16,15 +16,15 @@ export default function Home() {
 
       <div className="home-page__info gel-layout">
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" />
+          <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" height="40px" />
           <p className="home-page__info__text">Unique and original photo and card designs that you won't find anywhere else</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" width="60px" />
+          <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" width="60px" height="40px" />
           <p className="home-page__info__text">Personalise your chosen cards and send directly to the recipient (any UK address)</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sustainability.svg" alt="" width="60px" />
+          <img className="home-page__info__image" src="/svgs/sustainability.svg" alt="" width="60px" height="40px" />
           <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products</p>
         </div>
       </div>
