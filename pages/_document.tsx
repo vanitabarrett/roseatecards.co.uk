@@ -20,7 +20,6 @@ class MyDocument extends Document {
 
             if (getCookie('cookie_preferences') && getCookie('cookie_preferences') === '1') {
               if (!getCookie('_ga')) {
-                console.log("loading tag")
                 // Load gtag script
                 const script = document.createElement('script');
                 script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-MYGOOGLEID');
