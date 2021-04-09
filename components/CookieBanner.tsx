@@ -39,7 +39,7 @@ export default function CookieBanner() {
   }, []);
 
   return (showBanner && asPath !== '/cookies') && (
-    <div role='region' aria-label='cookie banner' className="cookie-banner">
+    <div role='region' aria-label='cookie banner' className="cookie-banner" data-nosnippet>
       <div className="cookie-banner__wrapper">
         <div className="cookie-banner__text-wrapper">
           <h2 className="cookie-banner__heading">We'd like to set analytics cookies - is that ok?</h2>
