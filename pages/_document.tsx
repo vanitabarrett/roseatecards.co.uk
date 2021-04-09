@@ -50,15 +50,15 @@ class MyDocument extends Document {
 
           <meta charSet="utf-8" />
           <meta name="robots" content={robots} />
-          <meta name="description" content="Greeting cards, postcards and stationery for those special occasions, including mental health and wellbeing cards. Send a little love in the post ❤️" />
+          <meta name="description" content="Greeting cards and wedding stationery for all occasions, including mental health and wellbeing cards. Send a little love in the post." />
 
-          <meta property="og:title" content="Roseate Cards | Sustainable Greetings Cards and Postcards" />
+          <meta property="og:title" content="Roseate Cards | Sustainable Greetings Cards and Wedding Stationery" />
           <meta property="og:image" content={`https://${domain}/social/social.png`} />
-          <meta property="og:description" content="Greeting cards and stationery. Send a little love in the post ❤️" />
+          <meta property="og:description" content="Greeting cards and wedding stationery. Send a little love in the post ❤️" />
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content="Roseate Cards" />
-          <meta property="twitter:description" content="Greeting cards and stationery. Send a little love in the post ❤️" />
+          <meta property="twitter:description" content="Greeting cards and wedding stationery. Send a little love in the post ❤️" />
           <meta property="twitter:image" content={`https://${domain}/social/social.png`} />
 
           {
