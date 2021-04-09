@@ -6,6 +6,13 @@ export default function Contact() {
     <div className="gel-wrap contact-page">
       <Head>
         <title>Contact - Roseate Cards</title>
+        <meta name="description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+
+        <meta property="og:title" content="Contact - Roseate Cards" />
+        <meta property="og:description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+
+        <meta property="twitter:title" content="Contact - Roseate Cards" />
+        <meta property="twitter:description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
       </Head>
       <h1 className="page-title">FAQs</h1>
 

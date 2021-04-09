@@ -33,7 +33,14 @@ export default function DownloadPage({
   return (
     <div className="gel-wrap free-download-page">
       <Head>
-        <title>{download.title} - {subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
+      <title>{download.title} - {subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
+        <meta name="description" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
+
+        <meta property="og:title" content={`${download.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="og:description" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
+
+        <meta property="twitter:title" content={`${download.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="twitter:description" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
       </Head>
       <Breadcrumbs items={breadcrumbItems} />
       <div className="gel-layout" itemScope itemType="http://schema.org/Product">

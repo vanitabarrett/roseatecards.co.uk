@@ -5,6 +5,13 @@ export default function Papers() {
     <div className="gel-wrap papers-page">
       <Head>
         <title>Our Papers - Roseate Cards</title>
+        <meta name="description" content="At Roseate Cards, we’re always looking for the best quality we can get while making sure our products remain affordable. We only use professional-grade papers, and all our stationery is produced with print companies which are Forest Stewardship Council (FSC) certified." />
+
+        <meta property="og:title" content="Our Papers - Roseate Cards" />
+        <meta property="og:description" content="At Roseate Cards, we’re always looking for the best quality we can get while making sure our products remain affordable. We only use professional-grade papers, and all our stationery is produced with print companies which are Forest Stewardship Council (FSC) certified." />
+
+        <meta property="twitter:title" content="Our Papers - Roseate Cards" />
+        <meta property="twitter:description" content="At Roseate Cards, we’re always looking for the best quality we can get while making sure our products remain affordable. We only use professional-grade papers, and all our stationery is produced with print companies which are Forest Stewardship Council (FSC) certified." />
       </Head>
       <h1 className="page-title">Our Papers</h1>
       <p>At Roseate Cards, we’re always looking for the best quality we can get while making sure our products remain affordable. The majority of cards printed in bulk by card retailers use approximately 250 gsm paper - at Roseate Cards, we use 324 gsm to give you sturdy and luxurious cards. We only use professional-grade papers, and all our stationery is produced with print companies which are Forest Stewardship Council (FSC) certified.</p>

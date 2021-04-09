@@ -16,6 +16,13 @@ export default function CategoryHomepage({
     <div className="gel-wrap category-page">
       <Head>
         <title>{categoryInfo.name} - Roseate Cards</title>
+        <meta name="description" content={`A selection of ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
+
+        <meta property="og:title" content={`${categoryInfo.name} - Roseate Cards`} />
+        <meta property="og:description" content={`A selection of ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
+
+        <meta property="twitter:title" content={`${categoryInfo.name} - Roseate Cards`} />
+        <meta property="twitter:description" content={`A selection of ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
       </Head>
       <h1 className="page-title">Free Wedding Downloads</h1>
       <CategoryNav categoryInfo={categoryInfo} />

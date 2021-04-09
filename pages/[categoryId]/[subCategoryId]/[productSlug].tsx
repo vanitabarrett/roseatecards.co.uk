@@ -34,6 +34,13 @@ export default function ProductPage({
     <div className="gel-wrap product-page">
       <Head>
         <title>{product.title} - {subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
+        <meta name="description" content={`${htmlParser(product.description.replace(/\n/g, ' ')).toString().split('.')[0]}. Design by Roseate Cards. Send a little love in the post ❤️`} />
+
+        <meta property="og:title" content={`${product.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="og:description" content={`${htmlParser(product.description.replace(/\n/g, ' ')).toString().split('.')[0]}. Design by Roseate Cards. Send a little love in the post ❤️`} />
+
+        <meta property="twitter:title" content={`${product.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="twitter:description" content={`${htmlParser(product.description.replace(/\n/g, ' ')).toString().split('.')[0]}. Design by Roseate Cards. Send a little love in the post ❤️`} />
       </Head>
       <Breadcrumbs items={breadcrumbItems} />
       <div className="gel-layout" itemScope itemType="http://schema.org/Product">

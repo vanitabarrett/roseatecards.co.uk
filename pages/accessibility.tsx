@@ -5,6 +5,13 @@ export default function Accessibility() {
     <div className="gel-wrap accessibility-page gel-2/3@l">
       <Head>
         <title>Accessibility Statement - Roseate Cards</title>
+        <meta name="description" content="The Roseate Cards website is designed to be used by as many people as possible. Our accessibility statement sets out our compliance against WCAG 2.0 and any known issues." />
+
+        <meta property="og:title" content="Accessibility Statement - Roseate Cards" />
+        <meta property="og:description" content="The Roseate Cards website is designed to be used by as many people as possible. Our accessibility statement sets out our compliance against WCAG 2.0 and any known issues." />
+
+        <meta property="twitter:title" content="Accessibility Statement - Roseate Cards" />
+        <meta property="twitter:description" content="The Roseate Cards website is designed to be used by as many people as possible. Our accessibility statement sets out our compliance against WCAG 2.0 and any known issues." />
       </Head>
       <h1 className="page-title">Accessibility Statement</h1>
       <p>This statement applies to content published on <a href="/">roseatecards.co.uk</a>.</p>
