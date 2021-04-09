@@ -31,11 +31,11 @@ export default function Cookies() {
         <title>Cookies - Roseate Cards</title>
         <meta name="description" content="We use cookies to store information about how you use our website, such as the pages you visit." />
 
-        <meta property="og:title" content="Cookies - Roseate Cards" />
-        <meta property="og:description" content="We use cookies to store information about how you use our website, such as the pages you visit." />
+        <meta property="og:title" key="ogtitle" content="Cookies - Roseate Cards" />
+        <meta property="og:description" key="ogdescription" content="We use cookies to store information about how you use our website, such as the pages you visit." />
 
-        <meta property="twitter:title" content="Cookies - Roseate Cards" />
-        <meta property="twitter:description" content="We use cookies to store information about how you use our website, such as the pages you visit." />
+        <meta property="twitter:title" key="twittertitle" content="Cookies - Roseate Cards" />
+        <meta property="twitter:description" key="twitterdescription" content="We use cookies to store information about how you use our website, such as the pages you visit." />
       </Head>
       <h1 className="page-title">Cookies</h1>
       <p>Cookies are files saved on your phone, tablet or computer when you visit a website. We use cookies to store information about how you use our website, such as the pages you visit.</p>

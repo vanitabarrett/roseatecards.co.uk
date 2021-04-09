@@ -22,11 +22,11 @@ export default function SubCategoryHomepage({
         <title>{subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
         <meta name="description" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
 
-        <meta property="og:title" content={`${categoryInfo.name} - Roseate Cards`} />
-        <meta property="og:description" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
+        <meta property="og:title" key="ogtitle" content={`${categoryInfo.name} - Roseate Cards`} />
+        <meta property="og:description" key="ogdescription" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
 
-        <meta property="twitter:title" content={`${categoryInfo.name} - Roseate Cards`} />
-        <meta property="twitter:description" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
+        <meta property="twitter:title" key="twittertitle" content={`${categoryInfo.name} - Roseate Cards`} />
+        <meta property="twitter:description" key="twitterdescription" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
       </Head>
       <h1 className="page-title">{subCategoryInfo.name}</h1>
       <CategoryNav categoryInfo={categoryInfo} />

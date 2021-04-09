@@ -8,11 +8,11 @@ export default function Contact() {
         <title>Contact - Roseate Cards</title>
         <meta name="description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
 
-        <meta property="og:title" content="Contact - Roseate Cards" />
-        <meta property="og:description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+        <meta property="og:title" key="ogtitle" content="Contact - Roseate Cards" />
+        <meta property="og:description" key="ogdescription" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
 
-        <meta property="twitter:title" content="Contact - Roseate Cards" />
-        <meta property="twitter:description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+        <meta property="twitter:title" key="twittertitle" content="Contact - Roseate Cards" />
+        <meta property="twitter:description" key="twitterdescription" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
       </Head>
       <h1 className="page-title">FAQs</h1>
 

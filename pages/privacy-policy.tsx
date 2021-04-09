@@ -7,11 +7,11 @@ export default function PrivacyPolicy() {
         <title>Privacy Policy - Roseate Cards</title>
         <meta name="description" content="We only collect the data you submit when purchasing a product via Roseate Cards. You have the right to request information about how your personal data is processed, a copy of that personal data, and request to delete it." />
 
-        <meta property="og:title" content="Privacy Policy - Roseate Cards" />
-        <meta property="og:description" content="We only collect the data you submit when purchasing a product via Roseate Cards. You have the right to request information about how your personal data is processed, a copy of that personal data, and request to delete it." />
+        <meta property="og:title" key="ogtitle" content="Privacy Policy - Roseate Cards" />
+        <meta property="og:description" key="ogdescription" content="We only collect the data you submit when purchasing a product via Roseate Cards. You have the right to request information about how your personal data is processed, a copy of that personal data, and request to delete it." />
 
-        <meta property="twitter:title" content="Privacy Policy - Roseate Cards" />
-        <meta property="twitter:description" content="We only collect the data you submit when purchasing a product via Roseate Cards. You have the right to request information about how your personal data is processed, a copy of that personal data, and request to delete it." />
+        <meta property="twitter:title" key="twittertitle" content="Privacy Policy - Roseate Cards" />
+        <meta property="twitter:description" key="twitterdescription" content="We only collect the data you submit when purchasing a product via Roseate Cards. You have the right to request information about how your personal data is processed, a copy of that personal data, and request to delete it." />
       </Head>
       <h1 className="page-title">Privacy Policy</h1>
       <p>Roseate Cards operates the website <a href="/">roseatecards.co.uk</a>. Roseate Cards is the data controller for any page on the roseatecards.co.uk domain. If you follow a link to a third-party site, for example: Etsy, that organisation is the data controller and is responsible for processing any data you share with them, unless stated otherwise.</p>
