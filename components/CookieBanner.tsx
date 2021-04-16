@@ -10,19 +10,14 @@ export default function CookieBanner() {
 
     // Load gtag script
     const script = document.createElement('script');
-    script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-MYGOOGLEID');
+    script.textContent = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-59QZCF3');`
 
-    script.onload = function() {
-      // Set up GA
-      window.dataLayer = window.dataLayer || [];
-      function gtag(arg1, arg2){window.dataLayer.push(arguments)}
-      gtag('js', new Date());
-      gtag('config', 'G-Q3YFKQ1M65');
-
-      // Hide banner
-      setShowBanner(false);
-    }
-
+    // Hide banner
+    setShowBanner(false);
     document.head.appendChild(script);
   }
 
@@ -85,5 +80,4 @@ export function deleteAllCookies() {
 
   // Disable GA, otherwise it sets cookies again
   window['ga-disable-UA-181888970-2'] = true;
-  window['ga-disable-G-Q3YFKQ1M65'] = true;
 }

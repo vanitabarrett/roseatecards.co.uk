@@ -26,20 +26,6 @@ class MyDocument extends Document {
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
                 })(window,document,'script','dataLayer','GTM-59QZCF3');
-
-                // Load gtag script
-                const script = document.createElement('script');
-                script.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-MYGOOGLEID');
-
-                script.onload = function() {
-                  // Set up GA
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){window.dataLayer.push(arguments)}
-                  gtag('js', new Date());
-                  gtag('config', 'G-Q3YFKQ1M65');
-                }
-
-                document.head.appendChild(script);
               }
             }
           ` }}>
