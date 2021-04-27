@@ -29,6 +29,7 @@ export default function Hello() {
       <h2>Social Media</h2>
       <a href="https://www.facebook.com/roseatecards" className="hello-page__link">Facebook</a>
       <a href="https://www.instagram.com/roseatecards/" className="hello-page__link">Instagram</a>
+      <a href="https://www.etsy.com/uk/shop/roseatecards/" className="hello-page__link">Etsy</a>
 
     </div>
   );
