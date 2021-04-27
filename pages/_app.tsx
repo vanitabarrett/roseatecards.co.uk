@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+import { useRouter } from "next/router";
 
 import Header from "../components/Header";
 import Footer from '../components/Footer';
@@ -8,6 +9,8 @@ import CookieBanner from '../components/CookieBanner';
 import '../styles/app.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const { asPath } = useRouter();
+
   return (
     <>
       <Head>
@@ -23,12 +26,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>
         <CookieBanner />
-        <Header />
+        { asPath !== "/hello" ? <Header /> : null }
         <main id="main" role="main">
           <Component {...pageProps} />
         </main>
       </div>
-      <Footer />
+      { asPath !== "/hello" ? <Footer /> : null }
     </>
   );
 }

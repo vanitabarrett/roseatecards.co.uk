@@ -51,4 +51,38 @@
       outline: 0;
     }
   }
+
+  &--small {
+    background-color: $white;
+    color: $black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-top: 5px solid $black;
+
+    .cookie-banner__wrapper {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    .cookie-banner__heading {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    .cookie-banner__buttons {
+      margin: 0 auto;
+    }
+
+    .cookie-banner__button {
+      display: inline-block;
+      width: 45%;
+      margin: 0 5px 0 0;
+    }
+  }
 }

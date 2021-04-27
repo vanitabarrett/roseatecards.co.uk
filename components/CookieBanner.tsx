@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import classnames from 'classnames';
 
 export default function CookieBanner() {
   const [showBanner, setShowBanner] = useState<boolean>(false);
   const { asPath } = useRouter();
+
+  const className = classnames("cookie-banner", {
+    "cookie-banner--small": asPath === "/hello"
+  });
+
 
   function acceptCookies() {
     document.cookie = 'cookie_preferences=1;expires=' + cookieExpiry() + ';domain=' + window.location.hostname + ';path=/';
@@ -34,7 +40,7 @@ export default function CookieBanner() {
   }, []);
 
   return (showBanner && asPath !== '/cookies') && (
-    <div role='region' aria-label='cookie banner' className="cookie-banner" data-nosnippet>
+    <div role='region' aria-label='cookie banner' className={className} data-nosnippet>
       <div className="cookie-banner__wrapper">
         <div className="cookie-banner__text-wrapper">
           <h2 className="cookie-banner__heading">We'd like to set analytics cookies - is that ok?</h2>
@@ -42,8 +48,12 @@ export default function CookieBanner() {
         </div>
 
         <div className="cookie-banner__buttons">
-          <button className="cookie-banner__button" onClick={acceptCookies}>Accept analytics cookies</button>
-          <button className="cookie-banner__button" onClick={rejectCookies}>Reject analytics cookies</button>
+          <button className="cookie-banner__button" onClick={acceptCookies}>
+            {asPath === "/hello" ? "Accept" : "Accept analytics cookies" }
+          </button>
+          <button className="cookie-banner__button" onClick={rejectCookies}>
+          {asPath === "/hello" ? "Reject" : "Reject analytics cookies" }
+          </button>
         </div>
       </div>
     </div>
