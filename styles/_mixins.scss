@@ -17,6 +17,31 @@
   }
 }
 
+@mixin nice-underline-inverse($padding: 0px) {
+  position: relative;
+  text-decoration: none;
+  color: $white;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: ($padding / 2);
+    left: $padding;
+    right: $padding;
+    border-bottom: 1px solid $white;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: $focus;
+    color: $black;
+
+    &::after {
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
 @mixin headline-font {
   font-family: "Timothy", cursive;
   font-weight: normal;
