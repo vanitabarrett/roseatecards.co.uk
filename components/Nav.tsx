@@ -6,7 +6,7 @@ import { NavLink } from '../types';
 
 const categoryLinks = shopData.map(({ id, name }) => ({
   href: `/${id}`,
-  text: name
+  text: `Shop ${name}`
 }));
 
 const LINKS: NavLink[] = [
