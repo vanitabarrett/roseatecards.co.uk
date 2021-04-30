@@ -10,10 +10,6 @@ export default function Home() {
         </p>
       </a>
 
-      <div className="home-page__covid-banner"><strong>COVID-19 update:</strong> we're still open;&nbsp;
-        <a href="/contact#covid19">shipping may be delayed</a>
-      </div>
-
       <div className="home-page__info gel-layout">
         <div className="home-page__info__section gel-layout__item gel-1/3">
           <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" height="40px" />
