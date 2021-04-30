@@ -1,5 +1,5 @@
 $footer-font-size: 0.9rem;
-$footer-padding-size: 0.6rem;
+$footer-padding-size: 0.4rem;
 
 @function calculate-footer-height($no-of-lines) {
   @return ($no-of-lines * ($footer-font-size + $footer-padding-size + $footer-padding-size)) +
@@ -10,10 +10,25 @@ $footer-height-xs: calculate-footer-height(3);
 $footer-height-m: calculate-footer-height(2);
 
 .footer {
+  position: relative;
   font-size: $footer-font-size;
-  font-weight: 300;
-  background: $light-grey;
+  font-weight: 400;
+  background: $red;
   padding: $footer-padding-size;
+  padding-top: 20px;
+  color: $white;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+
+  &:before, &:after {
+    content: ""; height: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+    background-color: $white;
+    top: 0;
+  }
 
   &__social {
     @include mq($from: gel-bp-m) {
@@ -23,29 +38,32 @@ $footer-height-m: calculate-footer-height(2);
     &__item {
       display: inline-block;
 
-      @include mq($from: gel-bp-m) {
-        display: block;
-        text-align: right;
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: $white;
       }
 
-      .footer__link {
-        font-weight: bold;
-
-        @include mq($from: gel-bp-m) {
-          margin-right: 0;
+      &:hover,  &:focus {
+        svg {
+          fill: $black;
         }
       }
     }
   }
 
   &__link {
+    @include nice-underline-inverse;
     display: inline-block;
-    margin: 0 15px 0 -5px;
-    @include nice-underline(5px);
-    padding: $footer-padding-size 5px;
+    margin: 0 15px 0 0;
+    padding: $footer-padding-size 0;
+  }
+
+  &__email {
+    margin: 15px 0;
   }
 
   &__copy {
-    padding: ($footer-padding-size * 4) 0 $footer-padding-size;
+    margin: 15px 0;
   }
 }
