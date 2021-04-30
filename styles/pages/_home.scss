@@ -105,22 +105,46 @@
       text-align: center;
       color: $medium-grey;
       margin: 30px 0;
+      color: $red;
+
+      &:last-child {
+        display: none;
+      }
+
+      @include mq($from: gel-bp-m) {
+        border-right: 1px solid $red;
+
+        &:last-child {
+          display: inline-block;
+          border-right: none;
+        }
+      }
+    }
+
+    &__heading {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 0.8rem;
+
+      @include mq($from: gel-bp-m) {
+        font-size: 1rem;
+      }
     }
 
     &__image {
       width: 60px;
       display: block;
-      margin: 0 auto 20px auto;
+      margin: 0 auto 10px auto;
     }
 
     &__text {
       margin: 0 auto;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       width: 80%;
 
       @include mq($from: gel-bp-m) {
         font-size: 1rem;
-        width: 60%;
+        width: 70%;
       }
     }
   }

@@ -11,17 +11,20 @@ export default function Home() {
       </a>
 
       <div className="home-page__info gel-layout">
-        <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sparkles.svg" alt="" width="60px" height="40px" />
-          <p className="home-page__info__text">Unique and original photo and card designs that you won't find anywhere else</p>
+        <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
+          <img className="home-page__info__image" src="/svgs/delivery-truck.svg" alt="" width="60px" height="60px" />
+          <h2 className="home-page__info__heading">Delivery Options</h2>
+          <p className="home-page__info__text">Cards can be sent to you or directly to your recipient with a personalised typed message.</p>
+        </div>
+        <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
+          <img className="home-page__info__image" src="/svgs/smiley.svg" alt="" width="60px" height="60px" />
+          <h2 className="home-page__info__heading">Personalisation</h2>
+          <p className="home-page__info__text">Our cards can be customised in a variety of different ways, get in touch to find out more.</p>
         </div>
         <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/email-dark.svg" alt="" width="60px" height="40px" />
-          <p className="home-page__info__text">Personalise your chosen cards and send directly to the recipient (any UK address)</p>
-        </div>
-        <div className="home-page__info__section gel-layout__item gel-1/3">
-          <img className="home-page__info__image" src="/svgs/sustainability.svg" alt="" width="60px" height="40px" />
-          <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products</p>
+          <img className="home-page__info__image" src="/svgs/world.svg" alt="" width="60px" height="60px" />
+          <h2 className="home-page__info__heading">Sustainability</h2>
+          <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products.</p>
         </div>
       </div>
 
