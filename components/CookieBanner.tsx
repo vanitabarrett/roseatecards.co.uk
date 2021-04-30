@@ -49,10 +49,10 @@ export default function CookieBanner() {
 
         <div className="cookie-banner__buttons">
           <button className="cookie-banner__button" onClick={acceptCookies}>
-            {asPath === "/hello" ? "Accept" : "Accept analytics cookies" }
+            Accept analytics cookies
           </button>
           <button className="cookie-banner__button" onClick={rejectCookies}>
-          {asPath === "/hello" ? "Reject" : "Reject analytics cookies" }
+            Reject analytics cookies
           </button>
         </div>
       </div>

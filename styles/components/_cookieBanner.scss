@@ -1,11 +1,22 @@
 .cookie-banner {
-  background-color: $accessible-red;
-  color: $white;
-  padding: 15px 0;
+  background-color: $white;
+  color: $black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 5px solid $black;
+  z-index: 100;
 
   &__wrapper {
-    margin: 0 auto;
-    width: 80%;
+    width: 100%;
+    margin: 15px auto 10px auto;
+    padding: 0 10px;
+
+    @include mq($from: gel-bp-l) {
+      width: 80%;
+    }
   }
 
   &__text-wrapper {
@@ -20,7 +31,11 @@
 
   &__heading {
     @include headline-font;
-    font-size: 2rem;
+    font-size: 1.4rem;
+
+    @include mq($from: gel-bp-l) {
+      font-size: 2rem;
+    }
   }
 
   &__buttons {
@@ -33,56 +48,19 @@
 
   &__button {
     @include headline-font;
+    display: inline-block;
     background-color: $black;
     padding: 15px;
     color: $white;
     font-size: 1.2rem;
-    margin: 5px 5px 5px 0;
-    width: 100%;
     border-bottom: 2px solid transparent;
     cursor: pointer;
-
-    @include mq($from: gel-bp-s) {
-      width: auto;
-    }
+    width: 45%;
+    margin: 0 5px 0 0;
 
     &:focus {
       border-bottom: 2px solid $white;
       outline: 0;
-    }
-  }
-
-  &--small {
-    background-color: $white;
-    color: $black;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-top: 5px solid $black;
-
-    .cookie-banner__wrapper {
-      width: 100%;
-      padding: 0 10px;
-    }
-
-    .cookie-banner__heading {
-      font-size: 1.2rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-    }
-
-    .cookie-banner__buttons {
-      margin: 0 auto;
-    }
-
-    .cookie-banner__button {
-      display: inline-block;
-      width: 45%;
-      margin: 0 5px 0 0;
     }
   }
 }
