@@ -110,6 +110,15 @@ h3 {
   left:-9999px;
 }
 
+.global-banner {
+  background-color: $accessible-red;
+  color: $white;
+  padding: 5px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 @import "./pages/category";
 @import "./pages/product";
 @import "./pages/contact";

@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>
         <CookieBanner />
+        <p className="global-banner">🌼 Enter promo code ROSEATE2FREE for £2 off a £10+ spend 🌼</p>
         { asPath !== "/hello" ? <Header /> : null }
         <main id="main" role="main">
           <Component {...pageProps} />
