@@ -10,10 +10,6 @@ const categoryLinks = shopData.map(({ id, name }) => ({
 }));
 
 const LINKS: NavLink[] = [
-  {
-    href: '/',
-    text: 'Home'
-  },
   ...categoryLinks,
   {
     href: '/papers',
