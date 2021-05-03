@@ -2,87 +2,85 @@
   margin-bottom: 50px;
 
   &__featured {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    max-height: 300px;
-    background-image: url('../../public/banners/boho.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70%;
+    margin-bottom: 30px;
 
-    &:hover, &:focus, &:active {
-      border: solid 3px $red;
+    &__image {
+      display: inline-block;
+      width: 50%;
+      height: 400px;
+      object-fit: cover;
     }
 
-    @include mq($from: gel-bp-s) {
-      background-position: 20% 20%;
+    &__text-wrapper {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 10px;
+
+      @include mq($from: gel-bp-m) {
+        margin-top: 0;
+      }
     }
-  }
 
-  &__featured-text-wrapper {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    transform: translate(-50%, -80%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    @include mq($from: gel-bp-s) {
-      width: auto;
-      text-align: right;
-      margin: 20px 10px;
+    &__headline-wrapper {
+      @include headline-font;
+      color: $black;
       position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
+
+      @include mq($from: gel-bp-l) {
+        left: -60px;
+      }
     }
 
-    @include mq($from: gel-bp-m) {
-      margin: 30px;
-    }
-
-    @include mq($from: gel-bp-l) {
-      margin: 70px;
-    }
-  }
-
-  &__featured-text {
-    @include headline-font;
-    display: inline-block;
-    color: $white;
-    background-color: $black;
-    padding: 0 10px;
-    font-size: 1.5rem;
-
-    @include mq($from: gel-bp-m) {
-      font-size: 2rem;
-    }
-
-    @include mq($from: gel-bp-l) {
+    &__text {
+      background-color: $white;
       font-size: 3rem;
-    }
-  }
 
-  &__featured-large-text {
-    display: inline-block;
-    position: relative;
-    font-size: 4rem;
-
-    @include mq($from: gel-bp-s) {
-      left: 15px;
+      @include mq($from: gel-bp-l) {
+        font-size: 4rem;
+      }
     }
 
-    @include mq($from: gel-bp-m) {
-      font-size: 3.5rem;
-      left: 25px;
+    &__large-text {
+      display: inline-block;
+      position: relative;
+      font-size: 3rem;
+
+      @include mq($from: gel-bp-l) {
+        left: 15px;
+        font-size: 6rem;
+      }
     }
 
-    @include mq($from: gel-bp-l) {
-      font-size: 4rem;
+    &__description {
+      font-size: 1.3rem;
+
+      @include mq($from: gel-bp-l) {
+        margin: 20px;
+      }
+    }
+
+    &__button-wrapper {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    &__button {
+      @include headline-font;
+      display: inline-block;
+      color: $white;
+      background-color: $accessible-red;
+      padding: 20px 50px;
+      text-decoration: none;
+      font-size: 2rem;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
+
+      &:focus {
+        color: $black;
+      }
     }
   }
 
