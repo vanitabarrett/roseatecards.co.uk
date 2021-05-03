@@ -24,8 +24,8 @@ export default function CategoryHomepage({
         <meta property="twitter:title" key="twittertitle" content={`${categoryInfo.name} - Roseate Cards`} />
         <meta property="twitter:description" key="twitterdescription" content={`A selection of ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
       </Head>
-      <h1 className="page-title">Free Wedding Downloads</h1>
       <CategoryNav categoryInfo={categoryInfo} />
+      <h1 className="page-title">Free Wedding Downloads</h1>
       <ProductsGrid products={downloads} />
     </div>
   );

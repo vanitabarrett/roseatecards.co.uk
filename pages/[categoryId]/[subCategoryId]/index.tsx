@@ -28,8 +28,8 @@ export default function SubCategoryHomepage({
         <meta property="twitter:title" key="twittertitle" content={`${categoryInfo.name} - Roseate Cards`} />
         <meta property="twitter:description" key="twitterdescription" content={`A selection of ${subCategoryInfo.name.toLowerCase()} ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
       </Head>
-      <h1 className="page-title">{subCategoryInfo.name}</h1>
       <CategoryNav categoryInfo={categoryInfo} />
+      <h1 className="page-title">{subCategoryInfo.name}</h1>
       <ProductsGrid products={products} />
     </div>
   );
