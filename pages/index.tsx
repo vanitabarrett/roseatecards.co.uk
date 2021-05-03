@@ -33,19 +33,22 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="home-page__cta gel-layout">
-        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/cards">
-          <img className="home-page__cta__image" src="/featured/wellbeing.jpg" alt="" />
-          <p className="home-page__cta__text">Greetings cards</p>
+      <div className="home-page__cta">
+        <a href="/wedding" className="home-page__cta__wrapper home-page__cta__wrapper-large home-page__cta__wrapper-large-3">
+          <p className="home-page__cta__tag">Shop wedding stationery</p>
+          <img className="home-page__cta__wrapper-large__image" src="/homepage-categories/wedding.jpg" alt="" />
         </a>
-        <a className="home-page__cta__wrapper gel-layout__item gel-1/2@m" href="/wedding">
-          <img className="home-page__cta__image home-page__cta__image--wellbeing" src="/featured/wedding.jpg" alt="" />
-          <p className="home-page__cta__text">Wedding stationery</p>
+        <a href="/cards/just-because" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-1">
+          <p className="home-page__cta__tag">Just because</p>
+          <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/just-because.png" alt="" />
+        </a>
+        <a href="/cards/birthday" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-2">
+          <p className="home-page__cta__tag">Birthday</p>
+          <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/birthday.png" alt="" />
         </a>
       </div>
 
       <p className="home-page__footnote">We love to read your reviews and see our cards arriving through your letterboxes! Tag your images and photos with #roseatecards to be in with a chance of featuring on our website!</p>
-
     </div>
   );
 }
