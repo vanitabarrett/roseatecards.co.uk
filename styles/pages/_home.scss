@@ -249,6 +249,65 @@
     }
   }
 
+  &__about {
+    position: relative;
+    background-color: $accessible-red;
+    color: $white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-top: 50px;
+
+    &:before, &:after {
+      content: ""; height: 6px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+      -webkit-clip-path: polygon(0% 0%, 5%  100%, 10% 0%, 15%  100%, 20% 0%, 25% 100%, 30% 0%, 35%  100%, 40% 0%, 45%  100%, 50% 0%, 55%  100%, 60% 0%, 65%  100%, 70% 0%, 75%  100%, 80% 0%, 85%  100%, 90% 0%, 95%  100%, 100% 0%);
+    }
+
+    &:before {
+      top: 0;
+      background-color: $white;
+    }
+
+    &:after {
+      bottom: -6px;
+      background-color: $accessible-red;
+    }
+
+    &__image {
+      display: none;
+
+      @include mq($from: gel-bp-m) {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin: 5px auto;
+        border: 5px solid $white;
+      }
+
+      @include mq($from: gel-bp-l) {
+        width: 75%;
+      }
+    }
+
+    &__title {
+      @include headline-font;
+      font-size: 3rem;
+    }
+
+    &__text {
+      padding: 10px 0;
+      font-size: 1.1rem;
+
+      a {
+        @include nice-underline-inverse;
+      }
+    }
+  }
+
   &__footnote {
     margin: 40px 0;
     text-align: center;
