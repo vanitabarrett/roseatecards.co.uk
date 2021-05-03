@@ -1,5 +1,5 @@
 .additional-info {
-  margin-top: 30px;
+  margin-top: 50px;
 
   &__title {
     @include headline-font;
@@ -11,9 +11,27 @@
   &__section {
     text-align: center;
     margin-bottom: 20px;
+    padding-right: 16px;
+
+    &:last-child {
+      display: none;
+    }
+
+    @include mq($from: gel-bp-m) {
+      border-right: 1px solid $red;
+
+      &:last-child {
+        display: inline-block;
+        border-right: none;
+      }
+    }
   }
 
   &__image {
     margin: 10px 0;
+  }
+
+  &__text {
+    color: $red;
   }
 }
