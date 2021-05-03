@@ -4,12 +4,17 @@ export default function Home() {
 
       <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
-      <a className="home-page__featured" href="/cards">
-        <p className="home-page__featured-text-wrapper">
-          <span className="home-page__featured-text">Send a little love</span><br/><span className="home-page__featured-text home-page__featured-large-text">in the post...</span>
-        </p>
-      </a>
-
+      <div className="home-page__featured gel-layout">
+        <img src="/banners/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" />
+        <div className="home-page__featured__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
+          <p className="home-page__featured__headline-wrapper">
+            <span className="home-page__featured__text">Send a little love</span><br/><span className="home-page__featured__text home-page__featured__large-text">in the post...</span>
+          </p>
+          <p className="home-page__featured__description">During hard times, messages of love and support can mean a lot to the people we love.</p>
+          <p className="home-page__featured__description">Our eco-friendly greeting cards are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
+          <p className="home-page__featured__button-wrapper"><a href="/cards/just-because" className="home-page__featured__button">Shop now</a></p>
+        </div>
+      </div>
       <div className="home-page__info gel-layout">
         <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
           <img className="home-page__info__image" src="/svgs/delivery-truck.svg" alt="" width="60px" height="60px" />
