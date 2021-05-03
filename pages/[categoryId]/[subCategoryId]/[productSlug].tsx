@@ -76,7 +76,7 @@ export default function ProductPage({
       <h2>Similar Products</h2>
       <ul>
         {similarProducts.map((product) => (
-          <li>{product.title}</li>
+          <li key={product.id}>{product.title}</li>
         ))}
       </ul>
     </div>
@@ -108,8 +108,9 @@ export async function getStaticProps({ params }) {
   const productSlug = params.productSlug as string;
   const categoryInfo = getCategoryInfoNoProducts(categoryId);
   const subCategoryInfo = categoryInfo.subCategories.find(({ id }) => id === subCategoryId);
-  const product = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products.find(({ slug }) => slug === productSlug);
-  const similarProducts = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products.filter(({ slug }) => slug !== productSlug).sort(() => Math.random() - 0.5).slice(0, 4);
+  const productsInCategory = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products;
+  const product = productsInCategory.find(({ slug }) => slug === productSlug);
+  const similarProducts = productsInCategory.filter(({ slug }) => slug !== productSlug).sort(() => Math.random() - 0.5).slice(0, 4);
 
   return {
     props: {
