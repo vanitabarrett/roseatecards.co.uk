@@ -8,6 +8,7 @@ import { getCategoryInfo, getCategoryInfoNoProducts } from '../../../lib/shopDat
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import AdditionalInfo from '../../../components/AdditionalInfo';
 import ImageCarousel from '../../../components/ImageCarousel';
+import ProductItem from '../../../components/ProductItem';
 
 export default function ProductPage({
   categoryInfo,
@@ -73,12 +74,20 @@ export default function ProductPage({
       </div>
 
       <AdditionalInfo categoryId={categoryInfo.id} />
-      <h2>Similar Products</h2>
-      <ul>
-        {similarProducts.map((product) => (
-          <li key={product.id}>{product.title}</li>
-        ))}
-      </ul>
+      <div className="product-page__similar">
+        <h2 className="product-page__similar-headline">You might also like...</h2>
+        <ul className="gel-layout">
+          {similarProducts.map((product) => (
+            <li className="gel-layout__item gel-1/4@l gel-1/2@s" key={product.id}>
+              <ProductItem {...product} />
+            </li>
+          ))}
+        </ul>
+
+        <div className="product-page__similar-button-wrapper">
+          <a href={`/${categoryInfo.id}/${subCategoryInfo.id}`} className="product-page__similar-button">Shop all {subCategoryInfo.name}</a>
+        </div>
+      </div>
     </div>
   );
 }
