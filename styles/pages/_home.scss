@@ -65,22 +65,7 @@
     }
 
     &__button {
-      @include headline-font;
-      display: inline-block;
-      color: $white;
-      background-color: $accessible-red;
-      padding: 20px 50px;
-      text-decoration: none;
-      font-size: 2rem;
-      border-bottom: 2px solid transparent;
-
-      &:hover {
-        border-bottom: 2px solid $black;
-      }
-
-      &:focus {
-        color: $black;
-      }
+      @include cta-button;
     }
   }
 

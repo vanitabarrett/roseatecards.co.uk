@@ -46,3 +46,25 @@
   font-family: "Timothy", cursive;
   font-weight: normal;
 }
+
+@mixin cta-button {
+  @include headline-font;
+  display: inline-block;
+  color: $white;
+  background-color: $accessible-red;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  border-bottom: 5px solid transparent;
+  text-align: center;
+
+  &:hover {
+    background-color: $focus;
+    color: $black;
+  }
+
+  &:focus {
+    color: $black;
+    border-bottom: 5px solid $black;
+  }
+}
