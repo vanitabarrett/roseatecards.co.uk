@@ -19,7 +19,7 @@ export default function Hello() {
       <img src="/svgs/logo-light.svg" alt="Roseate Cards" className="hello-page__logo" width="250px" height="60px" />
 
       <h2>Shop Now</h2>
-      <a href="/wedding/free-downloads" className="hello-page__link">Free Downloads</a>
+      <a href="/wedding/free-downloads" className="hello-page__link">Free Wedding Postponement Cards</a>
       <a href="/cards" className="hello-page__link">Cards, Notecards and Postcards</a>
       <a href="/wedding" className="hello-page__link">Wedding Stationery</a>
 
@@ -27,6 +27,7 @@ export default function Hello() {
       <a href="/contact" className="hello-page__link">Contact us</a>
 
       <h2>Social Media</h2>
+      <a href="/" className="hello-page__link">Website</a>
       <a href="https://www.facebook.com/roseatecards" className="hello-page__link">Facebook</a>
       <a href="https://www.instagram.com/roseatecards/" className="hello-page__link">Instagram</a>
       <a href="https://www.etsy.com/uk/shop/roseatecards/" className="hello-page__link">Etsy</a>
