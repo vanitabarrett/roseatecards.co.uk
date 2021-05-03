@@ -8,11 +8,13 @@ import { getCategoryInfo, getCategoryInfoNoProducts } from '../../../lib/shopDat
 import Breadcrumbs from '../../../components/Breadcrumbs';
 import AdditionalInfo from '../../../components/AdditionalInfo';
 import ImageCarousel from '../../../components/ImageCarousel';
+import ProductItem from '../../../components/ProductItem';
 
 export default function ProductPage({
   categoryInfo,
   subCategoryInfo,
-  product
+  product,
+  similarProducts
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const breadcrumbItems = [
     {
@@ -72,7 +74,20 @@ export default function ProductPage({
       </div>
 
       <AdditionalInfo categoryId={categoryInfo.id} />
+      <div className="product-page__similar">
+        <h2 className="product-page__similar-headline">You might also like...</h2>
+        <ul className="gel-layout">
+          {similarProducts.map((product) => (
+            <li className="gel-layout__item gel-1/4@l gel-1/2@s" key={product.id}>
+              <ProductItem {...product} />
+            </li>
+          ))}
+        </ul>
 
+        <div className="product-page__similar-button-wrapper">
+          <a href={`/${categoryInfo.id}/${subCategoryInfo.id}`} className="product-page__similar-button">Shop all {subCategoryInfo.name}</a>
+        </div>
+      </div>
     </div>
   );
 }
@@ -102,13 +117,16 @@ export async function getStaticProps({ params }) {
   const productSlug = params.productSlug as string;
   const categoryInfo = getCategoryInfoNoProducts(categoryId);
   const subCategoryInfo = categoryInfo.subCategories.find(({ id }) => id === subCategoryId);
-  const product = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products.find(({ slug }) => slug === productSlug);
+  const productsInCategory = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products;
+  const product = productsInCategory.find(({ slug }) => slug === productSlug);
+  const similarProducts = productsInCategory.filter(({ slug }) => slug !== productSlug).sort(() => Math.random() - 0.5).slice(0, 4);
 
   return {
     props: {
       categoryInfo,
       subCategoryInfo,
-      product
+      product,
+      similarProducts
     },
   }
 }
