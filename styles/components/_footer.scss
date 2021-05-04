@@ -66,4 +66,10 @@ $footer-height-m: calculate-footer-height(2);
   &__copy {
     margin: 15px 0;
   }
+
+  &__text {
+    @include mq($from: gel-bp-m) {
+      padding-left: 0;
+    }
+  }
 }

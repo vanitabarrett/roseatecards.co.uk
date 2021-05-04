@@ -25,8 +25,13 @@ export default function Footer() {
           <a className="footer__link" href="/accessibility">Accessibility</a>
           <a className="footer__link" href="/contact">Contact</a>
         </div>
-        <p className="footer__email">Say hello at hello@roseatecards.co.uk</p>
-        <p className="footer__copy">&copy; Roseate Cards {new Date().getFullYear()}</p>
+        <div className="gel-layout">
+          <div className="gel-layout__item gel-2/3 footer__text">
+            <p className="footer__copy">We are a small greetings card company based in the UK, and we really appreciate every single purchase made! Thank you for supporting small businesses.</p>
+            <p className="footer__email">Say hello at hello@roseatecards.co.uk</p>
+            <p className="footer__copy">&copy; Roseate Cards {new Date().getFullYear()}</p>
+          </div>
+        </div>
       </div>
     </footer>
   )

@@ -18,7 +18,7 @@ export default function Home({
               <span className="home-page__featured__text">Send a little love</span><br/><span className="home-page__featured__text home-page__featured__large-text">in the post...</span>
             </p>
             <p className="home-page__featured__description">During hard times, messages of love and support can mean a lot to the people we love.</p>
-            <p className="home-page__featured__description">Our eco-friendly greeting cards are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
+            <p className="home-page__featured__description">Our eco-friendly greeting cards and luxury wedding stationery are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
             <p className="home-page__featured__button-wrapper"><a href="/cards/just-because" className="home-page__featured__button">Shop now</a></p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function Home({
           <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
             <img className="home-page__info__image" src="/svgs/delivery-truck.svg" alt="" width="60px" height="60px" loading="lazy" />
             <h2 className="home-page__info__heading">Delivery Options</h2>
-            <p className="home-page__info__text">Cards can be sent to you or directly to your recipient with a personalised typed message.</p>
+            <p className="home-page__info__text">Cards can be posted to you, or sent directly to your recipient with a custom typed message.</p>
           </div>
           <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
             <img className="home-page__info__image" src="/svgs/smiley.svg" alt="" width="60px" height="60px" loading="lazy" />
@@ -36,7 +36,7 @@ export default function Home({
           <div className="home-page__info__section gel-layout__item gel-1/3">
             <img className="home-page__info__image" src="/svgs/world.svg" alt="" width="60px" height="60px" loading="lazy" />
             <h2 className="home-page__info__heading">Sustainability</h2>
-            <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products.</p>
+            <p className="home-page__info__text">All our cards are recyclable, and we are committed to using high-quality and sustainable materials. </p>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ export default function Home({
             </div>
             <div className="gel-layout__item gel-1/1 gel-2/3@m">
               <h2 className="home-page__about__title">Hello!</h2>
-              <p className="home-page__about__text">Welcome to Roseate Cards, an independent greeting card and stationery shop, run by Vanita and based in London. With a passion for fun new designs, we love creating new stationery, whether birthday cards or a fully coordinated wedding stationery set. In fact, Vanita has been making greetings cards from a young age - but let’s just say those earlier creations were a bit heavy on the felt-tip and stickers!</p>
+              <p className="home-page__about__text">Welcome to Roseate Cards, an independent stationery and online greeting card shop, run by Vanita and based in London, UK. We sell fun and unique cards, and love creating new stationery designs whether it be birthday cards or a fully co-ordinated wedding stationery set. In fact, Vanita has been making greetings cards for all occasions from a young age - but let’s just say those earlier creations were a bit heavy on the felt-tip and stickers!</p>
               <p className="home-page__about__text">Unlike other retailers, all our cards are printed on thick professional-quality card with a beautiful matt finish - or gloss for photo cards to really make the colours pop! You can <a href="/papers">read more about the papers we use</a>. As a small business, we do our best for the planet: we use natural materials and non-toxic inks, and ship our products in recyclable packaging.</p>
               <p className="home-page__about__text">If you are interested in customising or personalising any products, please contact us to chat over your ideas! We hope you enjoy browsing our website.</p>
             </div>
@@ -79,7 +79,7 @@ export default function Home({
         </div>
       : null}
 
-      <p className="home-page__footnote">We love to read your reviews and see our cards arriving through your letterboxes! Tag your images and photos with #roseatecards to be in with a chance of featuring on our website!</p>
+      <p className="home-page__footnote">Placed an online order recently? We’d love to know how we did! Take a snap of your order and tag it with #roseatecards to be in with a chance of featuring on our website.</p>
     </div>
   );
 }
