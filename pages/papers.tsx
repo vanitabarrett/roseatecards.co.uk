@@ -33,25 +33,25 @@ export default function Papers() {
       <p>This page lists the papers we use by default for our wedding stationery. However, we do have other paper options available with a variety of textures and shimmered effects. If this is something you’re interested in, please contact us to learn more. </p>
       <div className="gel-layout">
         <div className="gel-layout__item gel-1/2 gel-1/4@m">
-          <img src="/papers/uncoated.jpg" alt="" role="presentation" className="papers-page__image" />
+          <img src="/papers/uncoated.jpg" alt="" role="presentation" className="papers-page__image" loading="lazy" />
           <h3>Uncoated</h3>
           <p>A thick (350 gsm) paper, uncoated paper absorbs more ink than others and therefore colours appear slightly muted. A solid and modern choice, this is a great option for wedding stationery. We use this for our standard wedding stationery sets.</p>
         </div>
 
         <div className="gel-layout__item gel-1/2 gel-1/4@m">
-          <img src="/papers/laid.jpg" alt="" role="presentation" className="papers-page__image" />
+          <img src="/papers/laid.jpg" alt="" role="presentation" className="papers-page__image" loading="lazy" />
           <h3>White Laid</h3>
           <p>A premium paper with a fine lined texture, this adds a touch of luxury to printed products. We pair white laid envelopes with our uncoated wedding stationery to add that premium feel.</p>
         </div>
 
         <div className="gel-layout__item gel-1/2 gel-1/4@m">
-          <img src="/papers/rives-shetland.jpg" alt="" role="presentation" className="papers-page__image" />
+          <img src="/papers/rives-shetland.jpg" alt="" role="presentation" className="papers-page__image" loading="lazy" />
           <h3>Rives Shetland</h3>
           <p>A mid-weight (250 gsm) paper with an unusual subtle woven texture. It absorbs more ink than others, so printed inks appear more muted and understated. This is a real favourite for subtly textured and premium wedding stationery. We use this for our luxury wedding stationery sets.</p>
         </div>
 
         <div className="gel-layout__item gel-1/2 gel-1/4@m">
-          <img src="/papers/tintoretto-gesso.jpg" alt="" role="presentation" className="papers-page__image" />
+          <img src="/papers/tintoretto-gesso.jpg" alt="" role="presentation" className="papers-page__image" loading="lazy" />
           <h3>Tintoretto Gesso</h3>
           <p>A premium fine Italian paper with a hammered texture, this adds a touch of luxury to printed products. We pair Tintoretto Gesso envelopes with our luxury wedding sets to match accompany the Rives Shetland textured stationery.</p>
         </div>

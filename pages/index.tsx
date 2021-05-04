@@ -12,7 +12,7 @@ export default function Home({
         <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
         <div className="home-page__featured gel-layout">
-          <img src="/homepage-feature/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" alt="" />
+          <img src="/homepage-feature/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
           <div className="home-page__featured__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
             <p className="home-page__featured__headline-wrapper">
               <span className="home-page__featured__text">Send a little love</span><br/><span className="home-page__featured__text home-page__featured__large-text">in the post...</span>
@@ -24,17 +24,17 @@ export default function Home({
         </div>
         <div className="home-page__info gel-layout">
           <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
-            <img className="home-page__info__image" src="/svgs/delivery-truck.svg" alt="" width="60px" height="60px" />
+            <img className="home-page__info__image" src="/svgs/delivery-truck.svg" alt="" width="60px" height="60px" loading="lazy" />
             <h2 className="home-page__info__heading">Delivery Options</h2>
             <p className="home-page__info__text">Cards can be sent to you or directly to your recipient with a personalised typed message.</p>
           </div>
           <div className="home-page__info__section gel-layout__item gel-1/2@s gel-1/3@m">
-            <img className="home-page__info__image" src="/svgs/smiley.svg" alt="" width="60px" height="60px" />
+            <img className="home-page__info__image" src="/svgs/smiley.svg" alt="" width="60px" height="60px" loading="lazy" />
             <h2 className="home-page__info__heading">Personalisation</h2>
             <p className="home-page__info__text">Our cards can be customised in a variety of different ways, get in touch to find out more.</p>
           </div>
           <div className="home-page__info__section gel-layout__item gel-1/3">
-            <img className="home-page__info__image" src="/svgs/world.svg" alt="" width="60px" height="60px" />
+            <img className="home-page__info__image" src="/svgs/world.svg" alt="" width="60px" height="60px" loading="lazy" />
             <h2 className="home-page__info__heading">Sustainability</h2>
             <p className="home-page__info__text">Committed to using high-quality card and sustainable materials in all our products.</p>
           </div>
@@ -43,15 +43,15 @@ export default function Home({
         <div className="home-page__cta">
           <a href="/wedding" className="home-page__cta__wrapper home-page__cta__wrapper-large home-page__cta__wrapper-large-3">
             <p className="home-page__cta__tag">Shop wedding stationery</p>
-            <img className="home-page__cta__wrapper-large__image" src="/homepage-categories/wedding.jpg" alt="" />
+            <img className="home-page__cta__wrapper-large__image" src="/homepage-categories/wedding.jpg" alt="" loading="lazy" />
           </a>
           <a href="/cards/just-because" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-1">
             <p className="home-page__cta__tag">Just because</p>
-            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/just-because.png" alt="" />
+            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/just-because.png" alt="" loading="lazy" />
           </a>
           <a href="/cards/birthday" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-2">
             <p className="home-page__cta__tag">Birthday</p>
-            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/birthday.png" alt="" />
+            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/birthday.png" alt="" loading="lazy" />
           </a>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function Home({
         <div className="gel-wrap">
           <div className="gel-layout">
             <div className="gel-1/3 gel-layout__item">
-            <img className="home-page__about__image" src="/homepage-about/about.jpg" alt="" />
+            <img className="home-page__about__image" src="/homepage-about/about.jpg" alt="" loading="lazy" />
             </div>
             <div className="gel-layout__item gel-1/1 gel-2/3@m">
               <h2 className="home-page__about__title">Hello!</h2>

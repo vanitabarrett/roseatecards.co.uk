@@ -61,7 +61,7 @@ export default function DownloadPage({
         </div>
 
         <div className="gel-layout__item gel-1/2@m">
-          <img className="free-download-page__image" src={download.images[0].url_570xN} />
+          <img className="free-download-page__image" src={download.images[0].url_570xN} loading="lazy" />
         </div>
 
         <div className="gel-layout__item gel-1/2@m">
