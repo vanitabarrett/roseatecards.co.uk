@@ -6,7 +6,7 @@ export default function Home() {
         <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
         <div className="home-page__featured gel-layout">
-          <img src="/homepage-feature/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" />
+          <img src="/homepage-feature/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" alt="" />
           <div className="home-page__featured__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
             <p className="home-page__featured__headline-wrapper">
               <span className="home-page__featured__text">Send a little love</span><br/><span className="home-page__featured__text home-page__featured__large-text">in the post...</span>
