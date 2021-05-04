@@ -2,6 +2,14 @@ import shopData from '../shop-data.json';
 import { Category, CategoryNoProducts, Product } from '../types';
 import { sortByKey } from './arrays';
 
+export function getFeaturedListings(): Product[] {
+  const allProducts = shopData.map((category) => {
+    return category.subCategories.map((subCategory) => subCategory.products);
+  }).flat().flat();
+  const featuredProducts = allProducts.filter(({ featuredRank })=> !!featuredRank);
+  return sortByKey(featuredProducts, 'featuredRank').slice(0, 4);
+}
+
 export function getCategoryInfoNoProducts(categoryId): CategoryNoProducts {
   const { subCategories, ...categoryInfo } = getCategoryInfo(categoryId);
   return {

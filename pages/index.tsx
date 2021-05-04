@@ -1,4 +1,10 @@
-export default function Home() {
+import { InferGetStaticPropsType } from 'next';
+import { getFeaturedListings } from '../lib/shopData';
+import ProductsGrid from '../components/ProductsGrid';
+
+export default function Home({
+  featuredListings
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div className="home-page">
 
@@ -66,7 +72,23 @@ export default function Home() {
         </div>
       </div>
 
+      {featuredListings ?
+        <div className="gel-wrap home-page__products">
+          <h2 className="home-page__products__title">A few of our favourite things...</h2>
+          <ProductsGrid products={featuredListings} />
+        </div>
+      : null}
+
       <p className="home-page__footnote">We love to read your reviews and see our cards arriving through your letterboxes! Tag your images and photos with #roseatecards to be in with a chance of featuring on our website!</p>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const featuredListings = getFeaturedListings();
+  return {
+    props: {
+      featuredListings
+    },
+  }
 }

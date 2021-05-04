@@ -69,13 +69,6 @@
     }
   }
 
-  &__covid-banner {
-    margin-top: 5px;
-    padding: 10px;
-    background-color: $light-grey;
-    text-align: center;
-  }
-
   &__info {
     display: none;
 
@@ -290,6 +283,17 @@
       a {
         @include nice-underline-inverse;
       }
+    }
+  }
+
+  &__products {
+    margin-top: 50px;
+
+    &__title {
+      @include headline-font;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
   }
 
