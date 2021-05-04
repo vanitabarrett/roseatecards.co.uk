@@ -59,7 +59,7 @@ export default function Home() {
             <div className="gel-layout__item gel-1/1 gel-2/3@m">
               <h2 className="home-page__about__title">Hello!</h2>
               <p className="home-page__about__text">Welcome to Roseate Cards, an independent greeting card and stationery shop, run by Vanita and based in London. With a passion for fun new designs, we love creating new stationery, whether birthday cards or a fully coordinated wedding stationery set. In fact, Vanita has been making greetings cards from a young age - but let’s just say those earlier creations were a bit heavy on the felt-tip and stickers!</p>
-              <p className="home-page__about__text">Unlike other retailers, all our cards are printed on thick professional-quality card with a beautiful matt finish - or gloss for photo cards to really make the colours pop! Read more about the papers we use <a href="/papers">here</a>. As a small business, we do our best for the planet: we use natural materials and non-toxic inks, and ship our products in recyclable packaging.</p>
+              <p className="home-page__about__text">Unlike other retailers, all our cards are printed on thick professional-quality card with a beautiful matt finish - or gloss for photo cards to really make the colours pop! You can <a href="/papers">read more about the papers we use</a>. As a small business, we do our best for the planet: we use natural materials and non-toxic inks, and ship our products in recyclable packaging.</p>
               <p className="home-page__about__text">If you are interested in customising or personalising any products, please contact us to chat over your ideas! We hope you enjoy browsing our website.</p>
             </div>
           </div>
