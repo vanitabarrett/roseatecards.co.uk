@@ -15,6 +15,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
+          <meta charSet="utf-8" />
           <script dangerouslySetInnerHTML={{ __html: `
             ${ getCookie.toString() }
 
@@ -39,7 +40,6 @@ class MyDocument extends Document {
           <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
           <meta name="theme-color" content="#ffffff" />
 
-          <meta charSet="utf-8" />
           <meta name="robots" content={robots} />
 
           <meta property="og:image" content={`https://${domain}/social/social.png`} />
