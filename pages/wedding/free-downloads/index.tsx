@@ -2,6 +2,7 @@ import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 
 import freeDownloadsData from '../../../free-downloads-data.json';
+import categoryDescriptionData from '../../../category-description-data.json';
 import CategoryNav from '../../../components/CategoryNav';
 import ProductsGrid from '../../../components/ProductsGrid';
 import { FreeDownload } from '../../../types';
@@ -10,6 +11,7 @@ import { augmentDownloadData } from '../../../lib/freeDownloadData';
 
 export default function CategoryHomepage({
   downloads,
+  categoryDescription,
   categoryInfo
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -26,6 +28,7 @@ export default function CategoryHomepage({
       </Head>
       <CategoryNav categoryInfo={categoryInfo} />
       <h1 className="page-title">Free Wedding Downloads</h1>
+      {categoryDescription ? <p className="category-page__description">{categoryDescription}</p> : null}
       <ProductsGrid products={downloads} />
     </div>
   );
@@ -37,9 +40,12 @@ export async function getStaticProps() {
     return augmentDownloadData(download)
   })
 
+  const categoryDescription = categoryDescriptionData["wedding-free-downloads"] ? categoryDescriptionData["wedding-free-downloads"] : null
+
   return {
     props: {
       downloads,
+      categoryDescription,
       categoryInfo
     },
   }

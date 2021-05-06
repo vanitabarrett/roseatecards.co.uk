@@ -1,3 +1,10 @@
 .category-page {
   margin-bottom: 50px;
+
+  &__description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }

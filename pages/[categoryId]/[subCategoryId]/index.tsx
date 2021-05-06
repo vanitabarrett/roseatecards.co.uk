@@ -2,6 +2,7 @@ import { InferGetStaticPropsType, GetStaticPathsResult } from 'next';
 import Head from 'next/head';
 
 import shopData from '../../../shop-data.json';
+import categoryDescriptionData from '../../../category-description-data.json';
 import CategoryNav from '../../../components/CategoryNav';
 import ProductsGrid from '../../../components/ProductsGrid';
 import { getCategoryInfo, getCategoryInfoNoProducts, sortProducts } from '../../../lib/shopData';
@@ -9,6 +10,7 @@ import { useRouter } from 'next/router';
 
 export default function SubCategoryHomepage({
   categoryInfo,
+  categoryDescription,
   products
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const {
@@ -30,6 +32,7 @@ export default function SubCategoryHomepage({
       </Head>
       <CategoryNav categoryInfo={categoryInfo} />
       <h1 className="page-title">{subCategoryInfo.name}</h1>
+      {categoryDescription ? <p className="category-page__description">{categoryDescription}</p> : null}
       <ProductsGrid products={products} />
     </div>
   );
@@ -58,9 +61,13 @@ export async function getStaticProps({ params }) {
   const allProducts = getCategoryInfo(categoryId).subCategories.find(({ id }) => id === subCategoryId).products;
   const sortedProducts = sortProducts(allProducts);
 
+  const lookup = categoryId + "-" + subCategoryId
+  const categoryDescription = categoryDescriptionData[lookup] ? categoryDescriptionData[lookup] : null
+
   return {
     props: {
       categoryInfo,
+      categoryDescription,
       products: sortedProducts
     },
   }
