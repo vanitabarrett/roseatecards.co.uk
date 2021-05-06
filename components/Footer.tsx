@@ -29,6 +29,10 @@ export default function Footer() {
           <div className="gel-layout__item gel-2/3 footer__text">
             <p className="footer__copy">We are a small greetings card company based in the UK, and we really appreciate every single purchase made! Thank you for supporting small businesses.</p>
             <p className="footer__email">Say hello at hello@roseatecards.co.uk</p>
+            <a className="footer__indieretail" href="https://www.indieretail.uk/find-a-shop/?name=roseate_cards&shop=132287&browsesector=31">
+              <img src="/social/indieretail_logo.png" alt="" width="100px" />
+              We are a member of Indie Retail UK
+            </a>
             <p className="footer__copy">&copy; Roseate Cards {new Date().getFullYear()}</p>
           </div>
         </div>
