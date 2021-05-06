@@ -6,13 +6,13 @@ export default function Contact() {
     <div className="gel-wrap contact-page">
       <Head>
         <title>Contact - Roseate Cards</title>
-        <meta name="description" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+        <meta name="description" content="If our frequently answered questions have not helped, you can contact us via our support channels. We monitor our support channels between 8am and 9pm. We will respond to messages sent outside those times when we are next online." />
 
         <meta property="og:title" key="ogtitle" content="Contact - Roseate Cards" />
-        <meta property="og:description" key="ogdescription" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+        <meta property="og:description" key="ogdescription" content="If our frequently answered questions have not helped, you can contact us via our support channels. We monitor our support channels between 8am and 9pm. We will respond to messages sent outside those times when we are next online." />
 
         <meta property="twitter:title" key="twittertitle" content="Contact - Roseate Cards" />
-        <meta property="twitter:description" key="twitterdescription" content="Frequently asked questions. Contact us via email on support@roseatecards.co.uk or use our live chat on Facebook Messenger." />
+        <meta property="twitter:description" key="twitterdescription" content="If our frequently answered questions have not helped, you can contact us via our support channels. We monitor our support channels between 8am and 9pm. We will respond to messages sent outside those times when we are next online." />
       </Head>
       <h1 className="page-title">Contact</h1>
 
@@ -37,7 +37,7 @@ export default function Contact() {
       <div className="contact-page__contact">
         <h2 className="contact-page__contact__title">Still got some questions?</h2>
         <p>We monitor our support channels between 8am and 9pm. We will respond to messages sent outside those times when we are next online.</p>
-        <a className="contact-page__contact__link" href="mailto:hello@roseatecards.co.uk">Email us at hello@roseatecards.co.uk</a>
+        <a className="contact-page__contact__link" href="mailto:support@roseatecards.co.uk">Email us at support@roseatecards.co.uk</a>
         <a className="contact-page__contact__link" href="http://m.me/roseatecards">Facebook Messenger live chat</a>
       </div>
     </div>
