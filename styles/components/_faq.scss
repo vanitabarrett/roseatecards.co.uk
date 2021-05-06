@@ -18,6 +18,10 @@ $faq-padding-size: 10px;
     background-color: $light-grey;
     font-weight: 200;
 
+    ul, ol {
+      margin-left: 25px;
+    }
+
     p:not(:last-child) {
       padding-bottom: 10px;
     }
