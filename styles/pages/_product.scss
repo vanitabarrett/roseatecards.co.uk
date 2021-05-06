@@ -20,6 +20,7 @@
     h2 {
       @include headline-font;
       font-size: 1.7rem;
+      margin-bottom: -20px; // to reduce the effect of <br> tags after headings
     }
   }
 
