@@ -1,0 +1,22 @@
+.delivery-returns-page {
+  margin-bottom: 50px;
+
+  a {
+    @include nice-underline();
+  }
+
+  &__contents {
+    width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      @include headline-font;
+      font-size: 1.8rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-bottom: 30px;
+    }
+  }
+}

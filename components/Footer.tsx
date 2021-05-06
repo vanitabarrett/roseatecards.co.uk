@@ -23,7 +23,7 @@ export default function Footer() {
           <a className="footer__link" href="/privacy-policy">Privacy Policy</a>
           <a className="footer__link" href="/cookies">Cookies</a>
           <a className="footer__link" href="/accessibility">Accessibility</a>
-          <a className="footer__link" href="/contact">Contact</a>
+          <a className="footer__link" href="/delivery-returns">Delivery and Returns</a>
         </div>
         <div className="gel-layout">
           <div className="gel-layout__item gel-2/3 footer__text">
