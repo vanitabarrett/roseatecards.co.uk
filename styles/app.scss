@@ -153,6 +153,7 @@ h3 {
   &__text {
     background-color: $white;
     font-size: 3rem;
+    padding: 5px 0;
 
     @include mq($from: gel-bp-l) {
       font-size: 4rem;
