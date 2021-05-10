@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Blog() {
   return (
-    <div className="gel-wrap blog-page">
+    <div className="gel-wrap blogs-page">
       <Head>
         <title>Blog - Roseate Cards</title>
         <meta name="description" content="" />
@@ -18,11 +18,54 @@ export default function Blog() {
       <div className="featured-item gel-layout">
         <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
         <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
-          <p className="featured-item__headline-wrapper">
+          <h2 className="featured-item__headline-wrapper">
             <span className="featured-item__text">date</span><br/><span className="featured-item__text">Blog title</span>
-          </p>
+          </h2>
           <p className="featured-item__description">Blog summary.</p>
           <p className="featured-item__button-wrapper"><a href="/" className="featured-item__button">Continue reading</a></p>
+        </div>
+      </div>
+
+      <div className="blog-lists gel-layout">
+
+        <div className="blog-lists__item gel-layout__item gel-1/2@m">
+          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+          <div className="blog-lists__item__wrapper">
+            <p className="blog-lists__item__date">Date</p>
+            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <p className="blog-lists__item__description">Blog description.</p>
+            <a className="blog-lists__item__button" href="" >Continue reading</a>
+          </div>
+        </div>
+
+        <div className="blog-lists__item gel-layout__item gel-1/2@m">
+          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+          <div className="blog-lists__item__wrapper">
+            <p className="blog-lists__item__date">Date</p>
+            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <p className="blog-lists__item__description">Blog description.</p>
+            <a className="blog-lists__item__button" href="" >Continue reading</a>
+          </div>
+        </div>
+
+        <div className="blog-lists__item gel-layout__item gel-1/2@m">
+          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+          <div className="blog-lists__item__wrapper">
+            <p className="blog-lists__item__date">Date</p>
+            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <p className="blog-lists__item__description">Blog description.</p>
+            <a className="blog-lists__item__button" href="" >Continue reading</a>
+          </div>
+        </div>
+
+        <div className="blog-lists__item gel-layout__item gel-1/2@m">
+          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+          <div className="blog-lists__item__wrapper">
+            <p className="blog-lists__item__date">Date</p>
+            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <p className="blog-lists__item__description">Blog description.</p>
+            <a className="blog-lists__item__button" href="" >Continue reading</a>
+          </div>
         </div>
       </div>
     </div>
