@@ -60,6 +60,10 @@
       &__frame {
         width: 90%;
         margin: 0 auto;
+
+        @include mq($from: gel-bp-m) {
+          width: 50%;
+        }
       }
 
       &__title {
