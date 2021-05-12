@@ -15,7 +15,7 @@ export default function Blog() {
       </Head>
       <h1 className="page-title">Blog</h1>
 
-      <article className="featured-item gel-layout" itemScope itemType="https://schema.org/BlogPosting">
+      <article className="featured-item" itemScope itemType="https://schema.org/BlogPosting">
         <meta itemProp="author" content="Roseate Cards"></meta>
         <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
         <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
