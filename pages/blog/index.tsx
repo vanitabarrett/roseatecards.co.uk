@@ -5,13 +5,13 @@ export default function Blog() {
     <div className="gel-wrap blogs-page" itemScope itemType="https://schema.org/Blog">
       <Head>
         <title>Blog - Roseate Cards</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Explore our latest blog posts for wedding inspiration, help with deciding on your wedding stationery, and interesting topical blog posts on the latest in the world of greeting cards." />
 
         <meta property="og:title" key="ogtitle" content="Blog - Roseate Cards" />
-        <meta property="og:description" key="ogdescription" content="" />
+        <meta property="og:description" key="ogdescription" content="Explore our latest blog posts for wedding inspiration, help with deciding on your wedding stationery, and interesting topical blog posts on the latest in the world of greeting cards." />
 
         <meta property="twitter:title" key="twittertitle" content="Blog- Roseate Cards" />
-        <meta property="twitter:description" key="twitterdescription" content="" />
+        <meta property="twitter:description" key="twitterdescription" content="Explore our latest blog posts for wedding inspiration, help with deciding on your wedding stationery, and interesting topical blog posts on the latest in the world of greeting cards." />
       </Head>
       <h1 className="page-title">Blog</h1>
 
