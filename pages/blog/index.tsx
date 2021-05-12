@@ -64,7 +64,7 @@ export default function Blog({
   );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps() {
   const featuredBlog = blogs["featured"] ? blogs["featured"] : null
   const blogList = blogs["other_blogs"] ? blogs["other_blogs"] : null
 

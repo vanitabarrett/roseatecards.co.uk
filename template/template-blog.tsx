@@ -1,12 +1,24 @@
 import Head from 'next/head';
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import blogs from '../blog-data.json';
 
 export default function BlogPost() {
   const { asPath } = useRouter();
 
-  const blogTitle = "[BLOG TITLE]"
-  const blogFeaturedImage = "/homepage-feature/just-because.jpg"
-  const blogSocialShareDescription = "[BLOG SOCIAL SHARE DESCRIPTION]"
+  const allBlogs = []
+  allBlogs.push(blogs["featured"])
+
+  for (var blog of blogs["other_blogs"]) {
+    allBlogs.push(blog)
+  }
+
+  const blogSlug = asPath.substring(asPath.lastIndexOf('/') + 1)
+
+  const matchingBlog = allBlogs.find(({ slug }) => slug === `/blog/" + ${blogSlug}`);
+
+  const blogTitle = matchingBlog.title
+  const blogFeaturedImage = `/blog/${matchingBlog}`
+  const blogSocialShareDescription = matchingBlog.description
 
   return (
     <article className="gel-wrap blog-post-page" itemProp="blogPost" itemScope itemType="https://schema.org/BlogPosting">
@@ -33,7 +45,7 @@ export default function BlogPost() {
 
       <div className="blog-post-page__content">
         <p className="blog-post-page__content__date">
-        <time dateTime="2015-03-26T10:43:39Z" itemProp="datePublished">[DATE HERE - UPDATE ATTRIBUTE TOO]</time>
+        <time dateTime={matchingBlog.published_date} itemProp="datePublished">{matchingBlog.human_published_date}</time>
         </p>
         <h1 className="blog-post-page__content__title" itemProp="name headline">{blogTitle}</h1>
         <div itemProp="articleBody">
