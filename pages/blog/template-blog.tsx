@@ -1,6 +1,8 @@
 import Head from 'next/head';
+import { useRouter } from "next/router";
 
 export default function BlogPost() {
+  const { asPath } = useRouter();
   return (
     <div className="gel-wrap blog-post-page">
       <Head>
@@ -13,7 +15,9 @@ export default function BlogPost() {
         <meta property="twitter:title" key="twittertitle" content="[BLOG TITLE] - Roseate Cards" />
         <meta property="twitter:description" key="twitterdescription" content="[BLOG DESCRIPTION]" />
       </Head>
-      <img src="/homepage-feature/just-because.jpg" className="blog-post-page__feature" alt="" loading="lazy" />
+      <div className="blog-post-page__back">
+        <a href="/blog" className="blog-post-page__back__link">Back</a>
+      </div>
 
       <div className="blog-post-page__content">
         <p className="blog-post-page__content__date">DATE</p>

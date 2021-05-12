@@ -1,7 +1,7 @@
 .blog-post-page {
   margin-bottom: 50px;
 
-  &__feature {
+  &__feature, &__back {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -9,6 +9,14 @@
     @include mq($from: gel-bp-l) {
       width: 70%;
     }
+ }
+
+ &__back {
+   margin-bottom: 15px;
+
+   &__link {
+    @include nice-underline;
+   }
  }
 
   &__content {
