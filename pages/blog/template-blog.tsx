@@ -16,9 +16,11 @@ export default function BlogPost() {
 
         <meta property="og:title" key="ogtitle" content={`${blogTitle} - Roseate Cards`} />
         <meta property="og:description" key="ogdescription" content={blogSocialShareDescription} />
+        <meta property="og:image" key="ogimage" content={`https://roseatecards.co.uk${blogFeaturedImage}`} />
 
         <meta property="twitter:title" key="twittertitle" content={`${blogTitle} - Roseate Cards`} />
         <meta property="twitter:description" key="twitterdescription" content={blogSocialShareDescription} />
+        <meta property="twitter:image" key="twitterimage" content={`https://roseatecards.co.uk${blogFeaturedImage}`} />
       </Head>
       <meta itemProp="mainEntityOfPage" content={`https://roseatecards.co.uk${asPath}`}></meta>
       <div className="blog-post-page__back">
