@@ -42,4 +42,33 @@
     width: 80%;
    }
  }
+
+ &__share {
+   margin: 0 auto;
+   text-align: center;
+
+   h2 {
+     font-size: 1rem;
+   }
+
+   &__list {
+     list-style-type: none;
+     margin-top: 10px;
+
+     li {
+       display: inline-block;
+       margin-right: 10px;
+
+       a:focus {
+         background-color: transparent;
+       }
+
+       svg {
+         width: 40px;
+         height: 40px;
+         border-radius: 5px;
+       }
+     }
+   }
+ }
 }
