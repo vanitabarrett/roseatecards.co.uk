@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Blog() {
   return (
-    <div className="gel-wrap blogs-page">
+    <div className="gel-wrap blogs-page" itemScope itemType="https://schema.org/Blog">
       <Head>
         <title>Blog - Roseate Cards</title>
         <meta name="description" content="" />
@@ -15,58 +15,78 @@ export default function Blog() {
       </Head>
       <h1 className="page-title">Blog</h1>
 
-      <div className="featured-item gel-layout">
-        <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
+      <article className="featured-item gel-layout" itemScope itemType="https://schema.org/BlogPosting">
+        <meta itemProp="author" content="Roseate Cards"></meta>
+        <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
+        <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+          <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" itemProp="url contentUrl" />
+        </span>
         <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
           <h2 className="featured-item__headline-wrapper">
-            <span className="featured-item__text">date</span><br/><span className="featured-item__text">Blog title</span>
+            <span className="featured-item__text">date</span><br/><span className="featured-item__text" itemProp="name headline">Blog title</span>
           </h2>
           <p className="featured-item__description">Blog summary.</p>
-          <p className="featured-item__button-wrapper"><a href="/" className="featured-item__button">Continue reading</a></p>
+          <p className="featured-item__button-wrapper"><a href="/" className="featured-item__button" itemProp="mainEntityOfPage url">Continue reading</a></p>
         </div>
-      </div>
+      </article>
 
       <div className="blog-lists gel-layout">
 
-        <div className="blog-lists__item gel-layout__item gel-1/2@m">
-          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
+          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
+          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
+          </span>
           <div className="blog-lists__item__wrapper">
             <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
             <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" >Continue reading</a>
+            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
           </div>
-        </div>
+        </article>
 
-        <div className="blog-lists__item gel-layout__item gel-1/2@m">
-          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
+          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
+          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
+          </span>
           <div className="blog-lists__item__wrapper">
             <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
             <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" >Continue reading</a>
+            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
           </div>
-        </div>
+        </article>
 
-        <div className="blog-lists__item gel-layout__item gel-1/2@m">
-          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
+          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
+          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
+          </span>
           <div className="blog-lists__item__wrapper">
             <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
             <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" >Continue reading</a>
+            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
           </div>
-        </div>
+        </article>
 
-        <div className="blog-lists__item gel-layout__item gel-1/2@m">
-          <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" />
+        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
+          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
+          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
+          </span>
           <div className="blog-lists__item__wrapper">
             <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title">Blog Title</h2>
+            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
             <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" >Continue reading</a>
+            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
           </div>
-        </div>
+        </article>
 
         <div className="blog-lists__mailing">
           <h2 className="blog-lists__mailing__title">Join our members club</h2>

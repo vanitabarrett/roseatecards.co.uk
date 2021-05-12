@@ -3,25 +3,46 @@ import { useRouter } from "next/router";
 
 export default function BlogPost() {
   const { asPath } = useRouter();
+
+  const blogTitle = "[BLOG TITLE]"
+  const blogFeaturedImage = "/homepage-feature/just-because.jpg"
+  const blogSocialShareDescription = "[BLOG SOCIAL SHARE DESCRIPTION]"
+
   return (
-    <div className="gel-wrap blog-post-page">
+    <article className="gel-wrap blog-post-page" itemProp="blogPost" itemScope itemType="https://schema.org/BlogPosting">
       <Head>
-        <title>[BLOG TITLE] - Roseate Cards</title>
-        <meta name="description" content="[BLOG DESCRIPTION]" />
+        <title>{blogTitle} - Roseate Cards</title>
+        <meta name="description" content={blogSocialShareDescription} />
 
-        <meta property="og:title" key="ogtitle" content="[BLOG TITLE] - Roseate Cards" />
-        <meta property="og:description" key="ogdescription" content="[BLOG DESCRIPTION]" />
+        <meta property="og:title" key="ogtitle" content={`${blogTitle} - Roseate Cards`} />
+        <meta property="og:description" key="ogdescription" content={blogSocialShareDescription} />
 
-        <meta property="twitter:title" key="twittertitle" content="[BLOG TITLE] - Roseate Cards" />
-        <meta property="twitter:description" key="twitterdescription" content="[BLOG DESCRIPTION]" />
+        <meta property="twitter:title" key="twittertitle" content={`${blogTitle} - Roseate Cards`} />
+        <meta property="twitter:description" key="twitterdescription" content={blogSocialShareDescription} />
       </Head>
+      <meta itemProp="mainEntityOfPage" content={`https://roseatecards.co.uk${asPath}`}></meta>
       <div className="blog-post-page__back">
         <a href="/blog" className="blog-post-page__back__link">Back</a>
       </div>
 
+      <div itemScope itemType="https://schema.org/ImageObject">
+        <img src={blogFeaturedImage} className="blog-post-page__feature" alt="" loading="lazy" itemProp={blogFeaturedImage} />
+      </div>
+
       <div className="blog-post-page__content">
-        <p className="blog-post-page__content__date">DATE</p>
-        <h1 className="blog-post-page__content__title">BLOG TITLE BLOG TITLE BLOG TITLE BLOG TITLE BLOG TITLE BLOG TITLE BLOG TITLE BLOG TITLE </h1>
+        <p className="blog-post-page__content__date">
+        <time dateTime="2015-03-26T10:43:39Z" itemProp="datePublished">[DATE HERE - UPDATE ATTRIBUTE TOO]</time>
+        </p>
+        <h1 className="blog-post-page__content__title" itemProp="name headline">{blogTitle}</h1>
+        <div itemProp="articleBody">
+
+          <p>[CONTENT GOES HERE]</p>
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="[ALT TEXT HERE]" src="[IMAGE URL]" />
+            <figcaption itemProp="caption">[IMAGE CAPTION]</figcaption>
+          </figure>
+
+        </div>
       </div>
 
       <span itemProp="publisher" itemScope itemType="https://schema.org/Organization">
