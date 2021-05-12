@@ -1,6 +1,12 @@
+import { InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+import Article from '../../components/Article';
+import blogs from '../../blog-data.json';
 
-export default function Blog() {
+export default function Blog({
+  featuredBlog,
+  blogList
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div className="gel-wrap blogs-page" itemScope itemType="https://schema.org/Blog">
       <Head>
@@ -15,89 +21,57 @@ export default function Blog() {
       </Head>
       <h1 className="page-title">Blog</h1>
 
-      <article className="featured-item" itemScope itemType="https://schema.org/BlogPosting">
-        <meta itemProp="author" content="Roseate Cards"></meta>
-        <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
-        <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-          <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" itemProp="url contentUrl" />
-        </span>
-        <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
-          <h2 className="featured-item__headline-wrapper">
-            <span className="featured-item__text">date</span><br/><span className="featured-item__text" itemProp="name headline">Blog title</span>
-          </h2>
-          <p className="featured-item__description">Blog summary.</p>
-          <p className="featured-item__button-wrapper"><a href="/" className="featured-item__button" itemProp="mainEntityOfPage url">Continue reading</a></p>
+      { featuredBlog ?
+        <article className="featured-item" itemScope itemType="https://schema.org/BlogPosting">
+          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="datePublished" content={featuredBlog.published_date}></meta>
+          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img src={`/blog/${featuredBlog.image}`} className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" itemProp="url contentUrl" />
+          </span>
+          <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
+            <h2 className="featured-item__headline-wrapper">
+              <span className="featured-item__text">{featuredBlog.human_published_date}</span><br/><span className="featured-item__text" itemProp="name headline">{featuredBlog.title}</span>
+            </h2>
+            <p className="featured-item__description">{featuredBlog.description}</p>
+            <p className="featured-item__button-wrapper"><a href={`/blog/${featuredBlog.slug}`} className="featured-item__button" itemProp="mainEntityOfPage url">Continue reading</a></p>
+          </div>
+        </article> : null
+      }
+
+      { blogList ?
+
+        <div className="blog-lists gel-layout">
+
+          {
+            blogList.map((blog) => (
+              <Article {...blog} />
+            ))
+          }
+
+        </div> : null
+      }
+
+      <div className="blog-lists__mailing">
+        <h2 className="blog-lists__mailing__title">Join our members club</h2>
+        <p className="blog-lists__mailing__text">Subscribe to our mailing list to receive exclusive offers, news on new products and our latest blog posts.</p>
+        <div className="blog-lists__mailing__frame">
+          <iframe className="mj-w-res-iframe" frameBorder="0" scrolling="no" src="https://app.mailjet.com/widget/iframe/6M56/J1u" width="100%"></iframe>
+          <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
         </div>
-      </article>
-
-      <div className="blog-lists gel-layout">
-
-        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
-          <meta itemProp="author" content="Roseate Cards"></meta>
-          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
-          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
-          </span>
-          <div className="blog-lists__item__wrapper">
-            <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
-            <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
-          </div>
-        </article>
-
-        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
-          <meta itemProp="author" content="Roseate Cards"></meta>
-          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
-          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
-          </span>
-          <div className="blog-lists__item__wrapper">
-            <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
-            <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
-          </div>
-        </article>
-
-        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
-          <meta itemProp="author" content="Roseate Cards"></meta>
-          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
-          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
-          </span>
-          <div className="blog-lists__item__wrapper">
-            <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
-            <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
-          </div>
-        </article>
-
-        <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
-          <meta itemProp="author" content="Roseate Cards"></meta>
-          <meta itemProp="datePublished" content="[DATE PUBLISHED, e.g: 2014-12-23T19:32:41Z]"></meta>
-          <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img className="blog-lists__item__image" src="/homepage-feature/just-because.jpg" alt="" loading="lazy" itemProp="url contentUrl" />
-          </span>
-          <div className="blog-lists__item__wrapper">
-            <p className="blog-lists__item__date">Date</p>
-            <h2 className="blog-lists__item__title" itemProp="name headline">Blog Title</h2>
-            <p className="blog-lists__item__description">Blog description.</p>
-            <a className="blog-lists__item__button" href="" itemProp="mainEntityOfPage url">Continue reading</a>
-          </div>
-        </article>
-
-        <div className="blog-lists__mailing">
-          <h2 className="blog-lists__mailing__title">Join our members club</h2>
-          <p className="blog-lists__mailing__text">Subscribe to our mailing list to receive exclusive offers, news on new products and our latest blog posts.</p>
-          <div className="blog-lists__mailing__frame">
-            <iframe className="mj-w-res-iframe" frameBorder="0" scrolling="no" src="https://app.mailjet.com/widget/iframe/6M56/J1u" width="100%"></iframe>
-            <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
-          </div>
-        </div>
-
       </div>
+
     </div>
   );
+}
+
+export async function getStaticProps({ params }) {
+  const featuredBlog = blogs["featured"] ? blogs["featured"] : null
+  const blogList = blogs["other_blogs"] ? blogs["other_blogs"] : null
+
+  return {
+    props: {
+      featuredBlog,
+      blogList
+    },
+  }
 }

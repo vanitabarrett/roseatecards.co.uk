@@ -1,0 +1,20 @@
+{
+  "featured": {
+    "published_date": "EXAMPLE: 2014-12-23T19:32:41Z",
+    "human_published_date": "EXAMPLE: 23rd December 2014",
+    "title": "Wedding Invitations on a Budget",
+    "description": "[TBC]",
+    "image": "blog-invite-budget.jpg",
+    "slug": "[TBC]"
+  },
+  "other_blogs": [
+    {
+      "published_date": "EXAMPLE: 2014-12-23T19:32:41Z",
+      "human_published_date": "EXAMPLE: 23rd December 2014",
+      "title": "[TBC]",
+      "description": "[TBC]",
+      "image": "[TBC]",
+      "slug": "[TBC]"
+    }
+  ]
+}
