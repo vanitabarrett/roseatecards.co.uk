@@ -1,11 +1,11 @@
 {
   "featured": {
-    "published_date": "EXAMPLE: 2014-12-23T19:32:41Z",
-    "human_published_date": "EXAMPLE: 23rd December 2014",
+    "published_date": "2021-05-12T20:40:00Z",
+    "human_published_date": "12th May 2021",
     "title": "Wedding Invitations on a Budget",
     "description": "[TBC]",
     "image": "blog-invite-budget.jpg",
-    "slug": "[TBC]"
+    "slug": "wedding-invitations-on-a-budget"
   },
   "other_blogs": [
     {

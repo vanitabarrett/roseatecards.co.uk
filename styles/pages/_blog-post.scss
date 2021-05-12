@@ -19,6 +19,31 @@
    }
  }
 
+ &__article-body {
+  h2 {
+     @include headline-font;
+     font-size: 2rem;
+     margin-top: 30px;
+   }
+
+   h3 {
+    margin-top: 20px;
+   }
+
+   ul {
+     margin-left: 30px;
+   }
+
+  a {
+    @include nice-underline;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+ }
+
   &__content {
     position: relative;
     top: -70px;
@@ -40,6 +65,7 @@
     @include headline-font;
     margin-top: 10px;
     width: 80%;
+    font-size: 2.5rem;
    }
  }
 
@@ -70,5 +96,5 @@
        }
      }
    }
- }
+  }
 }
