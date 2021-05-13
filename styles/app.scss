@@ -148,6 +148,7 @@ h3 {
 
     @include mq($from: gel-bp-l) {
       left: -60px;
+      top: 10px;
     }
   }
 
