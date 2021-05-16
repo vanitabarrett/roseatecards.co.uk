@@ -50,11 +50,26 @@ export default function BlogPost() {
         <h1 className="blog-post-page__content__title" itemProp="name headline">{blogTitle}</h1>
         <div itemProp="articleBody" className="blog-post-page__article-body">
 
+          <p>With the average cost of wedding invitations in the UK ranging from £250 - £500 (up to thousands for luxury, bespoke designs), many couples are going down alternative routes to find more budget-friendly options.</p>
+          <p>When planning a wedding, it seems like the word 'wedding' itself seems to add an inflated cost to almost everything, so saving just a few pennies here and there can make a big difference.</p>
+
           <h2>Online</h2>
           <p>Completely foregoing printed wedding invitations and using a wedding website instead can be a great way to save money. Wedding websites can be as advanced as you want them to be, from simply informing your guests about the date and venue location, to collecting RSVPs and menu preferences, storing your gift list registry and notifying guests of updates.</p>
-          <p>[EXAMPLES OF WEDDING WEBSITES]</p>
-          <p>Don’t worry if you don’t know where to start when it comes to building a website. If you happen to know any website developers, they may be happy to help (perhaps in exchange for a small fee or some free drinks at the wedding!). There are also many website builders online where you can drag-and-drop the elements you want onto each page without needing any technical knowledge. These are some of the most popular:</p>
-          <p>[LIST OF WEDDING WEBSITE BUILDERS AND COST(?)]</p>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Screenshot of an example wedding website" src="/blog/invite-budget/hitched.jpg" />
+            <figcaption itemProp="caption">Wedding website, image taken from <a href="https://www.hitched.co.uk/website/index.php">Hitched</a></figcaption>
+          </figure>
+
+          <p>Don’t worry if you don’t know where to start when it comes to building a website. If you happen to know any website developers, they may be happy to help (perhaps in exchange for a small fee or some free drinks at the wedding!). There are also many website builders online where you can drag-and-drop the elements you want onto each page without needing any technical knowledge. These are some of the most popular wedding website builders:</p>
+
+          <ul className="list-no-bullets">
+            <li><a href="https://sayi.do/">Say I Do</a> - free up to 100 guests, premium plans from £23</li>
+            <li><a href="https://withjoy.com/wedding-website">Joy</a> - free, with ‘premium services’ available at an additional cost</li>
+            <li><a href="https://gettingmarried.co.uk/">Getting Married</a> - free, with premium plan for £99</li>
+            <li><a href="https://www.squarespace.com/tour/wedding-website">Squarespace</a> - starts from £10 a month</li>
+          </ul>
+
           <p>If you are considering a website, it’s helpful to consider the guests you will be inviting. Do they all have easy access to the internet? Are they tech-savvy? For guests who are unlikely to respond online, you may want to consider one of the options below.</p>
 
           <h3>Do It Yourself (DIY)</h3>
@@ -66,8 +81,20 @@ export default function BlogPost() {
           <h3>Envelopes</h3>
           <p>If you’re on a budget, our recommendation is always: don’t spend too much on envelopes, they only get ripped open anyway! As a rough guide, you should look for envelopes that are at least 90 gsm - anything under this is better suited for business letters. Stationery stores often sell multipacks of white or kraft envelopes which look great for classic and rustic themed weddings.</p>
 
-          <p>[LINK TO SOME PRODUCTS?]</p>
-          <p>[IMAGES AND/OR BLOGS OF DIY INVITATIONS?]</p>
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Wedding invitation set with colourful mini pom-poms" src="/blog/invite-budget/diy-pom.png" />
+            <figcaption itemProp="caption">DIY rainbow pom-pom stationery. Image and tutorial from <a href="https://www.imaginediy.co.uk/make-fun-pompom-wedding-stationery/">Imagine DIY</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Burgundy wedding invitation set with laser cut design" src="/blog/invite-budget/diy-lasercut.jpg" />
+            <figcaption itemProp="caption">DIY luxury wax-sealed invitations. Image and tutorial from <a href="https://www.imaginediy.co.uk/how-to-make-luxury-wax-seal-wedding-invitations/">Imagine DIY</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Blush pink watercolour invitations" src="/blog/invite-budget/diy-watercolour.jpg" />
+            <figcaption itemProp="caption">DIY watercolour invitations. Image and tutorial from <a href="https://www.minted.com/julep/2013/04/01/diy-watercolored-letterpress-invites">Minted.com</a></figcaption>
+          </figure>
 
           <h3>Delivery</h3>
           <p>If you live close by to friends and family that will be invited to your wedding, consider going for walk and posting your invitations directly through their door. You save the cost of some stamps and, as a bonus, get your daily step count in!</p>
@@ -80,7 +107,15 @@ export default function BlogPost() {
             <li>templates which are provided in an editable format, e.g: Photoshop, for you to personalise yourself</li>
           </ul>
 
-          <p>[IMAGE AND LINK TO ROSEATE CARDS DOWNLOADABLE TEMPLATE]</p>
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Black geometric patterned downloadable wedding invitation template" src="/blog/invite-budget/download-black-geometric.jpg" />
+            <figcaption itemProp="caption">Downloadable geometric wedding invitation template, by <a href="/wedding/stationery/black-geometric">Roseate Cards</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Simple downloadable wedding invitation template" src="/blog/invite-budget/download-typography.jpg" />
+            <figcaption itemProp="caption">Simple downloadable wedding invitation template, by <a href="https://www.etsy.com/uk/listing/678296722/calligraphy-wedding-invitation-template">Truly Elegant Prints (Etsy)</a></figcaption>
+          </figure>
 
           <p>At Roseate Cards, we have a range of <a href="/wedding">downloadable wedding stationery sets</a> which we personalise before sending to you - all you need to do is find a printer! </p>
 
@@ -88,7 +123,20 @@ export default function BlogPost() {
           <p>All-In-One wedding invitations are a great way of getting that luxurious professional wedding invitation feel without breaking the bank. They can be done in a variety of ways, but they all feature multiple folds of card so you can include as much information as possible. Some all-in-one cards specify that they are “seal-and-send” which means the invitation folds up and can be mailed without the need for a separate envelope.</p>
           <p>All-In-One invitations are cheaper because they use only one sheet of paper. If you ask people to RSVP to a wedding website, email address or phone number, there’s also no need for additional RSVP cards and envelopes.</p>
 
-          <p>[ IMAGES AND LINKS TO ALL-IN-ONE INVITES. NOT ON ROSEATE CARDS SADLY (yet). ] </p>
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Blush floral all-in-one send-and-seal wedding invitation" src="/blog/invite-budget/allone-blush.jpg" />
+            <figcaption itemProp="caption">Blush floral all-in-one send-and-seal wedding invitation, by <a href="https://www.etsy.com/uk/listing/957369018/autumn-peoria-romantic-retro-floral">Ivory Invitations (Etsy)</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="All-in-one send-and-seal wedding invitation with green and ivory floral design" src="/blog/invite-budget/allone-classic.jpg" />
+            <figcaption itemProp="caption">Classic white and green all-in-one send-and-seal wedding invitation, by <a href="https://www.etsy.com/uk/listing/876475898/all-in-one-wedding-invitation-white-and">InvitedinStyle (Etsy)</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Dusky blue concertina fold-out wedding invitation" src="/blog/invite-budget/allone-concertina.jpg" />
+            <figcaption itemProp="caption">Dusky blue concertina fold-out wedding invitation, by <a href="https://www.etsy.com/uk/listing/929397627/concertina-wedding-invitation-fold-out">ElleBeeDesignUK (Etsy)</a></figcaption>
+          </figure>
 
           <h2>Splashing Out</h2>
           <p>Wedding invitations really can range from the budget options we’ve seen here to thousands of pounds. If money isn’t an issue, here are a couple of additional extras that you might want to include:</p>
@@ -102,11 +150,6 @@ export default function BlogPost() {
           </ul>
 
           <p>If you’re interested in the above, then check out <a href="/wedding">our luxury wedding stationery sets</a>.</p>
-
-          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img itemProp="url contentUrl" alt="[ALT TEXT HERE]" src="[IMAGE URL]" />
-            <figcaption itemProp="caption">[IMAGE CAPTION]</figcaption>
-          </figure>
 
         </div>
       </div>
