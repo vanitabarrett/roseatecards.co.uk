@@ -9,12 +9,12 @@
   },
   "other_blogs": [
     {
-      "published_date": "EXAMPLE: 2014-12-23T19:32:41Z",
-      "human_published_date": "EXAMPLE: 23rd December 2014",
-      "title": "[TBC]",
+      "published_date": "2021-05-16T20:54:00Z",
+      "human_published_date": "16th May 2021",
+      "title": "Wedding Stationery Inspiration for 2021 and 2022",
       "description": "[TBC]",
-      "image": "[TBC]",
-      "slug": "[TBC]"
+      "image": "inspiration-2021-2022/featured.jpg",
+      "slug": "wedding-inspiration-2021-2022"
     }
   ]
 }
