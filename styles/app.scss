@@ -120,6 +120,77 @@ h3 {
   font-weight: 600;
 }
 
+.featured-item {
+  margin-bottom: 30px;
+
+  &__image {
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    padding-left: 0 !important;
+  }
+
+  &__text-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+
+    @include mq($from: gel-bp-m) {
+      margin-top: 0;
+    }
+  }
+
+  &__headline-wrapper {
+    @include headline-font;
+    color: $black;
+    position: relative;
+
+    @include mq($from: gel-bp-l) {
+      left: -60px;
+      top: 10px;
+    }
+  }
+
+  &__text {
+    background-color: $white;
+    font-size: 3rem;
+    padding: 5px 0;
+
+    @include mq($from: gel-bp-l) {
+      font-size: 4rem;
+    }
+  }
+
+  &__large-text {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+
+    @include mq($from: gel-bp-l) {
+      left: 15px;
+      font-size: 6rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.3rem;
+
+    @include mq($from: gel-bp-l) {
+      margin: 20px;
+    }
+  }
+
+  &__button-wrapper {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__button {
+    @include cta-button;
+  }
+}
+
 @import "./pages/category";
 @import "./pages/product";
 @import "./pages/contact";
@@ -131,3 +202,6 @@ h3 {
 @import "./pages/papers";
 @import "./pages/hello";
 @import "./pages/delivery-returns";
+@import "./pages/blogs";
+@import "./pages/blog-post";
+@import "./pages/newsletter";

@@ -11,15 +11,15 @@ export default function Home({
       <div className="gel-wrap">
         <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
-        <div className="home-page__featured gel-layout">
-          <img src="/homepage-feature/just-because.jpg" className="home-page__featured__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
-          <div className="home-page__featured__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
-            <p className="home-page__featured__headline-wrapper">
-              <span className="home-page__featured__text">Send a little love</span><br/><span className="home-page__featured__text home-page__featured__large-text">in the post...</span>
+        <div className="featured-item gel-layout">
+          <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
+          <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
+            <p className="featured-item__headline-wrapper">
+              <span className="featured-item__text">Send a little love</span><br/><span className="featured-item__text featured-item__large-text">in the post...</span>
             </p>
-            <p className="home-page__featured__description">During hard times, messages of love and support can mean a lot to the people we love.</p>
-            <p className="home-page__featured__description">Our eco-friendly greeting cards and luxury wedding stationery are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
-            <p className="home-page__featured__button-wrapper"><a href="/cards/just-because" className="home-page__featured__button">Shop now</a></p>
+            <p className="featured-item__description">During hard times, messages of love and support can mean a lot to the people we love.</p>
+            <p className="featured-item__description">Our eco-friendly greeting cards and luxury wedding stationery are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
+            <p className="featured-item__button-wrapper"><a href="/cards/just-because" className="featured-item__button">Shop now</a></p>
           </div>
         </div>
         <div className="home-page__info gel-layout">

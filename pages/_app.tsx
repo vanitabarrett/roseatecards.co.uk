@@ -10,6 +10,8 @@ import '../styles/app.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { asPath } = useRouter();
+  const isTest = process.env.ENVIRONMENT === 'test';
+  const domain = isTest ? 'test.roseatecards.co.uk' : 'roseatecards.co.uk';
 
   return (
     <>
@@ -17,11 +19,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Roseate Cards | Sustainable Greetings Cards and Postcards</title>
         <meta name="description" content="Greeting cards and wedding stationery for all occasions, including mental health and wellbeing cards. Send a little love in the post. Made and printed in the UK." />
 
+        <meta property="og:image" key="ogimage" content={`https://${domain}/social/social.png`} />
         <meta property="og:title" key="ogtitle" content="Roseate Cards | Sustainable Greetings Cards and Wedding Stationery" />
         <meta property="og:description" key="ogdescription" content="Greeting cards and wedding stationery. Made and printed in the UK. Send a little love in the post ❤️ " />
 
         <meta property="twitter:title" key="twittertitle" content="Roseate Cards" />
         <meta property="twitter:description" key="twitterdescription" content="Greeting cards and wedding stationery. Made and printed in the UK. Send a little love in the post ❤️" />
+        <meta property="twitter:image" key="twitterimage" content={`https://${domain}/social/social.png`} />
+
       </Head>
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>

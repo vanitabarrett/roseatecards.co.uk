@@ -1,0 +1,20 @@
+{
+  "featured": {
+    "published_date": "2021-05-12T20:40:00Z",
+    "human_published_date": "12th May 2021",
+    "title": "Wedding Invitations on a Budget",
+    "description": "With the average cost of wedding invitations in the UK ranging from £250 - £500, many couples are going down alternative routes to find more budget-friendly options.",
+    "image": "invite-budget/featured.jpg",
+    "slug": "wedding-invitations-on-a-budget"
+  },
+  "other_blogs": [
+    {
+      "published_date": "2021-05-16T20:54:00Z",
+      "human_published_date": "16th May 2021",
+      "title": "Wedding Stationery Inspiration",
+      "description": "Wedding stationery designs and trends which are proving popular for 2021 and 2022 weddings.",
+      "image": "inspiration-2021-2022/featured.jpg",
+      "slug": "wedding-inspiration-2021-2022"
+    }
+  ]
+}

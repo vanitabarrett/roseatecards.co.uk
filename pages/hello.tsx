@@ -5,14 +5,6 @@ export default function Hello() {
     <div className="gel-wrap hello-page gel-2/3@l">
       <Head>
         <title>Popular Links - Roseate Cards</title>
-        <meta name="description" content="" />
-
-        <meta property="og:title" key="ogtitle" content="Popular Links - Roseate Cards" />
-        <meta property="og:description" key="ogdescription" content="" />
-
-        <meta property="twitter:title" key="twittertitle" content="Popular Links - Roseate Cards" />
-        <meta property="twitter:description" key="twitterdescription" content="" />
-
         <meta name="robots" content="noindex" />
       </Head>
       <h1 className="page-title">Popular Links</h1>

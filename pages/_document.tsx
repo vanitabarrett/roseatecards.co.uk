@@ -42,10 +42,7 @@ class MyDocument extends Document {
 
           <meta name="robots" content={robots} />
 
-          <meta property="og:image" content={`https://${domain}/social/social.png`} />
-
           <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:image" content={`https://${domain}/social/social.png`} />
 
           {
             // Inlined Google Font loading to improve performance

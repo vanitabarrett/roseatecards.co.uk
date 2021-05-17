@@ -1,0 +1,129 @@
+$negative-margin: -70px;
+
+.blog-post-page {
+  margin-bottom: 50px;
+
+  &__feature, &__back {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq($from: gel-bp-l) {
+      width: 70%;
+    }
+  }
+
+  &__back {
+   margin-bottom: 15px;
+
+    &__link {
+      @include nice-underline;
+    }
+  }
+
+  &__article-body {
+    h2 {
+      @include headline-font;
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+
+    h3 {
+      margin-top: 20px;
+    }
+
+    ul {
+      margin-left: 30px;
+    }
+
+    a {
+      @include nice-underline;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    figure {
+      width: 100%;
+      margin: 30px 0;
+
+      img {
+        width: 100%;
+      }
+
+      figcaption {
+        font-size: 0.8rem;
+        margin: 5px 0 10px 0;
+        color: $medium-grey;
+
+        a::after {
+          border-color: $medium-grey;
+        }
+
+        a:focus {
+          color: $black;
+        }
+      }
+    }
+
+    .list-no-bullets {
+      list-style-type: none;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    position: relative;
+    top: $negative-margin;
+    width: 90%;
+    background-color: $white;
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    @include mq($from: gel-bp-l) {
+      width: 65%;
+    }
+
+   &__date {
+    font-weight: 300;
+    text-transform: uppercase;
+   }
+
+   &__title {
+    @include headline-font;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 2.5rem;
+   }
+ }
+
+ &__share {
+   margin: ($negative-margin+20px) auto 0 auto;
+   text-align: center;
+
+   h2 {
+     font-size: 1rem;
+   }
+
+   &__list {
+     list-style-type: none;
+     margin-top: 10px;
+
+     li {
+       display: inline-block;
+       margin-right: 10px;
+
+       a:focus {
+         background-color: transparent;
+       }
+
+       svg {
+         width: 40px;
+         height: 40px;
+         border-radius: 5px;
+       }
+     }
+   }
+  }
+}
