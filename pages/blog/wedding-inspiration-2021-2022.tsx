@@ -49,22 +49,92 @@ export default function BlogPost() {
         </p>
         <h1 className="blog-post-page__content__title" itemProp="name headline">{blogTitle}</h1>
         <div itemProp="articleBody" className="blog-post-page__article-body">
+          <p>Wedding stationery designs and trends which are proving popular for 2021 and 2022 weddings.</p>
+
           <h2>Florals</h2>
-          <p>[INTRO]</p>
+          <p>Florals? For spring? Groundbreaking.</p>
+          <p>But genuinely, wedding invitations this year seem to be all about everything floral and botanical. Being stuck indoors for so long in lockdown has given us a real appreciation for all things nature.</p>
 
           <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img itemProp="url contentUrl" alt="Screenshot of an example wedding website" src="/blog/invite-budget/hitched.jpg" />
-            <figcaption itemProp="caption">Wedding website, image taken from <a href="https://www.hitched.co.uk/website/index.php">Hitched</a></figcaption>
+            <img itemProp="url contentUrl" alt="Sqaure wedding invitation with green leafy canopy design" src="/blog/inspiration-2021-2022/florals-canopy.jpg" />
+            <figcaption itemProp="caption">Cascading Canopy wedding invitations, image taken from <a href="https://www.rosemood.co.uk/wedding-invitations/m/cascading-canopy">Rosemood</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Sqaure wedding invitation with circular tropical botanical design" src="/blog/inspiration-2021-2022/florals-tropical.jpg" />
+            <figcaption itemProp="caption">Tropical wedding invitation, image taken from <a href="http://www.emeraldpaperdesign.com/wedding-stationery#/tropicalweddingstationery/">Emerald Paper Design</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Floral wedding invitation set with burgundy coloured florals" src="/blog/inspiration-2021-2022/florals-marsala.jpg" />
+            <figcaption itemProp="caption">Marsala Floral Wedding Invitation with Ribbon, image taken from <a href="http://www.littlebirdweddings.co.uk/wedding-stationery/marsala-floral-wedding-invitation/">Little Bird Weddings</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Gatefold wedding invitation styled like a botanical glasshouse" src="/blog/inspiration-2021-2022/florals-glasshouse.jpg" />
+            <figcaption itemProp="caption">Botanical Glasshouse Gatefold Wedding Invitations, image taken from <a href="https://gerilovesemi.com/collections/botanical-glasshouse/products/botanical-glasshouse-gatefold-day-wedding-invitations">Geri Loves Emi Paper Co</a></figcaption>
           </figure>
 
           <h2>Simple and Monochromatic</h2>
-          <p>[INTRO]</p>
+          <p>You can't go wrong with simple and understated wedding invitations!</p>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Closeup of a textured ivory wedding invitation, with bold elegant typography" src="/blog/inspiration-2021-2022/simple-typography.jpg" />
+            <figcaption itemProp="caption">Ramsey Wedding Invitations, image taken from <a href="https://geebrothers.co.uk/shop/wedding-stationery/wedding-invitations/ramsey-wedding-invitations/">Gee Brothers</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Full wedding invitation set with elegant type and calligraphy" src="/blog/inspiration-2021-2022/simple-calligraphy.jpg" />
+            <figcaption itemProp="caption">Aldgate Wedding Invitation Suite, image taken from <a href="https://ellebeedesign.co.uk/collections/classic-invitation-suites/products/aldgate-classic-invitation-suite">Elle Bee Designs</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Monochrome wedding invitation set" src="/blog/inspiration-2021-2022/simple-monochrome.jpg" />
+            <figcaption itemProp="caption">Black and white monochrome wedding invitation set, image taken from <a href="/wedding/stationery/modern-monochrome">Roseate Cards</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Monochromatic earthy tan wedding invitation set" src="/blog/inspiration-2021-2022/simple-monochromatic.jpg" />
+            <figcaption itemProp="caption">Earthy Terracotta wedding invitation set, image taken from <a href="https://www.etsy.com/uk/listing/902350479/minimal-wedding-invitation-set-neutral">MintyPaperieShop</a></figcaption>
+          </figure>
 
           <h2>Watercolour</h2>
-          <p>[INTRO]</p>
+          <p>Watercolour invitations really can be whatever you want them to be - perfect for formal black tie occasions, but also perfect for a relaxed wedding for arty / festival vibes.</p>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Wedding invitation with a rainbow watercolour design in the centre" src="/blog/inspiration-2021-2022/watercolour-multi.jpg" />
+            <figcaption itemProp="caption">Bloom (Portrait) Wedding Invitations, image taken from <a href="https://www.rosemood.co.uk/wedding-invitations/m/bloom-portrait/">Rosemood</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Wedding invitation with a deep dark blue watercolour design, almost like a cloudy sky or the sea" src="/blog/inspiration-2021-2022/watercolour-sea.jpg" />
+            <figcaption itemProp="caption">Bold Navy Watercolour Wedding Invitation, image taken from <a href="http://www.littlebirdweddings.co.uk/wedding-stationery/bold-navy-watercolour-wedding-invitation/">Little Bird Weddings</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Wedding invitation with a stormy watercolour, with metallic gold splashes" src="/blog/inspiration-2021-2022/watercolour-gold.jpg" />
+            <figcaption itemProp="caption">Twilight wedding invitations, image taken from <a href="https://amandamichelle.co.uk/product/twilight/">Amanda Michelle Design and Stationery</a></figcaption>
+          </figure>
 
           <h2>Blush</h2>
-          <p>[INTRO]</p>
+          <p>After the coronavirus pandemic put a stop to weddings for the best part of a year in the UK, couples getting married now want to make the wedding a more personal affair.</p>
+          <p>More brides are incorporating colour into their dresses, with wedding invitations to match. One real favourite at the moment is blush pink.</p>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Blush pink wedding invitation with calligraphy" src="/blog/inspiration-2021-2022/blush-calligraphy.jpg" />
+            <figcaption itemProp="caption">Luxury blush wedding invitation, image taken from <a href="/wedding/stationery/luxury-blush">Roseate Cards</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Wedding invitation with a pinky-grey ombre" src="/blog/inspiration-2021-2022/blush-ombre.jpg" />
+            <figcaption itemProp="caption">Blush and grey wedding invitation, image taken from <a href="https://polkadotdaisy.uk/studio-collections/blush-grey/">Polka Dot Daisy</a></figcaption>
+          </figure>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Blush pink wedding invitation with a line drawing of a leaf" src="/blog/inspiration-2021-2022/blush-leaf.jpg" />
+            <figcaption itemProp="caption">Harmony wedding invitation, image taken from <a href="https://amandamichelle.co.uk/product/harmony/">Amanda Michelle Design and Stationery</a></figcaption>
+          </figure>
+
         </div>
       </div>
 
