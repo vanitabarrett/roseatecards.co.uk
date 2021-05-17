@@ -93,7 +93,7 @@ export default function BlogPost() {
 
           <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
             <img itemProp="url contentUrl" alt="Blush pink watercolour invitations" src="/blog/invite-budget/diy-watercolour.jpg" />
-            <figcaption itemProp="caption">DIY watercolour invitations. Image and tutorial from <a href="https://www.minted.com/julep/2013/04/01/diy-watercolored-letterpress-invites">Minted.com</a></figcaption>
+            <figcaption itemProp="caption">DIY watercolour invitations. Image from <a href="https://ohsobeautifulpaper.com/2012/02/diy-tutorial-watercolor-floral-pattern-wedding-invitations/">Oh So Beautiful Paper</a></figcaption>
           </figure>
 
           <h3>Delivery</h3>
