@@ -44,7 +44,7 @@ export default function Blog({
 
           {
             blogList.map((blog) => (
-              <Article {...blog} />
+              <Article key={blog.slug} {...blog} />
             ))
           }
 
