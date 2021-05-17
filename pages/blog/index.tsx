@@ -30,7 +30,7 @@ export default function Blog({
           </span>
           <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
             <h2 className="featured-item__headline-wrapper">
-              <span className="featured-item__text blogs-page__featured-date">{featuredBlog.human_published_date}</span><br/><span className="featured-item__text" itemProp="name headline">{featuredBlog.title}</span>
+              <span className="featured-item__text" itemProp="name headline">{featuredBlog.title}</span>
             </h2>
             <p className="featured-item__description">{featuredBlog.description}</p>
             <p className="featured-item__button-wrapper"><a href={`/blog/${featuredBlog.slug}`} className="featured-item__button" itemProp="mainEntityOfPage url">Continue reading</a></p>
