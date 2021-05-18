@@ -2,7 +2,9 @@ export default function Article({ published_date, human_published_date, title, d
   return (
     <>
       <article className="blog-lists__item gel-layout__item gel-1/2@m" itemScope itemType="https://schema.org/BlogPosting">
-        <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="author" itemScope itemType="http://schema.org/Organisation">
+            <meta itemProp="name">Roseate Cards</meta>
+          </meta>
         <meta itemProp="datePublished" content={published_date}></meta>
         <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
           <img className="blog-lists__item__image" src={`/blog/${image}`} alt="" loading="lazy" itemProp="url contentUrl" />

@@ -23,7 +23,9 @@ export default function Blog({
 
       { featuredBlog ?
         <article className="featured-item" itemScope itemType="https://schema.org/BlogPosting">
-          <meta itemProp="author" content="Roseate Cards"></meta>
+          <meta itemProp="author" itemScope itemType="http://schema.org/Organisation">
+            <meta itemProp="name">Roseate Cards</meta>
+          </meta>
           <meta itemProp="datePublished" content={featuredBlog.published_date}></meta>
           <span itemProp="image" itemScope itemType="https://schema.org/ImageObject">
             <img src={`/blog/${featuredBlog.image}`} className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" itemProp="url contentUrl" />
