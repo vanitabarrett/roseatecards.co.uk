@@ -27,6 +27,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="twitter:description" key="twitterdescription" content="Greeting cards and wedding stationery. Made and printed in the UK. Send a little love in the post ❤️" />
         <meta property="twitter:image" key="twitterimage" content={`https://${domain}/social/social.png`} />
 
+        {
+          // To verify website for Pinterest
+        }
+        <meta name="p:domain_verify" content="3d012a888f399846e4f5f99362b773fa"/>
       </Head>
       <div className="page-container">
         <a href="#main" className="skiplink">Skip to main page content</a>
