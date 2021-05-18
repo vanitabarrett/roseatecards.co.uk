@@ -16,6 +16,10 @@ const LINKS: NavLink[] = [
     text: 'Our Papers'
   },
   {
+    href: '/blog',
+    text: 'Blog'
+  },
+  {
     href: '/contact',
     text: 'Contact'
   }
