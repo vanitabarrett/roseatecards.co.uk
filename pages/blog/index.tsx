@@ -53,10 +53,10 @@ export default function Blog({
         </div> : null
       }
 
-      <div className="blog-lists__mailing">
-        <h2 className="blog-lists__mailing__title">Join our members club</h2>
-        <p className="blog-lists__mailing__text">Subscribe to our mailing list to receive exclusive offers, news on new products and our latest blog posts.</p>
-        <div className="blog-lists__mailing__frame">
+      <div className="mailing-cta">
+        <h2 className="mailing-cta__title">Join our members club</h2>
+        <p className="mailing-cta__text">Subscribe to our mailing list to receive exclusive offers, news on new products and our latest blog posts.</p>
+        <div className="mailing-cta__frame">
           <iframe className="mj-w-res-iframe" frameBorder="0" scrolling="no" src="https://app.mailjet.com/widget/iframe/6M56/J1u" width="100%"></iframe>
           <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
         </div>

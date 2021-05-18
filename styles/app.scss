@@ -191,6 +191,39 @@ h3 {
   }
 }
 
+.mailing-cta {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-top: 1px solid $red;
+
+  @include mq($from: gel-bp-s) {
+    width: 100%;
+  }
+
+  &__frame {
+    width: 90%;
+    margin: 0 auto;
+
+    @include mq($from: gel-bp-m) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    @include headline-font;
+    font-size: 2rem;
+    margin: 20px 0 10px 0;
+  }
+
+  &__text {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 @import "./pages/category";
 @import "./pages/product";
 @import "./pages/contact";

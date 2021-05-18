@@ -27,9 +27,16 @@ export default function CategoryHomepage({
       <CategoryNav categoryInfo={categoryInfo} />
       <h1 className="page-title">All {categoryInfo.name}</h1>
       <ProductsGrid products={products} />
-      <Notice title="Can't find what you're looking for?">
-        <p>We regularly add new designs - follow us on <a href="https://www.instagram.com/roseatecards/" rel="noreferrer external">social media</a> for updates!</p>
-      </Notice>
+
+      <div className="mailing-cta">
+        <h2 className="mailing-cta__title">Can't find what you're looking for?</h2>
+        <p className="mailing-cta__text">Subscribe to our mailing list to be first to find out about our new products, exclusive offers and our blog posts.</p>
+        <div className="mailing-cta__frame">
+          <iframe className="mj-w-res-iframe" frameBorder="0" scrolling="no" src="https://app.mailjet.com/widget/iframe/6M56/J1u" width="100%"></iframe>
+          <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
+        </div>
+      </div>
+
     </div>
   );
 }
