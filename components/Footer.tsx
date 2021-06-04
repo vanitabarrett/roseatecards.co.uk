@@ -19,21 +19,30 @@ export default function Footer() {
           >
             <svg id="Layer" enableBackground="new 0 0 64 64" height="512" viewBox="0 0 64 64" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m42 8h-20c-7.72 0-14 6.28-14 14v20c0 7.72 6.28 14 14 14h20c7.72 0 14-6.28 14-14v-20c0-7.72-6.28-14-14-14zm10 34c0 5.514-4.486 10-10 10h-20c-5.514 0-10-4.486-10-10v-20c0-5.514 4.486-10 10-10h20c5.514 0 10 4.486 10 10z"/><path d="m32 21c-6.065 0-11 4.935-11 11s4.935 11 11 11 11-4.935 11-11-4.935-11-11-11zm0 18c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z"/><path d="m45 16c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"/></svg>          </a>
         </div>
-        <div className="footer__related">
-          <a className="footer__link" href="/privacy-policy">Privacy Policy</a>
-          <a className="footer__link" href="/cookies">Cookies</a>
-          <a className="footer__link" href="/accessibility">Accessibility</a>
-          <a className="footer__link" href="/delivery-returns">Delivery and Returns</a>
-        </div>
         <div className="gel-layout">
-          <div className="gel-layout__item gel-2/3 footer__text">
-            <p className="footer__copy">We are a small greetings card company based in the UK, and we really appreciate every single purchase made! Thank you for supporting small businesses.</p>
-            <p className="footer__email">Say hello at hello@roseatecards.co.uk</p>
-            <a className="footer__indieretail" href="https://www.indieretail.uk/find-a-shop/?name=roseate_cards&shop=132287&browsesector=31">
-              <img src="/social/indieretail_logo.png" alt="" width="100px" />
-              We are a member of Indie Retail UK
-            </a>
-            <p className="footer__copy">&copy; Roseate Cards {new Date().getFullYear()}</p>
+          <div className="footer__newsletter gel-layout__item gel-1/4@l">
+            <h2 className="footer__newsletter__heading">Join our Members Club</h2>
+            <p className="footer__newsletter__text">By signing up to our newsletter, you will be the first to know about exclusive offers, competitions and new products!</p>
+            <a className="footer__link" href="/newsletter-signup">Sign up now &#8594;</a>
+          </div>
+          <div className="footer__main gel-layout__item gel-3/4@l">
+            <div className="gel-layout">
+              <div className="footer__related">
+                <a className="footer__link" href="/privacy-policy">Privacy Policy</a>
+                <a className="footer__link" href="/cookies">Cookies</a>
+                <a className="footer__link" href="/accessibility">Accessibility</a>
+                <a className="footer__link" href="/delivery-returns">Delivery and Returns</a>
+              </div>
+              <div className="gel-layout__item gel-2/3 footer__text">
+                <p className="footer__copy">We are a small greetings card company based in the UK, and we really appreciate every single purchase made! Thank you for supporting small businesses.</p>
+                <p className="footer__email">Say hello at hello@roseatecards.co.uk</p>
+                <a className="footer__indieretail" href="https://www.indieretail.uk/find-a-shop/?name=roseate_cards&shop=132287&browsesector=31">
+                  <img src="/social/indieretail_logo.png" alt="" width="100px" />
+                  We are a member of Indie Retail UK
+                </a>
+                <p className="footer__copy">&copy; Roseate Cards {new Date().getFullYear()}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

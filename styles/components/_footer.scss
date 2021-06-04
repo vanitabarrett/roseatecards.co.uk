@@ -30,6 +30,33 @@ $footer-height-m: calculate-footer-height(2);
     top: 0;
   }
 
+  &__newsletter {
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $white;
+
+    @include mq($from: gel-bp-l) {
+      padding: 0;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    &__heading {
+      font-size: 0.9rem;
+      padding: 5px 0;
+    }
+
+    &__text {
+      margin: 18px 0;
+    }
+  }
+
+  &__main {
+    @include mq($from: gel-bp-l) {
+      padding-left: 25px;
+    }
+  }
+
   &__social {
     @include mq($from: gel-bp-m) {
       float: right;
