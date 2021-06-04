@@ -12,6 +12,8 @@ export default function Hello() {
 
       <a href="/blog/wedding-invitations-on-a-budget" className="hello-page__link">Wedding Invitations on a Budget</a>
       <a href="/wedding/free-downloads" className="hello-page__link">Free Wedding Postponement Cards</a>
+      <a href="/newsletter-signup" className="hello-page__link">Join our Member's Club</a>
+
 
       <h2>Shop Now</h2>
       <a href="/cards" className="hello-page__link">Cards, Notecards and Postcards</a>
