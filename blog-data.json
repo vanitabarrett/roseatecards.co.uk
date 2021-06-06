@@ -9,6 +9,14 @@
   },
   "other_blogs": [
     {
+      "published_date": "2021-06-06T20:54:00Z",
+      "human_published_date": "6th June 2021",
+      "title": "Styles of Greeting Cards",
+      "description": "Ever confused about the different types of greeting cards out there? Or perhaps you're interested in making your own, and want to get some new inspiration.",
+      "image": "styles-greeting-cards/featured.jpg",
+      "slug": "styles-greeting-cards"
+    },
+    {
       "published_date": "2021-05-16T20:54:00Z",
       "human_published_date": "16th May 2021",
       "title": "Wedding Stationery Inspiration",

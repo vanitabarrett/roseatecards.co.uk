@@ -44,6 +44,16 @@ $negative-margin: -70px;
       margin: 10px 0;
     }
 
+    .figure--small {
+      width: 100%;
+
+      @include mq($from: gel-bp-m) {
+        display: inline-block;
+        width: 48%;
+        margin: 0 5px;
+      }
+    }
+
     figure {
       width: 100%;
       margin: 30px 0;

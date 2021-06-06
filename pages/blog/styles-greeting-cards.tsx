@@ -50,15 +50,88 @@ export default function BlogPost() {
         <h1 className="blog-post-page__content__title" itemProp="name headline">{blogTitle}</h1>
         <div itemProp="articleBody" className="blog-post-page__article-body">
 
-          <p>[CONTENT GOES HERE]</p>
+          <p>Ever confused about the different types of greeting cards out there? Or perhaps you're interested in making your own, and want to get some new inspiration.</p>
+
+          <h2>Standard</h2>
+          <p>Standard greeting cards are folded rectangular cards, usually with a printed design on the front. They come in a variety of sizes, usually smaller for multi-packs, but the standard sizes are 6x4" and 5x7".</p>
+
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Standard rectangular 6x4 card, with a plant illustration on the front" src="/blog/styles-greeting-cards/standard-grow.jpg" />
+            <figcaption itemProp="caption">You Grow Girl, by <a href="/birthday">Roseate Cards</a></figcaption>
+          </figure>
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Standard rectangular 6x4 card, with a retro orange design" src="/blog/styles-greeting-cards/standard-groovy.jpg" />
+            <figcaption itemProp="caption">Groovy, by <a href="/birthday">Roseate Cards</a></figcaption>
+          </figure>
+
+          <h2>Square</h2>
+          <p>A modern take on the standard rectangular card, square greeting cards add something a bit different to your usual card.</p>
+
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Square 6x6 card, with a pink and burgundy floral illustration" src="/blog/styles-greeting-cards/square-floral.jpg" />
+            <figcaption itemProp="caption">Pink and Burgundy, by <a href="/birthday">Roseate Cards</a></figcaption>
+          </figure>
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Square greeting card, with a greenery design" src="/blog/styles-greeting-cards/square-green.jpg" />
+            <figcaption itemProp="caption">Botanicals Greenery wedding card, by <a href="https://www.etsy.com/uk/listing/828532741/wedding-card-botanicals-greenery">BlossomTreeDesignsUK</a></figcaption>
+          </figure>
+
+          <h2>Photo Cards</h2>
+          <p>Greetings card with a photograph print, rather than an illustrated design. This can be a great affordable way for photographers to sell prints of their photographs.</p>
+          <p>One really popular subset of photo cards are customised photograph greetings cards, where you can upload your own photographs - this is a lovely way of sending a truly personlised card.</p>
+
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Square 6x6 card, with a photograph of profiteroles and chocolate sauce on the front" src="/blog/styles-greeting-cards/photo-profiteroles.jpg" />
+            <figcaption itemProp="caption">Profiteroles, by <a href="/photo">Roseate Cards</a></figcaption>
+          </figure>
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Square greeting card, with a customisable polaroid photo and text" src="/blog/styles-greeting-cards/photo-polaroid.jpg" />
+            <figcaption itemProp="caption">Polaroid style happy birthday card, by <a href="https://www.etsy.com/uk/listing/813910902/polaroid-style-happy-birthday-daddy">inthedetailsdesignco</a></figcaption>
+          </figure>
+
+          <h2>Gatefold</h2>
+          <p>More commonly used for wedding invitations, gatefold cards open up in the middle, with card on the left and right like a gate. You can get really inventive with gatefold cards, and especially creative in sealing them, for example: with wax seals or ribbons.</p>
+
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Gatefold wedding invitation, with eucalyptus design within" src="/blog/styles-greeting-cards/gatefold-wedding.jpg" />
+            <figcaption itemProp="caption">Eucalyptus Wedding Invitations, by <a href="https://www.etsy.com/uk/listing/955709816/10x-gatefold-tag-green-gold-eucalyptus">VintagePrints2015</a></figcaption>
+          </figure>
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Gatefold thank you card, with photographs inside" src="/blog/styles-greeting-cards/gatefold-thankyou.jpg" />
+            <figcaption itemProp="caption">Gatefold Personalised Thank You card, by <a href="https://www.etsy.com/uk/listing/824865402/gatefold-vintage-personalised-thank-you">LittleBooDesignsGB</a></figcaption>
+          </figure>
+
+          <h2>Tri-Fold</h2>
+          <p>Tri-fold cards are folded into 3 sections - you can see why they are sometimes also called Concertina or Zig-Zag cards!</p>
+
           <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
-            <img itemProp="url contentUrl" alt="[ALT TEXT HERE]" src="[IMAGE URL]" />
-            <figcaption itemProp="caption">[IMAGE CAPTION]</figcaption>
+            <img itemProp="url contentUrl" alt="Tri-fold greeting cards with spring floral illustrations" src="/blog/styles-greeting-cards/trifold.jpg" />
+            <figcaption itemProp="caption">Spring Hope concertina card, by <a href="https://www.etsy.com/uk/listing/972000106/spring-hope-concertina-card-spring">Raspberrythief</a></figcaption>
+          </figure>
+
+          <h2>Pop-Up</h2>
+          <p>Pop-up cards are seriously a work of art!</p>
+
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Pop-up peacock greetings card" src="/blog/styles-greeting-cards/popup-peacock.jpg" />
+            <figcaption itemProp="caption">Peacock 3D pop-up card, by <a href="https://www.etsy.com/uk/listing/950657062/birthday-card-peacockferris-wheel-3d-pop">ShashaArtStudio</a></figcaption>
+          </figure>
+          <figure className="figure--small" itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Eid Mubarak pop-up cards" src="/blog/styles-greeting-cards/popup-eid.jpg" />
+            <figcaption itemProp="caption">Eid Mubarak pop-up cards, by <a href="https://www.etsy.com/uk/listing/965705800/pack-of-5-eid-mubarak-pop-up-cards-eid">CardologyLtd</a></figcaption>
+          </figure>
+
+          <h2>Aperture and Shaker</h2>
+          <p>Aperture cards have a cut-out section in the front which can be used to either display a photograph/artwork or give a sneak peak inside the card.</p>
+          <p>Shaker cards are similar, but have a transparent pocket within the aperture containing glitter, confetti - anything shakeable!</p>
+
+          <figure itemProp="image" itemScope itemType="https://schema.org/ImageObject">
+            <img itemProp="url contentUrl" alt="Glittery pink birthday shaker card" src="/blog/styles-greeting-cards/shaker.jpg" />
+            <figcaption itemProp="caption">Glittery pink birthday shaker card, by <a href="https://www.etsy.com/uk/listing/946989022/glittery-pink-birthday-shaker-card">EmilyRoseShakerCards</a></figcaption>
           </figure>
 
         </div>
       </div>
-
 
       <span itemProp="publisher" itemScope itemType="https://schema.org/Organization">
         <meta itemProp="name" content="Roseate Cards"></meta>
