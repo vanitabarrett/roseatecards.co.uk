@@ -23,6 +23,11 @@
       margin-bottom: -20px; // to reduce the effect of <br> tags after headings
     }
 
+    a {
+      display: inline-block;
+      @include nice-underline;
+    }
+
     &__stat {
       font-weight: bold;
     }

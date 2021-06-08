@@ -67,9 +67,9 @@ export default function ProductPage({
             Buy on Etsy
           </a>
           <meta itemProp="description" content={`${htmlParser(product.description.replace(/\n/g, ' '))}`} />
-          <p className="product-page__description">
-            {htmlParser(product.description.replace(/\n/g, '<br />').replace(/\~(\S[^\~]+\S)\~/g, "<h2>$1</h2>").replace(/\*(\S[^\*]+\S)\*/g, "<span class='product-page__description__stat'>$1</span>"))}
-          </p>
+          <div className="product-page__description">
+            {htmlParser(product.description.replace(/\n/g, '<br />').replace(/\~(\S[^\~]+\S)\~/g, "<h2>$1</h2>").replace(/\*(\S[^\*]+\S)\*/g, "<span class='product-page__description__stat'>$1</span>").replace(/\[(.*?)\]\((.*?)\)/gi, '<a href="$2">$1</a>'))}
+          </div>
         </div>
       </div>
 
