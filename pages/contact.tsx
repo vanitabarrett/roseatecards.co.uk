@@ -35,10 +35,11 @@ export default function Contact() {
       </div>
 
       <div className="contact-page__contact">
-        <h2 className="contact-page__contact__title">Still got some questions?</h2>
+        <h2 className="contact-page__contact__title" id="contact-methods">Still got some questions?</h2>
         <p>We monitor our support channels between 8am and 9pm. We will respond to messages sent outside those times when we are next online.</p>
         <a className="contact-page__contact__link" href="mailto:support@roseatecards.co.uk">Email us at support@roseatecards.co.uk</a>
-        <a className="contact-page__contact__link" href="http://m.me/roseatecards">Facebook Messenger live chat</a>
+        <a className="contact-page__contact__link" href="https://m.me/roseatecards">Live chat on Facebook Messenger</a>
+        <a className="contact-page__contact__link" href="https://www.etsy.com/uk/shop/roseatecards">Live chat on Etsy</a>
       </div>
     </div>
   );
