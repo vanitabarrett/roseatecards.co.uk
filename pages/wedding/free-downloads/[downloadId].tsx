@@ -35,10 +35,10 @@ export default function DownloadPage({
       <title>{download.title} - Roseate Cards</title>
         <meta name="description" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
 
-        <meta property="og:title" key="ogtitle" content={`${download.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="og:title" key="ogtitle" content={`${download.title} | Roseate Cards`} />
         <meta property="og:description" key="ogdescription" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
 
-        <meta property="twitter:title" key="twittertitle" content={`${download.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
+        <meta property="twitter:title" key="twittertitle" content={`${download.title} | Roseate Cards`} />
         <meta property="twitter:description" key="twitterdescription" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
       </Head>
       <Breadcrumbs items={breadcrumbItems} />
