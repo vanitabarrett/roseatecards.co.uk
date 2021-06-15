@@ -6,7 +6,6 @@ import htmlParser from 'html-react-parser';
 import freeDownloadsData from '../../../free-downloads-data.json';
 import { getCategoryInfoNoProducts } from '../../../lib/shopData';
 import Breadcrumbs from '../../../components/Breadcrumbs';
-import AdditionalInfo from '../../../components/AdditionalInfo';
 import { augmentDownloadData } from '../../../lib/freeDownloadData';
 
 export default function DownloadPage({
