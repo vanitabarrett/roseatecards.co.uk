@@ -44,6 +44,11 @@ class MyDocument extends Document {
 
           <meta property="twitter:card" content="summary_large_image" />
 
+          <meta name="geo.region" content="GB" />
+          <meta name="geo.placename" content="London" />
+          <meta name="geo.position" content="51.507322;-0.127647" />
+          <meta name="ICBM" content="51.507322, -0.127647" />
+
           {
             // Inlined Google Font loading to improve performance
           }
