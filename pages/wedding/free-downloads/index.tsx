@@ -17,7 +17,7 @@ export default function CategoryHomepage({
   return (
     <div className="gel-wrap category-page">
       <Head>
-        <title>{categoryInfo.name} - Roseate Cards</title>
+        <title>Free Wedding Downloads - Roseate Cards</title>
         <meta name="description" content={`A selection of ${categoryInfo.name.toLowerCase()} available on Roseate Cards.`} />
 
         <meta property="og:title" key="ogtitle" content={`${categoryInfo.name} - Roseate Cards`} />
