@@ -32,7 +32,7 @@ export default function DownloadPage({
   return (
     <div className="gel-wrap free-download-page">
       <Head>
-      <title>{download.title} - {subCategoryInfo.name} - {categoryInfo.name} - Roseate Cards</title>
+      <title>{download.title} - Roseate Cards</title>
         <meta name="description" content={`${htmlParser(download.description.replace(/\n/g, ' ')).toString().split('.')[0]}. A free wedding download, ready to print. Design by Roseate Cards.`} />
 
         <meta property="og:title" key="ogtitle" content={`${download.title} | ${subCategoryInfo.name} ${categoryInfo.name} | Roseate Cards`} />
