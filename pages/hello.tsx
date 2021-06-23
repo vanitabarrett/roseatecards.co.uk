@@ -10,7 +10,7 @@ export default function Hello() {
       <h1 className="page-title">Popular Links</h1>
       <img src="/svgs/logo-light.svg" alt="Roseate Cards" className="hello-page__logo" width="250px" height="60px" />
 
-      <a href="/blog/wedding-invitations-on-a-budget" className="hello-page__link">Wedding Invitations on a Budget</a>
+      <a href="/blog/wedding-inspiration-2021-2022" className="hello-page__link">Wedding Trends and Inspiration for 2021/2022</a>
       <a href="/wedding/free-downloads" className="hello-page__link">Free Wedding Postponement Cards</a>
       <a href="/newsletter-signup" className="hello-page__link">Join our Member's Club</a>
 
