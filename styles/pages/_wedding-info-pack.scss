@@ -1,0 +1,90 @@
+.wedding-info-pack {
+  margin-bottom: 50px;
+
+  &__link {
+    @include nice-underline;
+  }
+
+  h2 {
+    @include headline-font;
+    font-size: 2.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__cta-wrapper {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  &__cta {
+    @include cta-button;
+    font-size: 1.5rem;
+  }
+
+  &__product {
+    margin: 10px 0;
+
+    &-image {
+      width: 100%;
+    }
+
+    &-text {
+      margin-top: -2px;
+      padding: 10px 0;
+    }
+  }
+
+  &__digital {
+    margin-top: -10px;
+  }
+
+  &__ordering {
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-text {
+      padding-left: 16px;
+
+      @include mq($from: gel-bp-l) {
+        padding-left: 30px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      ol {
+        margin-left: 20px;
+
+        @include mq($from: gel-bp-l) {
+          margin-left: 25px;
+        }
+
+        li {
+          margin: 10px 0;
+
+          .list-title {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  &__small-print {
+    margin-top: 0;
+
+    @include mq($from: gel-bp-l) {
+      margin-top: 20px;
+    }
+
+  }
+
+  &__photobooks {
+    margin-top: 20px;
+  }
+}
