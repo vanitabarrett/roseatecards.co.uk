@@ -92,6 +92,10 @@ export default function WeddingInfoPack() {
         <img src="wedding-info-pack/photobook-3.jpg" className="gel-layout__item gel-1/3@l" />
       </div>
 
+      <div className="wedding-info-pack__cta-wrapper">
+        <a href="/wedding/photobook/personalised-wedding-photobook" className="wedding-info-pack__cta">Shop now</a>
+      </div>
+
       <h2>Get in touch</h2>
       <p>If you interested in our wedding products or have any questions, please get in touch via email at <a href="mailto:hello@roseatecards.co.uk">hello@roseatecards.co.uk</a> or use our <a className="wedding-info-pack__link" href="/contact#contact-methods">live chat</a></p>
     </div>
