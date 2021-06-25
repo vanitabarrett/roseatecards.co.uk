@@ -74,20 +74,22 @@ export default function ProductPage({
       </div>
 
       <AdditionalInfo categoryId={categoryInfo.id} />
-      <div className="product-page__similar">
-        <h2 className="product-page__similar-headline">You might also like...</h2>
-        <ul className="gel-layout">
-          {similarProducts.map((product) => (
-            <li className="gel-layout__item gel-1/4@l gel-1/2@s" key={product.id}>
-              <ProductItem {...product} />
-            </li>
-          ))}
-        </ul>
+      { similarProducts.length ?
+        <div className="product-page__similar">
+          <h2 className="product-page__similar-headline">You might also like...</h2>
+          <ul className="gel-layout">
+            {similarProducts.map((product) => (
+              <li className="gel-layout__item gel-1/4@l gel-1/2@s" key={product.id}>
+                <ProductItem {...product} />
+              </li>
+            ))}
+          </ul>
 
-        <div className="product-page__similar-button-wrapper">
-          <a href={`/${categoryInfo.id}/${subCategoryInfo.id}`} className="product-page__similar-button">Shop all {subCategoryInfo.name}</a>
+          <div className="product-page__similar-button-wrapper">
+            <a href={`/${categoryInfo.id}/${subCategoryInfo.id}`} className="product-page__similar-button">Shop all {subCategoryInfo.name}</a>
+          </div>
         </div>
-      </div>
+      : null }
     </div>
   );
 }
