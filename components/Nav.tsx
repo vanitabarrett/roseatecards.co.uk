@@ -3,11 +3,12 @@ import classnames from 'classnames';
 
 import shopData from '../shop-data.json';
 import { NavLink } from '../types';
+import { sortByKey } from '../lib/arrays';
 
-const categoryLinks = shopData.map(({ id, name }) => ({
+const categoryLinks = sortByKey(shopData.map(({ id, name }) => ({
   href: `/${id}`,
   text: `Shop ${name}`
-}));
+})), "text");
 
 const LINKS: NavLink[] = [
   ...categoryLinks,
