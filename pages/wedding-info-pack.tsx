@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function NewsletterSignup() {
+export default function WeddingInfoPack() {
   return (
     <div className="gel-wrap wedding-info-pack gel-2/3@l">
       <Head>
