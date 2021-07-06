@@ -8,7 +8,7 @@ const files = FileHound.create()
   .find();
 
 const TOP_LEVEL_PATH = ["/"];
-const MID_LEVEL_PATH = ["/cards", "/contact", "/privacy-policy", "/accessibility", "/wedding", "/our-papers", "/cookies"];
+const MID_LEVEL_PATH = ["/cards", "/contact", "/privacy-policy", "/accessibility", "/wedding", "/our-papers", "/cookies", "/newsletter-signup", "/gifts"];
 
 files.then(function(paths) {
   const pagesSitemap = paths.map(pathItem => {
