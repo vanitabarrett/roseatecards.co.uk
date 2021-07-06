@@ -44,6 +44,24 @@
 
     .slide {
       background: $image-background;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .slider {
+      max-height: 700px;
+    }
+
+    .thumb {
+      height: 80px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
