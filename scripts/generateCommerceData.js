@@ -9,7 +9,7 @@ const XMLProducts = allProducts.map(( product ) => {
             <g:title>${product.title}</g:title>
             <g:description>${product.description.split('\n')[0]}</g:description>
             <g:link>${product.url}</g:link>
-            <g:image_link>${product.images[0]['url_170x135']}</g:image_link>
+            <g:image_link>${product.images[0]['url_fullxfull']}</g:image_link>
             <g:brand>Roseate Cards</g:brand>
             <g:condition>new</g:condition>
             <g:availability>in stock</g:availability>
