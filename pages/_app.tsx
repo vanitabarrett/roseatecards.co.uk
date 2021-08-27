@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Roseate Cards | Sustainable Greetings Cards and Postcards</title>
+        <title>Roseate Cards | Sustainable Greetings Cards and Wedding Stationery</title>
         <meta name="description" content="Greeting cards and wedding stationery for all occasions, including mental health and wellbeing cards. Send a little love in the post. Made and printed in the UK." />
 
         <meta property="og:image" key="ogimage" content={`https://${domain}/social/social.png`} />
