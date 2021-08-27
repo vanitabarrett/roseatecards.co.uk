@@ -8,7 +8,7 @@ const XMLProducts = allProducts.map(( product ) => {
             <g:id>${product.id}</g:id>
             <g:title>${product.title}</g:title>
             <g:description>${product.description.split('\n')[0]}</g:description>
-            <g:link>${encodeURIComponent(product.url)}</g:link>
+            <g:link>${product.url}</g:link>
             <g:image_link>${product.images[0]['url_170x135']}</g:image_link>
             <g:brand>Roseate Cards</g:brand>
             <g:condition>new</g:condition>
@@ -28,7 +28,7 @@ const shopXML = `<?xml version="1.0"?>
     <title>Roseate Cards</title>
     <link>https://roseatecards.co.uk/</link>
     <description>Sustainable Greetings Cards and Wedding Stationery</description>
-    ${XMLProducts.join('').replace('&', '&amp;')}
+    ${XMLProducts.join('').replace(/&/g, '&amp;')}
   </channel>
 </rss>`;
 
