@@ -1,12 +1,20 @@
 import { InferGetStaticPropsType } from 'next';
 import { getFeaturedListings } from '../lib/shopData';
 import ProductsGrid from '../components/ProductsGrid';
+import Head from 'next/head';
 
 export default function Home({
   featuredListings
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div className="home-page">
+
+      <Head>
+        {
+          // To verify website for Facebook Business
+        }
+        <meta name="facebook-domain-verification" content="y6kwn5evhxeizk7pv2w7qi54vgcfue" />
+      </Head>
 
       <div className="gel-wrap">
         <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
