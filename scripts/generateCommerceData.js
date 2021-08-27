@@ -28,12 +28,8 @@ const shopXML = `<?xml version="1.0"?>
     <title>Roseate Cards</title>
     <link>https://roseatecards.co.uk/</link>
     <description>Sustainable Greetings Cards and Wedding Stationery</description>
-    ${XMLProducts.join('')}
+    ${XMLProducts.join('').replace('&', '&amp;')}
   </channel>
 </rss>`;
 
 fs.writeFileSync("dist/commerce.xml", shopXML, "utf8");
-
-function writeProductsToXML(products) {
-  console.log(products)
-}
