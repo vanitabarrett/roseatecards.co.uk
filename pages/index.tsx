@@ -20,14 +20,14 @@ export default function Home({
         <h1 className="screenreader-only">Welcome to Roseate Cards</h1>
 
         <div className="featured-item gel-layout">
-          <img src="/homepage-feature/just-because.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
+          <img src="/homepage-feature/christmas.jpg" className="featured-item__image gel-layout__item gel-1/1 gel-1/2@m" alt="" loading="lazy" />
           <div className="featured-item__text-wrapper gel-layout__item gel-1/1 gel-1/2@m">
             <p className="featured-item__headline-wrapper">
-              <span className="featured-item__text">Send a little love</span><br/><span className="featured-item__text featured-item__large-text">in the post...</span>
+              <span className="featured-item__text">Send a little love in the post</span><br/><span className="featured-item__text featured-item__large-text">this Christmas...</span>
             </p>
             <p className="featured-item__description">During hard times, messages of love and support can mean a lot to the people we love.</p>
             <p className="featured-item__description">Our eco-friendly greeting cards and luxury wedding stationery are printed on high quality FSC-approved paper, paired with recycled kraft envelopes and shipped in recyclable cellophane and cardboard.</p>
-            <p className="featured-item__button-wrapper"><a href="/cards/just-because" className="featured-item__button">Shop now</a></p>
+            <p className="featured-item__button-wrapper"><a href="/cards" className="featured-item__button">Shop now</a></p>
           </div>
         </div>
         <div className="home-page__info gel-layout">
@@ -49,17 +49,17 @@ export default function Home({
         </div>
 
         <div className="home-page__cta">
-          <a href="/wedding" className="home-page__cta__wrapper home-page__cta__wrapper-large home-page__cta__wrapper-large-3">
-            <p className="home-page__cta__tag">Shop wedding stationery</p>
-            <img className="home-page__cta__wrapper-large__image" src="/homepage-categories/wedding.jpg" alt="" loading="lazy" />
+          <a href="/cards/christmas" className="home-page__cta__wrapper home-page__cta__wrapper-large home-page__cta__wrapper-large-3">
+            <p className="home-page__cta__tag">Shop Christmas cards</p>
+            <img className="home-page__cta__wrapper-large__image" src="/homepage-categories/christmas.jpg" alt="" loading="lazy" />
           </a>
-          <a href="/cards/just-because" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-1">
-            <p className="home-page__cta__tag">Just because</p>
-            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/just-because.png" alt="" loading="lazy" />
-          </a>
-          <a href="/cards/birthday" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-2">
+          <a href="/cards/birthday" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-1">
             <p className="home-page__cta__tag">Birthday</p>
             <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/birthday.png" alt="" loading="lazy" />
+          </a>
+          <a href="/wedding" className="home-page__cta__wrapper home-page__cta__wrapper-small home-page__cta__wrapper-small-2">
+            <p className="home-page__cta__tag">Wedding stationery</p>
+            <img className="home-page__cta__wrapper-small__image" src="/homepage-categories/wedding.jpg" alt="" loading="lazy" />
           </a>
         </div>
       </div>
