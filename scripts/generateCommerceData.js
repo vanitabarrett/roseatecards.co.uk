@@ -8,7 +8,7 @@ const XMLProducts = allProducts.map(( product ) => {
             <g:id>${product.id}</g:id>
             <g:title>${product.title}</g:title>
             <g:description>${product.description.split('\n')[0]}</g:description>
-            <g:link>${product.url}</g:link>
+            <g:link>${product.url.replace(/https:\/\/www.etsy.com/, 'https://roseatecards.etsy.com')}</g:link>
             <g:image_link>${product.images[0]['url_fullxfull']}</g:image_link>
             <g:brand>Roseate Cards</g:brand>
             <g:condition>new</g:condition>
